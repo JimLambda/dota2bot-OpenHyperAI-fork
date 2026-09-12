@@ -30,6 +30,9 @@ do
 	local ok, msg = pcall( function()
 		local b = GetBot()
 		print( '[OHA-LOAD-MARKER] ability_item_usage_generic.lua name=' .. tostring( b and b:GetUnitName() or 'nil' ) )
+		-- Ungated probe: Say writes to the console as a 'failed to localize' line, bypassing the
+		-- framework's print() override. If 'OHA_FORK_LOADED_TEST' appears, the FORK is what's running.
+		Say( b, 'OHA_FORK_LOADED_TEST', false )
 	end )
 	if not ok then print( '[OHA-LOAD-MARKER] print-error: ' .. tostring( msg ) ) end
 end
@@ -8478,6 +8481,13 @@ function AbilityLevelUpThink()
 	bot.lastLevelUpFrameProcessTime = DotaTime()
 	if not bot:IsIllusion() then
 		if botName == 'npc_dota_hero_medusa' then
+			-- [OHA-PROBE] one-time, live-bot confirmation that the FORK is running.
+			-- Say surfaces as a 'failed to localize' console line and bypasses the print() gate.
+			if not bot.__ohaProbeDone then
+				bot.__ohaProbeDone = true
+				Say( bot, 'OHA_FORK_PROBE_ALIVE_MEDUSA', false )
+				print( '[OHA-PROBE] medusa AbilityLevelUpThink running -> fork IS loaded' )
+			end
 			local ok, err = xpcall( AbilityLevelUpComplement, debug.traceback )
 			if not ok then print('[MEDUSA-DBG][LevelUp ERROR] '..tostring(err)) end
 		else
