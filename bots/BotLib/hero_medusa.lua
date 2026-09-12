@@ -161,6 +161,13 @@ local lastToggleTime = 0
 
 function X.SkillsComplement()
 
+	-- [MEDUSA-DBG] trace: print ability handles every 2s to detect nil derefs
+	if X._dbgT == nil then X._dbgT = -99 end
+	if DotaTime() - X._dbgT >= 2 then
+		X._dbgT = DotaTime()
+		print('[MEDUSA-DBG][SkillsComplement] Q='..tostring(abilityQ)..' W='..tostring(abilityW)..' E='..tostring(abilityE)..' R='..tostring(abilityR)..' Gorgon='..tostring(GorgonGrasp))
+	end
+
 	J.ConsiderForMkbDisassembleMask( bot )
 	J.ConsiderTarget()
 
@@ -176,7 +183,7 @@ function X.SkillsComplement()
 	castWDesire, castWTarget = X.ConsiderW()
 	if castWDesire > 0
 	then
-
+		print('[MEDUSA-DBG] -> cast W (desire='..tostring(castWDesire)..')')
 		J.SetQueuePtToINT( bot, true )
 
 		bot:ActionQueue_UseAbilityOnEntity( abilityW, castWTarget )
@@ -187,7 +194,7 @@ function X.SkillsComplement()
 	castRDesire = X.ConsiderR()
 	if castRDesire > 0 
 	then
-
+		print('[MEDUSA-DBG] -> cast R (desire='..tostring(castRDesire)..')')
 		J.SetQueuePtToINT( bot, true )
 
 		bot:ActionQueue_UseAbility( abilityR )
@@ -198,6 +205,7 @@ function X.SkillsComplement()
 	GorgonGraspDesire, GorgonGraspLocation = X.ConsiderGorgonGrasp()
 	if GorgonGraspDesire > 0
 	then
+		print('[MEDUSA-DBG] -> cast GorgonGrasp (desire='..tostring(GorgonGraspDesire)..')')
 		J.SetQueuePtToINT(bot, false)
 		bot:ActionQueue_UseAbilityOnLocation(GorgonGrasp, GorgonGraspLocation)
 		return
@@ -206,6 +214,7 @@ function X.SkillsComplement()
 	castQDesire = X.ConsiderQ()
 	if castQDesire > 0
 	then
+		print('[MEDUSA-DBG] -> cast Q (desire='..tostring(castQDesire)..')')
 		bot:Action_UseAbility( abilityQ )
 		return
 	end

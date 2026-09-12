@@ -8388,7 +8388,27 @@ function AbilityUsageThink()
 	if bot.lastAbilityFrameProcessTime == nil then bot.lastAbilityFrameProcessTime = DotaTime() end
 	if DotaTime() > 30 and (DotaTime() - bot.lastAbilityFrameProcessTime < (bot.frameProcessTime * (1 + Customize.ThinkLess))) and bot.isBear == nil then return end
 	bot.lastAbilityFrameProcessTime = DotaTime()
-	if BotBuild ~= nil and not J.IsNoAbilityIllution(bot) then BotBuild.SkillsComplement() end
+
+	if botName == 'npc_dota_hero_medusa' then
+		if bot.dbgAUT == nil then bot.dbgAUT = -99 end
+		if DotaTime() - bot.dbgAUT >= 2 then
+			bot.dbgAUT = DotaTime()
+			print(string.format('[MEDUSA-DBG][AUT] t=%.1f mode=%d desire=%.2f loc=(%.0f,%.0f) distF=%.0f actType=%d qAct=%d hp=%.2f mp=%.2f',
+				DotaTime(), bot:GetActiveMode(), bot:GetActiveModeDesire(),
+				bot:GetLocation().x, bot:GetLocation().y, bot:DistanceFromFountain(),
+				bot:GetCurrentActionType(), bot:NumQueuedActions(),
+				bot:GetHealth()/bot:GetMaxHealth(), bot:GetMana()/bot:GetMaxMana()))
+		end
+	end
+
+	if BotBuild ~= nil and not J.IsNoAbilityIllution(bot) then
+		if botName == 'npc_dota_hero_medusa' then
+			local ok, err = pcall( function() BotBuild.SkillsComplement() end )
+			if not ok then print('[MEDUSA-DBG][SkillsComplement ERROR] '..tostring(err)) end
+		else
+			BotBuild.SkillsComplement()
+		end
+	end
 end
 
 function BuybackUsageThink()

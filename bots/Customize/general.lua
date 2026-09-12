@@ -51,7 +51,8 @@ Customize.Radiant_Heros = {
     -- 'npc_dota_hero_drow_ranger',
     -- 'npc_dota_hero_templar_assassin',
 
-    'npc_dota_hero_bristleback',
+    -- 'npc_dota_hero_bristleback',
+    'npc_dota_hero_medusa',
     'npc_dota_hero_shredder',
     'npc_dota_hero_abaddon',
     'npc_dota_hero_skeleton_king',
@@ -68,7 +69,7 @@ Customize.Dire_Heros = {
     -- 'npc_dota_hero_centaur',
 
     'npc_dota_hero_luna',
-    'npc_dota_hero_medusa',
+    -- 'npc_dota_hero_medusa',
     'npc_dota_hero_sniper',
     'npc_dota_hero_drow_ranger',
     'npc_dota_hero_templar_assassin',

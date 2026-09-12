@@ -439,6 +439,14 @@ end
 function ItemPurchaseThink()
 	currentTime = DotaTime()
 
+	if botName == 'npc_dota_hero_medusa' then
+		if bot.dbgBuy == nil then bot.dbgBuy = -99 end
+		if DotaTime() - bot.dbgBuy >= 2 then
+			bot.dbgBuy = DotaTime()
+			print('[MEDUSA-DBG][BUY] target='..tostring(bot.currBuyingItemInPurchaseList)..' basicN='..tostring(#(bot.currBuyingBasicItemList or {}))..' gold='..tostring(bot:GetGold())..' invFull='..tostring(bot:IsInventoryFull()))
+		end
+	end
+
 	-- ARDM: detect stale hero instance and rebuild purchase list on hero swap
 	local isStale, freshBot, freshName = J.IsStaleARDMHero(bot, botName)
 	if isStale then return end
