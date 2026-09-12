@@ -16,6 +16,20 @@ local sTalentList = J.Skill.GetTalentList( bot )
 local sAbilityList = J.Skill.GetAbilityList( bot )
 local sRole = J.Item.GetRoleItemsBuyList( bot )
 
+-- [MEDUSA-DBG] load-time diagnostic (printed once when this module is first dofiled)
+do
+	local ok, msg = pcall( function()
+		local s = ''
+		if sAbilityList ~= nil then
+			for i = 1, math.min( 8, #sAbilityList ) do
+				s = s .. ( sAbilityList[i] or 'nil' ) .. ', '
+			end
+		end
+		print( '[MEDUSA-DBG][LOAD] botName=' .. tostring( botName ) .. ' sAbilityList={' .. s .. '}' )
+	end )
+	if not ok then print( '[MEDUSA-DBG][LOAD PRINT ERROR] ' .. tostring( msg ) ) end
+end
+
 local tTalentTreeList = {
 						['t25'] = {10, 0},
 						['t20'] = {0, 10},
@@ -142,10 +156,10 @@ modifier_medusa_stone_gaze_stone
 
 --]]
 
-local abilityQ = bot:GetAbilityByName( sAbilityList[1] )
-local abilityW = bot:GetAbilityByName( sAbilityList[2] )
-local abilityE = bot:GetAbilityByName( sAbilityList[3] )
-local abilityR = bot:GetAbilityByName( sAbilityList[6] )
+local abilityQ = bot:GetAbilityByName( sAbilityList[1] or "" )
+local abilityW = bot:GetAbilityByName( sAbilityList[2] or "" )
+local abilityE = bot:GetAbilityByName( sAbilityList[3] or "" )
+local abilityR = bot:GetAbilityByName( sAbilityList[6] or "" )
 local abilityM = nil
 local GorgonGrasp = bot:GetAbilityByName('medusa_gorgon_grasp')
 
@@ -167,6 +181,16 @@ function X.SkillsComplement()
 		X._dbgT = DotaTime()
 		print('[MEDUSA-DBG][SkillsComplement] Q='..tostring(abilityQ)..' W='..tostring(abilityW)..' E='..tostring(abilityE)..' R='..tostring(abilityR)..' Gorgon='..tostring(GorgonGrasp))
 	end
+
+	-- [MEDUSA-DBG] re-fetch ability handles for the CURRENT bot. hero_medusa.lua is a
+	-- single shared module across all Medusa copies, so the file-scope handles may
+	-- belong to a different bot instance. Refreshing per-call avoids casting on the
+	-- wrong hero (which throws and produces "error in error handling").
+	abilityQ = bot:GetAbilityByName( sAbilityList[1] or "" )
+	abilityW = bot:GetAbilityByName( sAbilityList[2] or "" )
+	abilityE = bot:GetAbilityByName( sAbilityList[3] or "" )
+	abilityR = bot:GetAbilityByName( sAbilityList[6] or "" )
+	GorgonGrasp = bot:GetAbilityByName( 'medusa_gorgon_grasp' )
 
 	J.ConsiderForMkbDisassembleMask( bot )
 	J.ConsiderTarget()
