@@ -1,3 +1,30 @@
+-- [OHA] The framework overrides print() and gates it behind Utils.DebugMode / isDebug, which
+-- silently discards ALL output. Walk the override chain to the engine's raw print (a C function
+-- with no Lua upvalues) and redefine print() for THIS bot's Lua state so our [MEDUSA-DBG]/[OHA]
+-- tags become visible. This does NOT touch the framework's global debug flags.
+local function _OHA_RawPrint()
+	local fn = print
+	for _ = 1, 6 do
+		if type( fn ) ~= 'function' then break end
+		if debug.getupvalue( fn, 1 ) == nil then return fn end -- engine C print has no upvalues
+		local found
+		for i = 1, 6 do
+			local _, uv = debug.getupvalue( fn, i )
+			if type( uv ) == 'function' then found = uv break end
+		end
+		if found == nil then break end
+		fn = found
+	end
+	return print
+end
+local ok_rp, _OHA_rp = pcall( _OHA_RawPrint )
+if not ok_rp or type( _OHA_rp ) ~= 'function' then _OHA_rp = print end
+print = function( ... )
+	local t = { ... }
+	for i = 1, #t do t[i] = tostring( t[i] ) end
+	_OHA_rp( table.concat( t, "\t" ) )
+end
+
 -- [OHA-LOAD-MARKER] fires unconditionally at file load (before any guard) to confirm the edited file is what Dota runs
 do
 	local ok, msg = pcall( function()
