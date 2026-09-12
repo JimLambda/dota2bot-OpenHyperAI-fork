@@ -213,7 +213,7 @@ function X.SkillsComplement()
 end
 
 function X.ConsiderGorgonGrasp()
-	if not GorgonGrasp:IsFullyCastable()
+	if GorgonGrasp == nil or not GorgonGrasp:IsFullyCastable()
 	then
 		return BOT_ACTION_DESIRE_NONE, 0
 	end

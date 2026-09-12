@@ -41,6 +41,7 @@ Hero.PurchaseList = {
 	"item_monkey_king_bar",
 	"item_aghanims_shard",
 	"item_ultimate_scepter",
+	"item_travel_boots",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
 	"item_butterfly",
