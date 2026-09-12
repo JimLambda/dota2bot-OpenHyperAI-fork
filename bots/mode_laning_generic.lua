@@ -33,6 +33,14 @@ function GetDesire()
 	PickOneAnnouncer()
 	AnnounceMessages()
 
+	-- [OHA-PROBE] PRE_GAME confirmation the FORK is running for medusa.
+	-- ActionImmediate_Chat is ungated (same channel as the 'I will play position X' lines).
+	if bot:GetUnitName() == 'npc_dota_hero_medusa' and not bot.__ohaProbeLaning then
+		bot.__ohaProbeLaning = true
+		local ok, pos = pcall( function() return J.GetPosition(bot) end )
+		bot:ActionImmediate_Chat( 'OHA_FORK_PROBE_MEDUSA_LANING pos=' .. ( ok and tostring( pos ) or '?' ), false )
+	end
+
 	if bot:IsInvulnerable() or not bot:IsHero() or not bot:IsAlive() or not string.find(botName, "hero") or bot:IsIllusion() then return BOT_MODE_DESIRE_NONE end
 	local botLV = bot:GetLevel()
 	local currentTime = DotaTime()
@@ -172,9 +180,14 @@ function GetBestDenyCreep(hCreepList)
 	return nil
 end
 
-if local_mode_laning_generic or (J.GetPosition(bot) == 1 and J.IsPosxHuman(5)) then
-	function Think()
-		local hitCreep, moveToCreep = GetBestLastHitCreep(nEnemyCreeps)
+function Think()
+	-- [OHA-PROBE] confirm the laning Think actually runs for medusa (incl. non-pos-1).
+	if bot:GetUnitName() == 'npc_dota_hero_medusa' and not bot.__ohaProbeLaningThink then
+		bot.__ohaProbeLaningThink = true
+		bot:ActionImmediate_Chat( 'OHA_FORK_PROBE_MEDUSA_LANING_THINK pos=' .. tostring( J.GetPosition(bot) ), false )
+	end
+
+	local hitCreep, moveToCreep = GetBestLastHitCreep(nEnemyCreeps)
 		if J.IsValid(hitCreep) then
 			if J.GetPosition(bot) <= 2 or not J.IsThereNonSelfCoreNearby(700)
 			then
@@ -213,7 +226,6 @@ if local_mode_laning_generic or (J.GetPosition(bot) == 1 and J.IsPosxHuman(5)) t
 
 		bot:Action_MoveToLocation(target_loc + RandomVector(50))
 	end
-end
 
 
 function PickOneAnnouncer()
