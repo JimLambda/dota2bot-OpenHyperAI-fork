@@ -45,13 +45,21 @@ Customize.Ban = {
 6. Check Appendix to ensure you DO NOT pick more than 1 "weak" heroes in a team for your game experience.
 --]]
 Customize.Radiant_Heros = {
-    'Random',
-    'Random',
+    'npc_dota_hero_medusa',
+    'npc_dota_hero_luna',
+    'npc_dota_hero_sniper',
+    'npc_dota_hero_drow_ranger',
+    'npc_dota_hero_templar_assassin',
 }
 
 -- Same notes as above for picking heroes but for the Dire side.
 Customize.Dire_Heros = {
-    'Random',
+    -- tanky heroes
+    'npc_dota_hero_bristleback',
+    'npc_dota_hero_shredder',
+    'npc_dota_hero_abaddon',
+    'npc_dota_hero_skeleton_king',
+    'npc_dota_hero_centaur',
 }
 
 --[[
@@ -99,6 +107,10 @@ Customize.Dire_Names = {
 -- 1 is mild meaning bots will group up only when convenient; 3 is bots will almost always try to push together.
 -- Group pushing may increase the difficulty but can reduce the game experience. 
 Customize.Force_Group_Push_Level = 1
+
+-- Set how frequently you want the bots to push.
+-- 1 is default, bot may choose to farm more in game. 2 is balanced for push vs farm. 3 is almost no farm, all push.
+Customize.Push_Frequency = 1
 
 -- The Enhanced Fretbots mode settings:
 -- For more about Fretbots mode: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/68
