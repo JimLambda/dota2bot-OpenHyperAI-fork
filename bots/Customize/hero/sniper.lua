@@ -23,13 +23,13 @@ local Hero = { }
 -- Set it to true to turn on ALL of the custom settings in this file, or set it to false to turn off the settings.
 Hero.Enable = true -- CHANGE THIS TO: true
 
--- The ability upgrade order of the bot. 1 means the first ability, 2 means the second ability, ..., 6 means the ultimate ability.
--- Be very careful when changing the values, if you misplace 1 ability it can cause the bot failing to upgrade all the other abilities.
-Hero.AbilityUpgrade = {1,3,1,2,1,6,1,3,2,3,6,2,3,2,6}
+-- -- The ability upgrade order of the bot. 1 means the first ability, 2 means the second ability, ..., 6 means the ultimate ability.
+-- -- Be very careful when changing the values, if you misplace 1 ability it can cause the bot failing to upgrade all the other abilities.
+-- Hero.AbilityUpgrade = {1,3,1,2,1,6,1,3,2,3,6,2,3,2,6}
 
--- The talent upgrade choices. There are 4 tiers of talents to choose when the bot reaches level 10, 15, 20, and 25.
--- "l" means choose the talent on the "left" side; "r" means choose the talent on the "right" side.
-Hero.Talent = {"r", "l", "l", "r"}
+-- -- The talent upgrade choices. There are 4 tiers of talents to choose when the bot reaches level 10, 15, 20, and 25.
+-- -- "l" means choose the talent on the "left" side; "r" means choose the talent on the "right" side.
+-- Hero.Talent = {"r", "l", "l", "r"}
 
 -- The items this bot will purchase in game. Note if you cutomize this list, the bot will purchase these items no matter what it position is in the game.
 -- Item internal names in Dota2: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/73
@@ -47,9 +47,9 @@ Hero.PurchaseList = {
 	"item_moon_shard",
 }
 
--- The items this bot will sell in game. Note the items should be paired together - once the bot gets the first item in the pair, the bot sells the second item.
-Hero.SellList = {
-    "item_bloodthorn", "item_circlet",
-}
+-- -- The items this bot will sell in game. Note the items should be paired together - once the bot gets the first item in the pair, the bot sells the second item.
+-- Hero.SellList = {
+--     "item_bloodthorn", "item_circlet",
+-- }
 
 return Hero

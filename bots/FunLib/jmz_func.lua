@@ -47,10 +47,11 @@ function J.SetUserHeroInit( nAbilityBuildList, nTalentBuildList, sBuyList, sSell
 		status, _ = xpcall(function() tBotSet = require( sBotDir ) end, function( err ) print( '[WARN] When loading customized file: '..err ) end )
 	end
 	if status and tBotSet and tBotSet.Enable then
-		nAbilityBuildList = tBotSet.AbilityUpgrade
-		nTalentBuildList = J.GetTalentBuildList( tBotSet.Talent )
-		sBuyList = tBotSet.PurchaseList
-		sSellList = tBotSet.SellList
+		-- Only override the fields the user actually set, so the rest keeps the bot's built-in defaults.
+		if tBotSet.AbilityUpgrade ~= nil then nAbilityBuildList = tBotSet.AbilityUpgrade end
+		if tBotSet.Talent ~= nil then nTalentBuildList = J.GetTalentBuildList( tBotSet.Talent ) end
+		if tBotSet.PurchaseList ~= nil then sBuyList = tBotSet.PurchaseList end
+		if tBotSet.SellList ~= nil then sSellList = tBotSet.SellList end
 	end
 	return nAbilityBuildList, nTalentBuildList, sBuyList, sSellList
 end
