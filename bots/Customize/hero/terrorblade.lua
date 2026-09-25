@@ -35,14 +35,14 @@ Hero.Enable = true -- CHANGE THIS TO: true
 Hero.PurchaseList = {
 	"item_boots",
 	"item_hydras_breath",
-	"item_manta",
-	"item_greater_crit",
+	"item_bloodthorn",
 	"item_satanic",
+	"item_skadi",
 	"item_aghanims_shard",
 	"item_ultimate_scepter",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_butterfly",
+	"item_disperser",
 	"item_moon_shard",
 }
 

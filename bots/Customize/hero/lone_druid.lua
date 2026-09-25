@@ -33,15 +33,29 @@ Hero.Enable = true -- CHANGE THIS TO: true
 -- The items this bot will purchase in game. Note if you cutomize this list, the bot will purchase these items no matter what it position is in the game.
 -- Item internal names in Dota2: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/73
 Hero.PurchaseList = {
-	"item_boots",
-	"item_hydras_breath",
-	"item_manta",
-	"item_greater_crit",
-	"item_satanic",
-	"item_aghanims_shard",
-	"item_ultimate_scepter",
-	"item_travel_boots_2",
+	-- purchase bear items first.
+	-- "item_ultimate_scepter",  -- Purchasing this only will cause bugs now.
+	"item_mjollnir",
+	"item_heart",
+	"item_abyssal_blade",
+	"item_monkey_king_bar",
+	"item_butterfly",
 	"item_ultimate_scepter_2",
+	"item_ultimate_scepter_2",
+	"item_disperser",
+	"item_aghanims_shard",
+	"item_aghanims_shard",
+	"item_moon_shard",
+
+	-- then lone druid's items.
+	"item_boots",
+	"item_mjollnir",
+	"item_hydras_breath",
+	"item_satanic",
+	"item_monkey_king_bar",
+	-- "item_ultimate_scepter",
+	"item_travel_boots_2",
+	-- "item_ultimate_scepter_2",
 	"item_butterfly",
 	"item_moon_shard",
 }

@@ -34,15 +34,16 @@ Hero.Enable = true -- CHANGE THIS TO: true
 -- Item internal names in Dota2: https://github.com/forest0xia/dota2bot-OpenHyperAI/discussions/73
 Hero.PurchaseList = {
 	"item_boots",
-	"item_hydras_breath",
-	"item_manta",
-	"item_greater_crit",
-	"item_satanic",
+	"item_kaya_and_sange",
+	"item_bloodstone",
+	"item_shivas_guard",
+	"item_octarine_core",
 	"item_aghanims_shard",
 	"item_ultimate_scepter",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_butterfly",
+	"item_sphere",
+	-- "item_overwhelming_blink",
 	"item_moon_shard",
 }
 
