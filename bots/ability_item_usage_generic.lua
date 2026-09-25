@@ -3650,10 +3650,9 @@ end
 
 --银月
 X.ConsiderItemDesire["item_moon_shard"] = function( hItem )
-	if bot:GetNetWorth() < 18000 or Utils.CountBackpackEmptySpace(bot) >= 3
-	then
-		return BOT_ACTION_DESIRE_NONE
-	end
+	-- Every hero self-consumes the moon shard once it holds an unconsumed one (after the
+	-- short delay below). No net-worth / backpack gating, so all heroes - including supports
+	-- like Storm/Earth Spirit that keep an empty backpack - eat it as soon as they own one.
 
 	local nCastRange = 2000
 	local sCastType = 'unit'
