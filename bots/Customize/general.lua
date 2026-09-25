@@ -141,7 +141,9 @@ Customize.Dire_Heros = {
 Customize.Allow_Repeated_Heroes = false
 
 -- The max number of weak heroes allowed in a team the bots can pick.
-Customize.Weak_Hero_Cap = 1
+-- Raised to 3 so the customized Radiant lineup (lone_druid, void_spirit, ember_spirit are all "weak") is honored
+-- instead of being replaced by random heroes. Lower it back toward 1 to keep the weak-hero experience guard.
+Customize.Weak_Hero_Cap = 3
 
 -- The weak penalty curve for bots picking weak heroes:
 --   { type="linear", k=0.25 }         ->  penalty = max(0, 1 - k * (weakPicked/cap))
