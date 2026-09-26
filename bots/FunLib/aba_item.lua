@@ -1168,13 +1168,26 @@ function Item.IsItemInTargetHero( sItemName, bot )
 	if sItemName == 'item_moon_shard' and bot:HasModifier( "modifier_item_moon_shard_consumed" ) then return true end
 
 	if sItemName == 'item_ultimate_scepter_2' then
-		-- Lone Druid carries one Aghanim's Blessing for himself and hands a second
-		-- to his Spirit Bear. Track the actual purchase count on the shared LD table
-		-- so we stop at exactly two regardless of in-transit / dropped items (a held
-		-- blessing would otherwise read as "owned" immediately and block the second).
+		-- Lone Druid must acquire two Aghanim's Blessings: one for himself and one to
+		-- hand to the Spirit Bear. A Blessing held by a unit that already owns the
+		-- upgrade stays physical, so HasScepter()/inventory checks are unreliable.
+		-- Treat the pair as satisfied only once the hero and the bear together hold
+		-- two Blessings (counting both the consumed modifier and any physical item),
+		-- so exactly two are bought regardless of whether they are consumed.
 		if bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
 			local ld = Utils.GetLoneDruid(bot)
-			return ( ( ld.scepter2Bought or 0 ) >= 2 )
+			local bear = ld.bear
+			local function _ldHasBlessing( unit )
+				if unit == nil then return false end
+				if unit:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) then return true end
+				for s = 0, 14 do
+					local it = unit:GetItemInSlot( s )
+					if it ~= nil and it:GetName() == 'item_ultimate_scepter_2' then return true end
+				end
+				return false
+			end
+			local owned = ( _ldHasBlessing( bot ) and 1 or 0 ) + ( _ldHasBlessing( bear ) and 1 or 0 )
+			return owned >= 2
 		end
 		return ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
 	end

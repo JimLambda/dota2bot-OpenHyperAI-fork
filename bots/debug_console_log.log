@@ -1,0 +1,67 @@
+Excessive frame time of 707.79ms clamped.  Acting as if the frame only took 100.00ms
+[Server] PR:IncrementIdleTime 9:[I:0:0] 2.23
+CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
+CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
+SteamLearn error for project 7 (toobusy: NO), existing error count 20, retrying no sooner than 102.00s
+[Particles] CONTENT ERROR: Unable to find body part '@run' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[InputSystem] Processing SDL events took 16.6ms
+[InputSystem] Processing SDL events took 12.2ms
+[Server] PR:IncrementIdleTime 5:[I:0:0] 2.00
+[InputSystem] Processing SDL events took 10.5ms
+[InputSystem] Processing SDL events took 12.3ms
+SteamLearn error for project 1, but before existing retry delay, ignoring
+[Localization System] CLocalize::FindSafe failed to localize: 'Let's do Roshan!'
+[Localization System] CLocalize::FindSafe failed to localize: 'Roshan time!'
+[Localization System] CLocalize::FindSafe failed to localize: 'Roshan time!'
+[Localization System] CLocalize::FindSafe failed to localize: 'Roshan time!'
+[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
+[InputSystem] Processing SDL events took 10.3ms
+SteamLearn error for project 1 (toobusy: NO), existing error count 20, retrying no sooner than 102.00s
+[InputSystem] Processing SDL events took 5.7ms
+[InputSystem] Processing SDL events took 5.5ms
+[Particles] CONTENT ERROR: Unable to find body part '@run' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Server] PR:IncrementIdleTime 5:[I:0:0] 3.00
+[Server] PR:IncrementIdleTime 8:[I:0:0] 2.50
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/lone_druid/lone_druid.vmdl" for entity "npc_dota_hero_lone_druid"
+[Client] 9.5% server ticks missed due to network (0 dropped, 19 late)   Good:182   BadOther:0    Fixed: 0 dropped, 0 late
+[Server] PR:IncrementIdleTime 8:[I:0:0] 2.37
+[Server] PR:IncrementIdleTime 5:[I:0:0] 3.77
+[Server] 1984:item_hyperstone::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -3 is outside of cell bounds (0->128) @(-17169.007812 5359.593262 128.000000)
+[Server] 2003:item_recipe_mjollnir::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -3 is outside of cell bounds (0->128) @(-17169.007812 5359.593262 128.000000)
+[Server] PR:IncrementIdleTime 5:[I:0:0] 2.50
+[Server] PR:IncrementIdleTime 8:[I:0:0] 2.37
+[Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
+[Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
+SteamLearn error for project 1, but before existing retry delay, ignoring
+[Particles] CONTENT ERROR: Unable to find body part '@run' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Server] PR:IncrementIdleTime 1:[I:0:0] 2.77
+[Server] PR:IncrementIdleTime 5:[I:0:0] 2.00
+[Server] Client (account 0) tried to execute invalid order (20). Unit is dead.
+Sending CMsgConnectedPlayers for reason FIRST_BLOOD.  Last send was 581.9s ago, urgency is 0.0s
+game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
+first_blood_happened: true
+send_reason: FIRST_BLOOD
+radiant_kills: 1
+dire_kills: 0
+radiant_lead: 200162
+building_state: 4784201
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 27 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 610 bytes
+--- CSODOTALobby.first_blood_happened: false
++++ CSODOTALobby.first_blood_happened: true
+[Localization System] CLocalize::FindSafe failed to localize: '?????'
+[Particles] CONTENT ERROR: Unable to find body part '@run' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Particles] CONTENT ERROR: Unable to find body part 'loadout_spawn' in model 'models/heroes/storm_spirit/storm_spirit.vmdl' referenced in particle system 'particles/units/heroes/hero_stormspirit/stormspirit_moving_remnant_image.vpcf'
+[Server] Client (account 0) tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/dazzle/dazzle.vmdl" for entity "npc_dota_hero_dazzle"
+SteamLearn error for project 1, but before existing retry delay, ignoring
+[Server] PR:IncrementIdleTime 2:[I:0:0] 2.40
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/furion/furion.vmdl" for entity "npc_dota_hero_furion"
+[Server] PR:IncrementIdleTime 5:[I:0:0] 11.50

@@ -135,6 +135,23 @@ local function _stillNeeds(itemName)
 	if GetGameMode() == GAMEMODE_ARDM and DotaTime() > 2 * 60 and tARDMNeverRebuy[itemName] then
 		return false
 	end
+	-- Lone Druid must acquire two Aghanim's Blessings: one he keeps/consumes and one
+	-- handed to the Spirit Bear. A Blessing that stays physical (not yet consumed)
+	-- still counts as a physical item, which would make the generic count below think
+	-- the second is already owned and skip it. Treat the pair as satisfied only once
+	-- the hero and the bear together hold two Blessings (counting both the consumed
+	-- modifier and any physical Blessing), preventing both over-skip and over-buy.
+	if itemName == 'item_ultimate_scepter_2' and bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
+		local ld = Utils.GetLoneDruid(bot)
+		local bear = ld.bear
+		local heroHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed')
+			or _countOwnedEverywhere(bot, 'item_ultimate_scepter_2') > 0
+		local bearHas = bear ~= nil and (
+			bear:HasModifier('modifier_item_ultimate_scepter_consumed')
+			or _countOwnedEverywhere(bear, 'item_ultimate_scepter_2') > 0 )
+		local owned = (heroHas and 1 or 0) + (bearHas and 1 or 0)
+		return owned < 2
+	end
 	if not bot.currBuyingRequiredCounts then return true end
 	local required = bot.currBuyingRequiredCounts[itemName]
 	if not required then return true end
@@ -323,6 +340,8 @@ local function GeneralPurchase()
 				if bot.currBuyingBasicItem == "item_ultimate_scepter_2" and bot == Utils.GetLoneDruid(bot).hero then
 					local ld = Utils.GetLoneDruid(bot)
 					ld.scepter2Bought = ( ld.scepter2Bought or 0 ) + 1
+					local b = ld.bear
+					print( "[LD scepter2] purchased; heroConsumed=" .. tostring( bot:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) ) .. " bearConsumed=" .. tostring( b ~= nil and b:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) ) )
 				end
 				ClearCurrBuyingBasicItemList()
 				bot.SecretShop = false
@@ -734,13 +753,17 @@ function ItemPurchaseThink()
 	if bot == Utils.GetLoneDruid(bot).hero then
 		local bear = Utils.GetLoneDruid(bot).bear
 		if bear ~= nil then
-			local hEnemyList = J.GetNearbyHeroes(bot, 1000, true, BOT_MODE_NONE)
+			-- Only avoid handing items over if an enemy is near the bear (where the
+			-- item will land), not merely near the hero.
+			local hEnemyList = J.GetNearbyHeroes(bear, 800, true, BOT_MODE_NONE)
 			if #hEnemyList >= 1 then return end
 
 			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountBackpackEmptySpace(bear) <= 0 then return end
 			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then return end
 
-			if GetUnitToUnitDistance(bot, bear) < 400 then
+			-- Widen the delivery range: the bear fetches dropped items within 1000u,
+			-- so the hero can offload his first Blessing and buy his own second one.
+			if GetUnitToUnitDistance(bot, bear) < 1000 then
 				for i = 0, 9
 				do
 					local item = bot:GetItemInSlot( i )
@@ -753,6 +776,7 @@ function ItemPurchaseThink()
 						if itemName == 'item_ultimate_scepter_2' then
 							if not bear:HasScepter()
 							and Utils.CountBackpackEmptySpace(bear) >= 1 then
+								print( "[LD scepter2] hero dropping Blessing to bear" )
 								bot:Action_DropItem(item, bear:GetLocation())
 							end
 						elseif Utils.HasValue(tLoneDruidBearItems, itemName)
@@ -1284,6 +1308,7 @@ function ItemPurchaseThink()
 				and Utils.GetLoneDruid(bot).bear ~= nil
 				and Item.GetItemTotalWorthInSlots(Utils.GetLoneDruid(bot).bear) < 28000
 				and Item.IsItemInTargetHero(bot.currBuyingItemInPurchaseList, Utils.GetLoneDruid(bot).bear)
+				and bot.currBuyingItemInPurchaseList ~= 'item_ultimate_scepter_2' -- LD buys his own Blessing even after the bear already has one
 			)
 			or bot.countInvCheck > (GetGameMode() == GAMEMODE_ARDM and 30 or 3 * 60) -- ARDM: 30s timeout, normal: 3min
 		then
