@@ -46,6 +46,7 @@ Hero.PurchaseList = {
 	"item_aghanims_shard",
 	"item_aghanims_shard",
 	"item_moon_shard",
+	"item_moon_shard",
 
 	-- then lone druid's items.
 	"item_boots",
@@ -57,7 +58,7 @@ Hero.PurchaseList = {
 	"item_travel_boots_2",
 	-- "item_ultimate_scepter_2",
 	"item_butterfly",
-	"item_moon_shard",
+	-- "item_moon_shard",
 }
 
 -- -- The items this bot will sell in game. Note the items should be paired together - once the bot gets the first item in the pair, the bot sells the second item.
