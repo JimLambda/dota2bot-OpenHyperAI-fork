@@ -320,6 +320,10 @@ local function GeneralPurchase()
 		then
 			local res = courier:ActionImmediate_PurchaseItem(bot.currBuyingBasicItem)
 			if res == PURCHASE_ITEM_SUCCESS then
+				if bot.currBuyingBasicItem == "item_ultimate_scepter_2" and bot == Utils.GetLoneDruid(bot).hero then
+					local ld = Utils.GetLoneDruid(bot)
+					ld.scepter2Bought = ( ld.scepter2Bought or 0 ) + 1
+				end
 				ClearCurrBuyingBasicItemList()
 				bot.SecretShop = false
 				return
@@ -343,6 +347,10 @@ local function GeneralPurchase()
 			then
 				if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 				then
+					if bot.currBuyingBasicItem == "item_ultimate_scepter_2" and bot == Utils.GetLoneDruid(bot).hero then
+						local ld = Utils.GetLoneDruid(bot)
+						ld.scepter2Bought = ( ld.scepter2Bought or 0 ) + 1
+					end
 					ClearCurrBuyingBasicItemList()
 					bot.SecretShop = false
 					return
@@ -739,8 +747,15 @@ function ItemPurchaseThink()
 					if item ~= nil
 					then
 						local itemName = item:GetName()
-						-- Only hand over items that belong to the bear.
-						if Utils.HasValue(tLoneDruidBearItems, itemName)
+						-- Only hand over items that belong to the bear. Aghanim's Blessing
+						-- is unique per unit, so the hero keeps his own and only hands a
+						-- spare to the bear while it still lacks a scepter upgrade.
+						if itemName == 'item_ultimate_scepter_2' then
+							if not bear:HasScepter()
+							and Utils.CountBackpackEmptySpace(bear) >= 1 then
+								bot:Action_DropItem(item, bear:GetLocation())
+							end
+						elseif Utils.HasValue(tLoneDruidBearItems, itemName)
 						and not Utils.HasValue(tLoneDruidKeepItems, itemName)
 						and Utils.CountBackpackEmptySpace(bear) >= 1 then
 							bot:Action_DropItem(item, bear:GetLocation())
