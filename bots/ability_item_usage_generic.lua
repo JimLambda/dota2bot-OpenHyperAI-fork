@@ -992,6 +992,56 @@ local function ItemUsageComplement()
 	local aether = J.IsItemAvailable( "item_aether_lens" )
 	if aether ~= nil then aetherRange = 250 else aetherRange = 0 end
 
+	-- Pull an unconsumed moon shard out of the backpack (slots 6-8) into a main
+	-- slot so it can actually be eaten. The item loop below only scans the main
+	-- inventory (0-5) and stash, never the backpack, so a moon shard bought as
+	-- the last item (which lands in the 7th slot) would otherwise never be used.
+	if not bot:HasModifier( "modifier_item_moon_shard_consumed" ) then
+		local msSlot = bot:FindItemSlot( "item_moon_shard" )
+		if msSlot >= 0 and bot:GetItemSlotType( msSlot ) == ITEM_SLOT_TYPE_BACKPACK then
+			-- Prefer an empty main slot (clean swap, nothing displaced).
+			local emptyMain = -1
+			for i = 0, 5 do
+				if bot:GetItemInSlot( i ) == nil then emptyMain = i; break end
+			end
+
+			local swapTarget, bDisplaced = emptyMain, false
+			if swapTarget == -1 then
+				-- All main slots full: temporarily displace the least-expensive
+				-- main item into the backpack so the shard can be consumed.
+				local bestCost = math.huge
+				for i = 0, 5 do
+					local it = bot:GetItemInSlot( i )
+					if it ~= nil then
+						local c = GetItemCost( it:GetName() )
+						if c < bestCost then bestCost = c; swapTarget = i end
+					end
+				end
+				bDisplaced = true
+			end
+
+			if swapTarget ~= -1 and swapTarget ~= msSlot then
+				bot:ActionImmediate_SwapItems( msSlot, swapTarget )
+				bot._moonSwapMainSlot = swapTarget
+				bot._moonSwapPending = bDisplaced
+			end
+		end
+	elseif bot._moonSwapPending then
+		-- Shard was consumed; move the temporarily displaced main item back
+		-- into the (now empty) main slot it came from.
+		local mainSlot = bot._moonSwapMainSlot
+		if mainSlot ~= nil and bot:GetItemInSlot( mainSlot ) == nil then
+			for b = 6, 8 do
+				if bot:GetItemInSlot( b ) ~= nil then
+					bot:ActionImmediate_SwapItems( b, mainSlot )
+					break
+				end
+			end
+		end
+		bot._moonSwapPending = false
+		bot._moonSwapMainSlot = nil
+	end
+
 	local nItemSlot = { 5, 4, 3, 2, 1, 0, 15, 16 }
 
 	for _, nSlot in pairs( nItemSlot )
