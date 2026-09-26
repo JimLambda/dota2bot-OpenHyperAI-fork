@@ -1,5 +1,6 @@
 require( GetScriptDirectory()..'/FunLib/aba_global_overrides' )
 local Role = require( GetScriptDirectory()..'/FunLib/aba_role' )
+local Utils = require( GetScriptDirectory()..'/FunLib/utils' )
 
 local Item = {}
 
@@ -1166,7 +1167,23 @@ function Item.IsItemInTargetHero( sItemName, bot )
 	
 	if sItemName == 'item_moon_shard' and bot:HasModifier( "modifier_item_moon_shard_consumed" ) then return true end
 
-	if sItemName == 'item_ultimate_scepter_2' then return ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 ) end
+	if sItemName == 'item_ultimate_scepter_2' then
+		-- Lone Druid carries one Aghanim's Blessing for himself and hands a second
+		-- to his Spirit Bear. Only block the purchase once the pair already accounts
+		-- for two (counting both consumed upgrades and a held, not-yet-consumed item
+		-- so we never loop-buy a third while the second is still in transit to the bear).
+		if bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
+			local function scepter2Count(u)
+				if u == nil or not u:IsAlive() then return 0 end
+				local nConsumed = ( u:HasScepter() and u:FindItemSlot('item_ultimate_scepter') < 0 ) and 1 or 0
+				local nHeld = ( u:FindItemSlot('item_ultimate_scepter_2') >= 0 ) and 1 or 0
+				return nConsumed + nHeld
+			end
+			local ld = Utils.GetLoneDruid(bot)
+			return ( scepter2Count(bot) + scepter2Count(ld.bear) ) >= 2
+		end
+		return ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
+	end
 
 	local nItemSolt = bot:FindItemSlot( sItemName )
 
