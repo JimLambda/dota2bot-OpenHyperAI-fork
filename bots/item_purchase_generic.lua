@@ -1325,6 +1325,9 @@ function ItemPurchaseThink()
 		then
 			-- skip it and continue next
 			bot.countInvCheck = 0
+			if bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2' then
+				print( "[LD scepter2] GATE SKIPPED 2nd Blessing — IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
+			end
 			_resetCurrentTarget()
 			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
 		elseif currentTime > bot.lastInvCheck + 1.0 then

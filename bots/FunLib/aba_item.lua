@@ -1169,25 +1169,22 @@ function Item.IsItemInTargetHero( sItemName, bot )
 
 	if sItemName == 'item_ultimate_scepter_2' then
 		-- Lone Druid must acquire two Aghanim's Blessings: one for himself and one to
-		-- hand to the Spirit Bear. A Blessing held by a unit that already owns the
-		-- upgrade stays physical, so HasScepter()/inventory checks are unreliable.
-		-- Treat the pair as satisfied only once the hero and the bear together hold
-		-- two Blessings (counting both the consumed modifier and any physical item),
-		-- so exactly two are bought regardless of whether they are consumed.
+		-- hand to the Spirit Bear. The 2nd Blessing stays physical until it reaches the
+		-- bear, so we must NOT treat "hero holds a physical spare" as owned. The pair is
+		-- only satisfied once BOTH the hero and the bear actually have the upgrade
+		-- (the consumed modifier). This lets exactly two Blessings be bought regardless
+		-- of whether the 2nd is still in transit on the hero.
 		if bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
 			local ld = Utils.GetLoneDruid(bot)
 			local bear = ld.bear
-			local function _ldHasBlessing( unit )
-				if unit == nil then return false end
-				if unit:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) then return true end
-				for s = 0, 14 do
-					local it = unit:GetItemInSlot( s )
-					if it ~= nil and it:GetName() == 'item_ultimate_scepter_2' then return true end
-				end
-				return false
+			if bear == bot then bear = nil end -- defensive: never treat the hero as its own bear
+			local heroUpgraded = bot:HasModifier( 'modifier_item_ultimate_scepter_consumed' )
+			local bearUpgraded = bear ~= nil and bear:HasModifier( 'modifier_item_ultimate_scepter_consumed' )
+			if heroUpgraded and bearUpgraded and not _G.__ldScepterDiagDone then
+				_G.__ldScepterDiagDone = true
+				print( "[LD scepter2][Diag] both upgraded -> 2nd satisfied (heroC=true bearC=true)" )
 			end
-			local owned = ( _ldHasBlessing( bot ) and 1 or 0 ) + ( _ldHasBlessing( bear ) and 1 or 0 )
-			return owned >= 2
+			return heroUpgraded and bearUpgraded
 		end
 		return ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
 	end

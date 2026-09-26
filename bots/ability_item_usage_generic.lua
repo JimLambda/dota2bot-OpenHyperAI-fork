@@ -320,7 +320,7 @@ local function AbilityLevelUpComplement()
 			bot:ActionImmediate_LevelAbility(abilityName)
 			table.remove( sAbilityLevelUpList, 1 )
 		else
-			print("[WARN] Skipped to level up ability "..abilityName.." for "..botName.." for this time because it may fail.")
+			-- print("[WARN] Skipped to level up ability "..abilityName.." for "..botName.." for this time because it may fail.")
 			if botLevel > 25 then
 				print("[WARN] Ignore ability "..abilityName.." for "..botName.." because it may always fail.")
 				table.remove( sAbilityLevelUpList, 1 )
