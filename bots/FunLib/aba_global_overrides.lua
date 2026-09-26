@@ -377,6 +377,11 @@ end
 
 local originalActionImmediate_SwapItems = CDOTA_Bot_Script.ActionImmediate_SwapItems
 local itemSwapGapTime = 6 + 5 -- 6s item cd after swap, 5s delta time for item usage reaction.
+-- Expose the original (ungated) swap so specific logic can bypass the combat /
+-- throttle gate below when the swap is safe and necessary (e.g. moving a moon
+-- shard out of the backpack so it can be consumed). Call as
+-- bot:_OriginalActionImmediate_SwapItems( slot1, slot2 ).
+CDOTA_Bot_Script._OriginalActionImmediate_SwapItems = originalActionImmediate_SwapItems
 function CDOTA_Bot_Script:ActionImmediate_SwapItems(intnSlot1, intnSlot2)
 	local unitName = self:GetUnitName()
 	-- print(unitName.." swaps items: "..tostring(intnSlot1)..', '..tostring(intnSlot2))
