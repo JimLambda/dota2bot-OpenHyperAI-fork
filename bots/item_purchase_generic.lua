@@ -669,16 +669,52 @@ function ItemPurchaseThink()
 		end
 	end
 
+	-- Lone Druid <-> Spirit Bear item routing.
+	-- Lone Druid only hands the bear items listed in tLoneDruidBearItems, and the
+	-- bear only picks up items from that same list. Everything else is kept by
+	-- Lone Druid himself (tLoneDruidKeepItems are explicitly reserved for the hero
+	-- and never handed over). Edit these tables to change which items the bear carries.
+	local tLoneDruidBearItems = {
+		'item_phase_boots',
+		'item_magic_wand',
+		'item_mask_of_madness',
+		'item_mjollnir',
+		'item_radiance',
+		'item_abyssal_blade',
+		'item_black_king_bar',
+		'item_assault',
+		'item_monkey_king_bar',
+		'item_ultimate_scepter',
+		'item_ultimate_scepter_2',
+		'item_moon_shard',
+		'item_skadi',
+		'item_satanic',
+		'item_greater_crit',
+		'item_aghanims_shard',
+		'item_travel_boots',
+		'item_travel_boots_2',
+	}
+	local tLoneDruidKeepItems = {
+		'item_tango',
+		'item_tango_single',
+		'item_flask',
+		'item_clarity',
+		'item_faerie_fire',
+		'item_mango',
+		'item_branches',
+		'item_boots',
+		'item_tpscroll',
+	}
+
 	if bot == Utils.GetLoneDruid(bot).hero then
 		local bear = Utils.GetLoneDruid(bot).bear
 		if bear ~= nil then
 			local hEnemyList = J.GetNearbyHeroes(bot, 1000, true, BOT_MODE_NONE)
 			if #hEnemyList >= 1 then return end
-			
+
 			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountBackpackEmptySpace(bear) <= 0 then return end
 			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then return end
 
-			local bearNetworth = Item.GetItemTotalWorthInSlots(bear)
 			if GetUnitToUnitDistance(bot, bear) < 400 then
 				for i = 0, 9
 				do
@@ -686,13 +722,10 @@ function ItemPurchaseThink()
 					if item ~= nil
 					then
 						local itemName = item:GetName()
-						if Utils.HasValue(Item['tEarlyConsumableItem'], itemName)
-						or Utils.HasValue(Item['item_ultimate_scepter'], itemName)
-						or (string.find(itemName, 'boot') and bearNetworth > 600)
-						or itemName == 'item_tpscroll' and Item.HasItem(bear, 'item_tpscroll')
-						then
-							-- do nothing, keep it.
-						elseif Utils.CountBackpackEmptySpace(bear) >= 1 then
+						-- Only hand over items that belong to the bear.
+						if Utils.HasValue(tLoneDruidBearItems, itemName)
+						and not Utils.HasValue(tLoneDruidKeepItems, itemName)
+						and Utils.CountBackpackEmptySpace(bear) >= 1 then
 							bot:Action_DropItem(item, bear:GetLocation())
 						end
 					end
@@ -704,11 +737,14 @@ function ItemPurchaseThink()
 		local dropItemList = GetDroppedItemList()
 		for _, tDropItem in pairs( dropItemList )
 		do
-			if tDropItem.owner == Utils.GetLoneDruid(bot).hero and not string.find(tDropItem.item:GetName(), 'token')
-			and not (string.find(tDropItem.item:GetName(), 'boot') and Item.HasItemWithName(bot, 'boot')) then
+			local itemName = tDropItem.item:GetName()
+			if tDropItem.owner == Utils.GetLoneDruid(bot).hero
+			and not string.find(itemName, 'token')
+			and Utils.HasValue(tLoneDruidBearItems, itemName)
+			and not Utils.HasValue(tLoneDruidKeepItems, itemName)
+			and not (string.find(itemName, 'boot') and Item.HasItemWithName(bot, 'boot')) then
 				local distance = GetUnitToLocationDistance(bot, tDropItem.location)
-				if distance > 200 and distance < 1000 and tDropItem.owner == bot
-				then
+				if distance > 200 and distance < 1000 then
 					bot:Action_MoveToLocation(tDropItem.location)
 				elseif distance <= 100 then
 					bot:Action_PickUpItem(tDropItem.item)
