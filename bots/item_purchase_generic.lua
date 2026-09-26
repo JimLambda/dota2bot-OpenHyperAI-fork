@@ -450,6 +450,11 @@ local function TurboModeGeneralPurchase()
 	then
 		if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 		then
+			if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
+			and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+				bot.scepter2Bought = ( bot.scepter2Bought or 0 ) + 1
+				print( "[LD scepter2][turbo] purchased Blessing #" .. tostring( bot.scepter2Bought ) )
+			end
 			ClearCurrBuyingBasicItemList()
 			return
 		else
@@ -465,6 +470,12 @@ end
 
 function ItemPurchaseThink()
 	currentTime = DotaTime()
+
+	-- print("[LD-DEBUG] LOADED: dota2bot-OpenHyperAI-fork/item_purchase_generic (scepter_2 double-buy fix present)")
+	if not _G.__ldDebugBanner then
+		_G.__ldDebugBanner = true
+		print( "[LD-DEBUG] LOADED: dota2bot-OpenHyperAI-fork/item_purchase_generic (scepter_2 double-buy fix present)" )
+	end
 
 	-- ARDM: detect stale hero instance and rebuild purchase list on hero swap
 	local isStale, freshBot, freshName = J.IsStaleARDMHero(bot, botName)
