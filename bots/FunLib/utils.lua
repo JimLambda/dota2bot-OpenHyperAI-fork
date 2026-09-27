@@ -1286,6 +1286,18 @@ function ____exports.CountBackpackEmptySpace(bot)
     end
     return count
 end
+-- Counts any empty item slot (main inventory 0-5 + backpack 6-8). A unit can pick
+-- up a dropped item into any of these slots, so delivery is possible whenever this
+-- is >= 1 — not only when a backpack slot happens to be free.
+function ____exports.CountItemEmptySpace(bot)
+    local count = 0
+    for ____, slot in ipairs({0, 1, 2, 3, 4, 5, 6, 7, 8}) do
+        if bot:GetItemInSlot(slot) == nil then
+            count = count + 1
+        end
+    end
+    return count
+end
 function ____exports.FloatEqual(a, b)
     return math.abs(a - b) < 0.000001
 end

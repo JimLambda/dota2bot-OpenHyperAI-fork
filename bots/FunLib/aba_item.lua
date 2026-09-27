@@ -1174,19 +1174,66 @@ function Item.IsItemInTargetHero( sItemName, bot )
 		-- only satisfied once BOTH the hero and the bear actually have the upgrade
 		-- (the consumed modifier). This lets exactly two Blessings be bought regardless
 		-- of whether the 2nd is still in transit on the hero.
-		if bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
-			local ld = Utils.GetLoneDruid(bot)
-			local bear = ld.bear
-			if bear == bot then bear = nil end -- defensive: never treat the hero as its own bear
-			local heroUpgraded = bot:HasModifier( 'modifier_item_ultimate_scepter_consumed' )
-			local bearUpgraded = bear ~= nil and bear:HasModifier( 'modifier_item_ultimate_scepter_consumed' )
-			if heroUpgraded and bearUpgraded and not _G.__ldScepterDiagDone then
-				_G.__ldScepterDiagDone = true
-				print( "[LD scepter2][Diag] both upgraded -> 2nd satisfied (heroC=true bearC=true)" )
+		local isLD = ( bot:GetUnitName() == 'npc_dota_hero_lone_druid' )
+		-- Aghanim's Blessing stays a PHYSICAL item until it is consumed, so a held
+		-- (not-yet-consumed) Blessing must also count as "owned". Count both the
+		-- consumed modifier and any physical item_ultimate_scepter_2 on the unit.
+		local function ldBlessingCount( u )
+			if u == nil then return 0 end
+			local n = 0
+			if u:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) then n = n + 1 end
+			for slot = 0, 14 do
+				local it = u:GetItemInSlot( slot )
+				if it ~= nil and it:GetName() == 'item_ultimate_scepter_2' then n = n + 1 end
 			end
-			return heroUpgraded and bearUpgraded
+			return n
 		end
-		return ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
+		local ld = ( isLD and Utils and Utils.GetLoneDruid ) and Utils.GetLoneDruid(bot) or nil
+		local bear = ( ld and ld.bear ) or nil
+		if bear == bot then bear = nil end -- defensive: never treat the hero as its own bear
+		local heroCount = ldBlessingCount(bot)
+		local bearCount = ldBlessingCount(bear)
+		local result
+		if isLD then
+			-- Authoritative: how many Blessings the lone-druid pair has actually
+			-- purchased (incremented on each successful hero purchase). This does not
+			-- depend on the consumed-modifier or item-slot detection, so it is robust
+			-- even if a Blessing is in transit on the courier/stash. Fallback to the
+			-- physical/consumed count if the counter is somehow unavailable.
+			local bought = ( ld and ld.scepter2Bought ) or 0
+			result = ( bought >= 2 ) or ( ( heroCount + bearCount ) >= 2 )
+		else
+			result = ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
+		end
+		if _G.__ldScepterTrace == nil or DotaTime() - _G.__ldScepterTrace > 2 then
+			_G.__ldScepterTrace = DotaTime()
+			local slots = {}
+			for s = 0, 14 do
+				local it = bot:GetItemInSlot(s)
+				if it ~= nil then slots[#slots+1] = it:GetName() end
+			end
+			local bearSlots = "n/a"
+			if bear ~= nil then
+				local t = {}
+				for s = 0, 14 do
+					local it = bear:GetItemInSlot(s)
+					if it ~= nil then t[#t+1] = it:GetName() end
+				end
+				bearSlots = table.concat(t, ",")
+			end
+			print( "[LD scepter2][Trace] unit=" .. tostring(bot:GetUnitName())
+				.. " isLD=" .. tostring(isLD)
+				.. " heroC=" .. tostring(heroCount)
+				.. " bearC=" .. tostring(bearCount)
+				.. " bearNil=" .. tostring(bear == nil)
+				.. " heroHasScepter=" .. tostring(bot:HasScepter())
+				.. " heroConsumedMod=" .. tostring(bot:HasModifier('modifier_item_ultimate_scepter_consumed'))
+				.. " bought=" .. tostring(ld and ld.scepter2Bought or -1)
+				.. " heroSlots=[" .. table.concat(slots, ",") .. "]"
+				.. " bearSlots=[" .. tostring(bearSlots) .. "]"
+				.. " -> " .. tostring(result) )
+		end
+		return result
 	end
 
 	local nItemSolt = bot:FindItemSlot( sItemName )

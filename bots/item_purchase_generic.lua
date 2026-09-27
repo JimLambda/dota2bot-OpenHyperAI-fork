@@ -769,7 +769,7 @@ function ItemPurchaseThink()
 			local hEnemyList = J.GetNearbyHeroes(bear, 800, true, BOT_MODE_NONE)
 			if #hEnemyList >= 1 then return end
 
-			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountBackpackEmptySpace(bear) <= 0 then return end
+			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountItemEmptySpace(bear) <= 0 then return end
 			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then return end
 
 			-- Widen the delivery range: the bear fetches dropped items within 1000u,
@@ -786,13 +786,13 @@ function ItemPurchaseThink()
 						-- spare to the bear while it still lacks a scepter upgrade.
 						if itemName == 'item_ultimate_scepter_2' then
 							if not bear:HasScepter()
-							and Utils.CountBackpackEmptySpace(bear) >= 1 then
+							and Utils.CountItemEmptySpace(bear) >= 1 then
 								print( "[LD scepter2] hero dropping Blessing to bear" )
 								bot:Action_DropItem(item, bear:GetLocation())
 							end
 						elseif Utils.HasValue(tLoneDruidBearItems, itemName)
 						and not Utils.HasValue(tLoneDruidKeepItems, itemName)
-						and Utils.CountBackpackEmptySpace(bear) >= 1 then
+						and Utils.CountItemEmptySpace(bear) >= 1 then
 							bot:Action_DropItem(item, bear:GetLocation())
 						end
 					end
@@ -1326,7 +1326,9 @@ function ItemPurchaseThink()
 			-- skip it and continue next
 			bot.countInvCheck = 0
 			if bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2' then
-				print( "[LD scepter2] GATE SKIPPED 2nd Blessing — IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
+				print( "[LD scepter2] GATE SKIPPED scepter_2 — unit=" .. tostring(bot:GetUnitName())
+					.. " HasScepter=" .. tostring(bot:HasScepter())
+					.. " IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
 			end
 			_resetCurrentTarget()
 			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
