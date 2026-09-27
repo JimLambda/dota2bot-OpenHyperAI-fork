@@ -1,524 +1,20 @@
-BUG:  server couldn't look up codegen info for CEntityClass()
-BUG:  client couldn't look up codegen info for CEntityClass()
-[Client] CClientSteamContext init ok, logged on = 1
-[Server] Event System loaded 94 events from file: vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/core/pak01.vpk:resource/core.gameevents.
-[Server] Event System loaded 276 events from file: vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/dota/pak01.vpk:resource/game.gameevents.
-Found
-Hero npc_dota_hero_tiny is using an invalid ability special_bonus_strength_8 in its bot skill build!
-[Networking] CEntitySystem::BuildEntityNetworking (parallel build of server) took 112.645 msecs for 3229 out of 3327 classes
-[STARTUP] {20.191} server module init ok
-[Client] Event System loaded 94 events from file: vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/core/pak01.vpk:resource/core.gameevents.
-[Client] Event System loaded 276 events from file: vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/dota/pak01.vpk:resource/game.gameevents.
-Found
-Hero npc_dota_hero_tiny is using an invalid ability special_bonus_strength_8 in its bot skill build!
-ReadSteamRemoteStorageFile( bufOut, "cfg/dotakeys_personal.lst" ) -> 0.000665 seconds
-ReadSteamRemoteStorageFile( bufOut, "cfg/pending_replay_requests.lst" ) -> 0.000325 seconds
-ReadSteamRemoteStorageFile( bufOut, "scripts/clientstorage.txt" ) -> 0.000230 seconds
-[Networking] CEntitySystem::BuildEntityNetworking (parallel build of client) took 132.851 msecs for 3243 out of 3342 classes
-[ResourceSystem] Failed loading resource "scripts/featured_gamemodes_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/ping_wheel_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/tracked_stats_match_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/tracked_stats_team_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/tracked_stats_player_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/trophies_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "scripts/roadtoti_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_default.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_default.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_default.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_default.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_opaque.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_opaque.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_opaque.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/panorama_world_panel_lit_opaque.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/point_worldtext_default_background.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/point_worldtext_default_background.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/point_worldtext_default_background.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material dev/point_worldtext_default_background.vmat!
-[ResourceSystem] Failed loading resource "scripts/candy_shops_staging.vdata_c" (ERROR_FILEOPEN: File not found)
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/luminaire.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/luminaire.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/luminaire.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/luminaire.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/primary_white.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/primary_white.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/primary_white.vmat!
-[Vfx] No valid vcs file found for shader generic.vfx
-[MaterialSystem] CMaterial2::LoadShadersAndSetupModes(1598): Error creating shader generic.vfx for material materials/dev/primary_white.vmat!
-[ResourceSystem] Failed loading resource "soundevents/soundevents_test.vsndevts_c" (ERROR_FILEOPEN: File not found)
-Failed to load mutations file! scripts/battlepass/ti2018/mutations.txt
-ReadSteamRemoteStorageFile( bufOut, "cfg/dota_player_loadout_shuffle.txt" ) -> 0.000335 seconds
-ReadSteamRemoteStorageFile( bufOut, "scripts/dota_local_disk_lobby_data.txt" ) -> 0.000235 seconds
-Telling Steam it is safe to update the app
-[GCClient] Logged on to Steam, set GC connection state to NO_SESSION
-[GCClient] Send msg 4006 (k_EMsgGCClientHello), 112 bytes
-ReadSteamRemoteStorageFile( bufOut, "cfg/contextual_tips_history.json" ) -> 0.000330 seconds
-ILocalize::AddFile() failed to load file "".
-[HostStateManager] CHostStateMgr::QueueNewRequest( Idle (levelload), 1 )
-ChangeGameUIState: DOTA_GAME_UI_STATE_INVALID -> DOTA_GAME_UI_STATE_LOADING_SCREEN
-Source2Init OK
-[HostStateManager] HostStateRequest::Start(HSR_IDLE):  loop(levelload) id(1) addons() desc(Idle (levelload))
-[EngineServiceManager] SwitchToLoop levelload requested:  id [1] addons []
-ReadSteamRemoteStorageFile( bufOut, "cfg/viewedheropatches.cfg" ) -> 0.000566 seconds
-Successfully loaded player info from 'scripts/dota_pro_player_info.json'
-ReadSteamRemoteStorageFile( bufOut, "cfg/fantasy_crafting.lst" ) -> 0.000285 seconds
-ReadSteamRemoteStorageFile( bufOut, "cfg/challenge_selections.cfg" ) -> 0.000255 seconds
-WriteSteamRemoteStorageFileAsync( "cfg/last_match.dat" ) -> at 24.395
-ReadSteamRemoteStorageFile( bufOut, "scripts/dota_acknowledged_violators.txt" ) -> 0.000189 seconds
-ReadSteamRemoteStorageFile( bufOut, "guides/broodmother_1738248415.build" ) -> 0.000314 seconds
-ReadSteamRemoteStorageFile( bufOut, "cfg/herobuilds.cfg" ) -> 0.000177 seconds
-ReadSteamRemoteStorageFile( bufOut, "cfg/saved_sets.kv" ) -> 0.000181 seconds
-ReadSteamRemoteStorageFile( bufOut, "cfg/dismissed_help_tips.txt" ) -> 0.000275 seconds
-ReadSteamRemoteStorageFile( bufOut, "scripts/lobby_settings.txt" ) -> 0.000417 seconds
-[Localization System] CLocalize::CompileString failed to localize: '#DOTA_Plus_ProfileCard_TimeRemainingDays'
-ILocalize::AddFile() failed to load file "resource/localization/broadcastfacts_english.txt".
-[HostStateManager] Host activate: Idle (levelload)
-[InputSystem] Raw keyboard mode: 0
-[SplitScreen] Writing configuration for slot 0
-[SplitScreen] Saved 'user_keys.vcfg' to SteamRemoteStorage, 54 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg_lastclouded': type 3
-[SplitScreen] Saved 'user_convars.vcfg' to SteamRemoteStorage, 12185 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg_lastclouded': type 3
-[Steam] Running SteamAPI_RunCallbacks for first time
-[SteamNetSockets] Certificate expires in 10h43m at 1790512451 (current time 1790473855), will renew in 8h43m
-[GCClient] Recv msg 4009 (k_EMsgGCClientConnectionStatus), 12 bytes
-[GCClient] In logon queue; waiting for GC to confirm connection.
-[GCClient] Recv msg 4004 (k_EMsgGCClientWelcome), 1337 bytes
-[GCClient] Received client welcome from GC.
-[SOCache] CMsgClientWelcome subscribed: 0 up-to-date, 2 out-of-date
-[SOCache] CGCSOCacheSubscribedJob(owner=<Lobby:30037545654579364>) [in cache]
-Telling Steam not to update the app for the next 900 seconds
-[GCClient] Send msg 7035 (k_EMsgGCAbandonCurrentGame), 8 bytes
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[Console] Saving lobby data to disk.
-WriteSteamRemoteStorageFileAsync( "scripts/dota_local_disk_lobby_data.txt" ) -> at 24.889
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[Console] Deleting lobby data from disk.
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[Console] Saving lobby data to disk.
-WriteSteamRemoteStorageFileAsync( "scripts/dota_local_disk_lobby_data.txt" ) -> at 24.890
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-GC reported matchgroups version 107
-[WeekendTourney] Received weekend tourney schedule.
-[SteamNetSockets] Got SDR network config.  Loaded revision 1790374330 OK
-[SteamNetSockets] Performing ping measurement
-[SteamNetSockets] SDR RelayNetworkStatus:  avail=Attempting  config=OK  anyrelay=Attempting   (Performing ping measurement)
-[SteamNetSockets] AuthStatus (steamid:76561198301032223):  OK  (OK)
-[GCClient] Send msg 2536 (k_EMsgGCRequestStoreSalesData), 12 bytes
-[GCClient] Send msg 2617 (k_EMsgClientToGCCancelUnfinalizedTransactions), 8 bytes
-[GCClient] Recv msg 29 (k_ESOMsg_CacheSubscribedUpToDate), 44 bytes
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-Failed to load inventory scratchpad information file "cfg/dota_player_scratchpad.txt"!
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 30 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 38 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 79 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 87 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 22 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 30 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 24 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 32 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 22 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 30 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 24 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 32 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 24 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 32 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 24 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 32 bytes
-[GCClient] Recv msg 15002 (Unknown MsgType - Not Found), 29 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 37 bytes
-CAsyncWriteInProgress::OnComplete( "cfg/last_match.dat" ) -> Success at 24.899
-Failed to get blog data: HTTP status 0
-CAsyncWriteInProgress::OnComplete( "scripts/dota_local_disk_lobby_data.txt" ) -> Error (0:37) at 24.899
-CAsyncWriteInProgress::OnComplete( "scripts/dota_local_disk_lobby_data.txt" ) -> Success at 24.899
-[Client] CL:  CLoopModeLevelLoad::MaybeSwitchToGameLoop switching to "game" loopmode with addons ()
-[EngineServiceManager] SwitchToLoop game requested:  id [1] addons []
-[GCClient] Send msg 7009 (k_EMsgGCJoinChatChannel), 35 bytes
-[GCClient] Send msg 7197 (k_EMsgGCMatchmakingStatsRequest), 8 bytes
-[GCClient] Send msg 8879 (k_EMsgClientToGCRankRequest), 19 bytes
-[GCClient] Send msg 8673 (k_EMsgClientToGCRequestGuildData), 19 bytes
-[GCClient] Send msg 8137 (k_EMsgClientToGCMyTeamInfoRequest), 17 bytes
-[GCClient] Send msg 8879 (k_EMsgClientToGCRankRequest), 19 bytes
-[GCClient] Send msg 7387 (k_EMsgDOTAGetEventPoints), 25 bytes
-ReadSteamRemoteStorageFile( bufOut, "cfg/chat.cfg" ) -> 0.000253 seconds
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-[SteamNetSockets] L4S detection: no.  up_ecn1=plain_extra(DSCPOther)  down_dscp45=plain_extra(DSCPOther)
-[SteamNetSockets] We will send ECN=0 (ECN config value=-1)
-[Server] CNetworkGameServerBase::SetServerState (ss_dead -> ss_waitingforgamesessionmanifest)
-[Server] SV:  maxplayers set to 1
-Initializing script VM...
-...done
-CPlayerVoiceListener::GameInit()
-[GCClient] Recv msg 8136 (k_EMsgGCToClientTeamsInfo), 17 bytes
-[GCClient] Recv msg 2618 (k_EMsgClientToGCCancelUnfinalizedTransactionsResponse), 19 bytes
-[GCClient] Recv msg 7010 (k_EMsgGCJoinChatChannelResponse), 39 bytes
-WriteSteamRemoteStorageFileAsync( "cfg/chat.cfg" ) -> at 26.028
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 37 bytes
-[GCClient] Recv msg 8674 (k_EMsgClientToGCRequestGuildDataResponse), 19 bytes
-[GCClient] Recv msg 25 (k_ESOMsg_CacheUnsubscribed), 21 bytes
-[SOCache] CGCSOCacheUnsubscribedJob(owner=<Lobby:30037545654579364>)
-[Console] Deleting lobby data from disk.
-Telling Steam it is safe to update the app
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[GCClient] Recv msg 8880 (k_EMsgGCToClientRankResponse), 17 bytes
-[GCClient] Recv msg 8880 (k_EMsgGCToClientRankResponse), 29 bytes
-[GCClient] Recv msg 7010 (k_EMsgGCJoinChatChannelResponse), 90 bytes
-[GCClient] Recv msg 7010 (k_EMsgGCJoinChatChannelResponse), 90 bytes
-[GCClient] Recv msg 2538 (k_EMsgGCRequestStoreSalesDataUpToDateResponse), 16 bytes
-CAsyncWriteInProgress::OnComplete( "cfg/chat.cfg" ) -> Success at 26.035
-[GCClient] Send msg 8676 (k_EMsgClientToGCRequestGuildMembership), 17 bytes
-[GCClient] Send msg 8853 (k_EMsgClientToGCGetHeroStickers), 17 bytes
-[GCClient] Send msg 9023 (k_EMsgClientToGCMonsterHunterGetUserData), 17 bytes
-[GCClient] Send msg 8078 (k_EMsgClientToGCGetQuestProgress), 17 bytes
-[GCClient] Send msg 7387 (k_EMsgDOTAGetEventPoints), 25 bytes
-[GCClient] Send msg 8793 (k_EMsgClientToGCGetCurrentPrivateCoachingSession), 17 bytes
-[GCClient] Send msg 7427 (k_EMsgGCNotificationsRequest), 17 bytes
-**** Panel TimeRangeSlider has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel TimeScrubSlider has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel SliderAndMarkers has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel TimeScrubSlider has fill-parent-flow for width, but isn't in a flowing right layout
-[ResourceSystem] Failed loading resource "materials/sprites/blueglow1.vmat_c" (ERROR_FILEOPEN: File not found)
-[Server] SV:  Spawn Server: <empty>
-[Server] CNetworkGameServerBase::SetServerState (ss_waitingforgamesessionmanifest -> ss_loading)
-[GCClient] Recv msg 7198 (k_EMsgGCMatchmakingStatsResponse), 306 bytes
-[WeekendTourney] Auto selecting weekend tourney division 'se_asia' based on ping to best region of 103ms
-[WeekendTourney] Selected division changed to 'se_asia'
-[GCClient] Send msg 7503 (k_EMsgClientToGCEmoticonDataRequest), 17 bytes
-[ResourceSystem] Failed loading resource "panorama/images/players/0_png.vtex_c" (ERROR_FILEOPEN: File not found)
-[Server] CNetworkGameServerBase::SetServerState (ss_loading -> ss_active)
-[GCClient] Send msg 7534 (k_EMsgClientToGCGetProfileCard), 23 bytes
-[Client] CL:  CWaitForGameServerStartupPrerequisite done waiting for server
-[Client] CL:  CCreateGameClientJob creating client connection to 'loopback'
-[SteamNetSockets] [#1059760569 pipe] connected
-[SteamNetSockets] [#2495911773 pipe] connected
-[Networking] Created poll group for socket 'client'
-[Networking] Created poll group for socket 'server'
-[Networking] Connected loopback client=3f2aa9b9@loopback:1 <-> server=94c4975d@loopback:0
-[Client] Tick packet desired receive margin now 5.0ms.  cl_tickpacket_recvmargin_desired=5  cl_tickpacket_desired_queuelength=0.  engine_frametime_warnings_enable=1, cl_async_usercmd_send=1
-[GCClient] Recv msg 8678 (k_EMsgGCToClientGuildMembershipUpdated), 10 bytes
-[GCClient] Send msg 8886 (k_EMsgClientToGCShowcaseGetUserData), 25 bytes
-[GCClient] Send msg 8729 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatch), 62 bytes
-[NetSteamConn] Associating NetChan 超级坑队 @ loopback:0 (loopback:0) with Steam Net Connection handle #2495911773 (userdata 0)
-[NetSteamConn] Associating NetChan server @ loopback:1 (loopback:1) with Steam Net Connection handle #1059760569 (userdata 1)
-[Client] CL:  Connected to 'loopback:1'
-[Server] Client 0 '超级坑队友' setting rate to 80000
-[Client] Game: "Dota 2"
-[Client] Map: "<empty>"
-[Client] Players: 1 (0 bots) / 1 humans
-[Client] Build: 10835 (revision 11041083)
-[Client] Server Number: 1
-[SignonState] CL:  CNetworkGameClient::ProcessServerInfo
-ReadSteamRemoteStorageFile( bufOut, "voice_ban.dt" ) -> 0.000303 seconds
-LoadResponseSystem scripts/talker/response_rules.vrr - Start
-response rule announcer_Tease has no speaker!
-response rule announcer_dlc_darkest_dungeon_CustomIsDarkestDungeonAnnIsAnnounceIdleLateGameChance_25%(3) has no CONCEPT!
-response rule announcer_dlc_darkest_dungeon_CustomIsDarkestDungeonAnnIsAnnounceIdleLateGameChance_25% has no CONCEPT!
-response rule monkey_king_Chance_5% has no CONCEPT!
-response rule monkey_king_Chance_5%IsMKCrown has no CONCEPT!
-CResponseSystem:  scripts/talker/response_rules.vrr (34426 rules, 2996 criteria, and 34426 responses)
-LoadResponseSystem scripts/talker/response_rules.vrr - Finish
-[GCClient] Recv msg 8677 (k_EMsgClientToGCRequestGuildMembershipResponse), 21 bytes
-[GCClient] Recv msg 8079 (k_EMsgClientToGCGetQuestProgressResponse), 19 bytes
-[GCClient] Recv msg 8854 (k_EMsgClientToGCGetHeroStickersResponse), 21 bytes
-[GCClient] Recv msg 7388 (k_EMsgDOTAGetEventPointsResponse), 37 bytes
-[GCClient] Recv msg 9024 (k_EMsgClientToGCMonsterHunterGetUserDataResponse), 61 bytes
-[GCClient] Recv msg 7428 (k_EMsgGCNotificationsResponse), 21 bytes
-[GCClient] Recv msg 8794 (k_EMsgClientToGCGetCurrentPrivateCoachingSessionResponse), 19 bytes
-[Client] CNetworkGameClient::ProcessClassInfo: create on client true
-[Client] CNetworkGameClient::ProcessClassInfo: creating client serializers from local server serializers (crc 0, server api exists)
-[Client] CL:  loaded 39 replay compatability settings from 'vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/core/pak01.vpk:./scripts/replay_compatability_settings.txt'
-[Client] CL:  loaded 24 replay compatability settings from 'vpk:E:/wwf_folder/runnings/games/steam/software/steamapps/common/dota 2 beta/game/dota/pak01.vpk:./scripts/replay_compatability_settings.txt'
-[Client] Client missing networkable entity class CPhysMagnet
-[Client] Client missing networkable entity class CSpotlightEnd
-[Client] CNetworkGameClientBase::LinkClasses took 99.260 msec
-[GCClient] Recv msg 7504 (k_EMsgGCToClientEmoticonData), 25 bytes
-[GCClient] Recv msg 7535 (k_EMsgClientToGCGetProfileCardResponse), 45 bytes
-[GCClient] Recv msg 8887 (k_EMsgClientToGCShowcaseGetUserDataResponse), 187 bytes
-[GCClient] Recv msg 8730 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse), 54 bytes
-[SteamNetSockets] Ping measurement completed in 5.5s.  Relays: 24 valid, 0 great, 0 good+, 6 ok+, 11 ignored
-[SteamNetSockets] Ping location: pvgm=57+5/59+5,pvgt=58+5/61+5,pvgu=58+5/63+5,tyo=63+6,hkg=76+7,gum=94+9/92+6,sgp=230+23/108+7,maa2=134+13/138+7,bom2=144+14,fra=166+16,iad=/251+16,gru=373+37/371+15
-[SteamNetSockets] SDR RelayNetworkStatus:  avail=OK  config=OK  anyrelay=OK   (OK.  Relays: 24 valid, 0 great, 0 good+, 6 ok+, 11 ignored)
-[Client] CL:  CGameClientConnectPrerequisite connection succeeded
-ChangeGameUIState: DOTA_GAME_UI_STATE_LOADING_SCREEN -> DOTA_GAME_UI_STATE_DASHBOARD
-[Server] SV:  IGameSystem::LoopActivateAllSystems {
-[Host] HO:  IGameSystem::LoopActivateAllSystems {
-[Host] HO:  } IGameSystem::LoopActivateAllSystems done
-[Server] SV:  } IGameSystem::LoopActivateAllSystems done
-[Server] SV:  Game started
-[Client] CL:  IGameSystem::LoopActivateAllSystems {
-ReadSteamRemoteStorageFile( bufOut, "scripts/control_groups.txt" ) -> 0.000395 seconds
-ReadSteamRemoteStorageFile( bufOut, "scripts/item_suggest_preference.txt" ) -> 0.000279 seconds
-[Client] CL:  } IGameSystem::LoopActivateAllSystems done
-[SignonState] CL:  CNetworkGameClient::OnSwitchLoopModeFinished( game : success )
-[Server] SV:  Sending full update to client 超级坑队友 (reason:  initial update)
-[Client] CNetworkGameClientBase::OnReceivedUncompressedPacket(), received full update
-[Prediction] Resetting prediction state because we received a full update
-[Client] Receiving 0.0K non-incremental update from server
-[Networking] server @ loopback:1:  NetChan Setting Timeout to 30.00 seconds
-[Client] CL:  Signon traffic "server":  incoming 21.078 KB [211 netframes], outgoing 3.163 KB [210 netframes]
-[Networking] 超级坑队 @ loopback:0:  NetChan Setting Timeout to 20.00 seconds
-[GCClient] Send msg 8800 (k_EMsgClientToGCGetAvailablePrivateCoachingSessionsSummary), 17 bytes
-[GCClient] Send msg 8034 (k_EMsgClientToGCGetProfileCardStats), 17 bytes
-[ResourceSystem] Failed loading resource "panorama/images/heroes/icons/npc_dota_rattletrap_cog_png.vtex_c" (ERROR_FILEOPEN: File not found)
-Job ShowIntroMovie has spent >3.000ms without yielding: 4.191ms
-[MeshSystem] Model models/items/rattletrap/the_warring_states_star_cogs/the_warring_states_star_cogs.vmdl: Attempted to attach attachment attach_hitloc to an unknown bone Bone001!
-[GCClient] Recv msg 8035 (k_EMsgClientToGCGetProfileCardStatsResponse), 67 bytes
-[GCClient] Recv msg 8801 (k_EMsgClientToGCGetAvailablePrivateCoachingSessionsSummaryResponse), 23 bytes
-Excessive frame time of 471.30ms clamped.  Acting as if the frame only took 100.00ms.  (Last amnesty was 'OnAppActivationChanged', 1.79s ago)
-[ResourceSystem] Failed loading resource "panorama/images/spellicons/dota_base_ability_png.vtex_c" (ERROR_FILEOPEN: File not found)
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel HealthbarsPreview has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel MainObjectivesTitle has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel SideObjectivesTitle has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel AbilityBarHeroSelectorContainer has fill-parent-flow for height, but isn't in a flowing down or up layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-[ResourceSystem] Failed loading resource "panorama/images/econ/sets/v2/npc_dota_hero_largo_0_small_png.vtex_c" (ERROR_FILEOPEN: File not found)
-[ResourceSystem] Failed loading resource "panorama/images/econ/sets/v2/scavenger_basilisk_small_png.vtex_c" (ERROR_FILEOPEN: File not found)
-[GCClient] Send msg 8944 (k_EMsgClientToGCOverworldGetUserData), 19 bytes
-[SceneSystem] Too many non-culled draws (alloc 0, need 2), resizing!
-[GCClient] Recv msg 8945 (k_EMsgClientToGCOverworldGetUserDataResponse), 2845 bytes
-Excessive frame time of 144.36ms clamped.  Acting as if the frame only took 100.00ms.  (Last amnesty was 'SDL_EVENT(0x20e)', 0.21s ago)
-[MaterialSystem] materials/models/items/bristleback/bristlebot/dark_carnival_bristlebot_goo_proj_ball.vmat Shader: spring_meteor.vfx attribute 'DepthPassBatchID' set in mode 'Default' does not match value set in another mode 1 != 0.
-[MaterialSystem] materials/models/items/bristleback/bristlebot/dark_carnival_bristlebot_goo_proj_ball.vmat Shader: spring_meteor.vfx attribute 'DepthPassBatchID' set in mode 'DotaForward' does not match value set in another mode 0 != 1.
-[MaterialSystem] materials/models/items/bristleback/bristlebot/dark_carnival_bristlebot_goo_proj_ball.vmat Shader: spring_meteor.vfx attribute 'DepthPassBatchID' set in mode 'Depth' does not match value set in another mode 1 != 0.
-[MaterialSystem] materials/models/items/bristleback/bristlebot/dark_carnival_bristlebot_goo_proj_ball.vmat Shader: spring_meteor.vfx attribute 'DepthPassBatchID' set in mode 'DotaDeferred' does not match value set in another mode 0 != 1.
-[SoundSystem] Opened Audio Input Device:
-	Channel Count:	2
-	Sample Rate:	48000
-	Buffer Size:	480
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel HealthbarsPreview has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-Excessive frame time of 726.11ms clamped.  Acting as if the frame only took 100.00ms.  (Last amnesty was 'SDL_EVENT(0x20e)', 1.08s ago)
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel  has fill-parent-flow for width, but isn't in a flowing right layout
-[InputSystem] Processing SDL events took 48.7ms
-Excessive frame time of 404.87ms clamped.  Acting as if the frame only took 100.00ms
-[InputSystem] Processing SDL events took 5.4ms
-[SoundSystem] Opened Audio Input Device:
-	Channel Count:	2
-	Sample Rate:	48000
-	Buffer Size:	480
-[InputSystem] Processing SDL events took 6.2ms
-Excessive frame time of 670.09ms clamped.  Acting as if the frame only took 100.00ms
-[SoundSystem] Opened Audio Input Device:
-	Channel Count:	2
-	Sample Rate:	48000
-	Buffer Size:	480
-Excessive frame time of 293.00ms clamped.  Acting as if the frame only took 100.00ms
-Excessive frame time of 203.51ms clamped.  Acting as if the frame only took 100.00ms
-[InputSystem] Processing SDL events took 5.9ms
-[RenderSystem] Saved video settings config to 'cfg\video.txt'
-WriteSteamRemoteStorageFileAsync( "cfg/dotakeys_personal.lst" ) -> at 73.213
-[RenderSystem] Saved video settings config to 'cfg\video.txt'
-[SplitScreen] Writing configuration for slot 0
-[SplitScreen] Saved 'user_keys.vcfg' to SteamRemoteStorage, 54 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg_lastclouded': type 3
-[SplitScreen] Saved 'user_convars.vcfg' to SteamRemoteStorage, 12185 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg_lastclouded': type 3
-CAsyncWriteInProgress::OnComplete( "cfg/dotakeys_personal.lst" ) -> Success at 73.259
-[RenderSystem] Swap Chain Mode Changing:
-	m_nVersion: 1 -> 1
-	m_DisplayMode:
-		m_nVersion: 1 -> 1
-		m_nWidth: 1920 -> 1920
-		m_nHeight: 1080 -> 1080
-		m_Format: 0 -> 0
-		m_nRefreshRateNumerator: 0 -> 60
-		m_nRefreshRateDenominator: 0 -> 1
-		m_nFlags: 0x0 -> 0xF
-	m_nBackBufferCount: 1 -> 1
-	m_nMultisampleType: 0 -> 0
-	m_nModeUsage: 4 -> 4
-	m_bUseStencil: 0 -> 0
-	m_bWaitForVSync: 1 -> 1
-	m_bScaleToOutputResolution: 1 -> 0
-	m_bProgressive: 0 -> 0
-	m_bUsingMultipleWindows: 0 -> 0
-	m_bIsMainWindow: 1 -> 0
-[RenderSystem] Successfully created dx11 swap chain [FlipDiscard | AllowTear]
-Excessive frame time of 167.75ms clamped.  Acting as if the frame only took 100.00ms
-[RenderSystem] Saved video settings config to 'cfg\video.txt'
-[SplitScreen] Writing configuration for slot 0
-[SplitScreen] Saved 'user_keys.vcfg' to SteamRemoteStorage, 54 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_keys_0_slot0.vcfg_lastclouded': type 3
-[SplitScreen] Saved 'user_convars.vcfg' to SteamRemoteStorage, 12185 bytes OK
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg': type 1
-[SplitScreen] Saved user config file 'cfg/user_convars_0_slot0.vcfg_lastclouded': type 3
-**** Panel BotScriptDedicatedChoices has fill-parent-flow for width, but isn't in a flowing right layout
-**** Panel BotScriptDedicatedChoices has fill-parent-flow for width, but isn't in a flowing right layout
-Opened LAN beacon/search socket on port 27005.
-[GCClient] Send msg 7038 (k_EMsgGCPracticeLobbyCreate), 186 bytes
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 328 bytes
-[SOCache] CGCSOCacheSubscribedJob(owner=<Lobby:30037546242577405>) [in cache]
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[GCClient] Recv msg 7055 (k_EMsgGCPracticeLobbyResponse), 19 bytes
-[GCClient] Send msg 7009 (k_EMsgGCJoinChatChannel), 35 bytes
-**** Panel LobbyPlayerName has fill-parent-flow for width, but isn't in a flowing right layout
-[GCClient] Send msg 8673 (k_EMsgClientToGCRequestGuildData), 19 bytes
-[GCClient] Recv msg 7010 (k_EMsgGCJoinChatChannelResponse), 85 bytes
-[GCClient] Recv msg 8674 (k_EMsgClientToGCRequestGuildDataResponse), 19 bytes
-WriteSteamRemoteStorageFileAsync( "cfg/fantasy_crafting.lst" ) -> at 79.043
-[GCClient] Send msg 7047 (k_EMsgGCPracticeLobbySetTeamSlot), 21 bytes
-CAsyncWriteInProgress::OnComplete( "cfg/fantasy_crafting.lst" ) -> Success at 79.071
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 328 bytes
-[Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-[GCClient] Recv msg 7055 (k_EMsgGCPracticeLobbyResponse), 19 bytes
-**** Panel LobbyPlayerName has fill-parent-flow for width, but isn't in a flowing right layout
 [GCClient] Send msg 7041 (k_EMsgGCPracticeLobbyLaunch), 11 bytes
 [InputService] execing lan_server.cfg
 Loading map "start"
-[HostStateManager] CHostStateMgr::QueueNewRequest( Loading (start), 2 )
-[HostStateManager] HostStateRequest::Start(HSR_GAME):  loop(levelload) id(2) addons() desc(Loading (start))
-[EngineServiceManager] SwitchToLoop levelload requested:  id [2] addons []
+[HostStateManager] CHostStateMgr::QueueNewRequest( Loading (start), 4 )
+[HostStateManager] HostStateRequest::Start(HSR_GAME):  loop(levelload) id(4) addons() desc(Loading (start))
+[EngineServiceManager] SwitchToLoop levelload requested:  id [4] addons []
 [Client] CL:  IGameSystem::LoopDeactivateAllSystems {
-WriteSteamRemoteStorageFileAsync( "scripts/control_groups.txt" ) -> at 80.239
-WriteSteamRemoteStorageFileAsync( "scripts/item_suggest_preference.txt" ) -> at 80.239
+WriteSteamRemoteStorageFileAsync( "scripts/control_groups.txt" ) -> at 267.611
+WriteSteamRemoteStorageFileAsync( "scripts/item_suggest_preference.txt" ) -> at 267.611
 [Client] CL:  } IGameSystem::LoopDeactivateAllSystems done
 [Client] Disconnecting from server: NETWORK_DISCONNECT_LOOPDEACTIVATE
-[NetSteamConn] Closing Steam Net Connection on socket 'client' to loopback:1, handle #1059760569 (2055 NETWORK_DISCONNECT_LOOPDEACTIVATE)
-[NetSteamConn] CloseSteamNetConnection handle #1059760569 (userdata 1)
-[NetSteamConn] Disassociating NetChan server @  (unknown) from Steam Net Connection handle #1059760569 (userdata 1)
-[SteamNetSockets] [#1059760569 pipe 'server'] closed by app, linger requested but not needed (2055) NETWORK_DISCONNECT_LOOPDEACTIVATE
-[SteamNetSockets] [#2495911773 pipe '超级坑队友'] closed by peer (2055): NETWORK_DISCONNECT_LOOPDEACTIVATE
-[NetSteamConn] Removing Steam Net Connection for loopback:1, handle #1059760569
+[NetSteamConn] Closing Steam Net Connection on socket 'client' to loopback:1, handle #1850368768 (2055 NETWORK_DISCONNECT_LOOPDEACTIVATE)
+[NetSteamConn] CloseSteamNetConnection handle #1850368768 (userdata 0)
+[NetSteamConn] Disassociating NetChan server @  (unknown) from Steam Net Connection handle #1850368768 (userdata 0)
+[SteamNetSockets] [#1850368768 pipe 'server'] closed by app, linger requested but not needed (2055) NETWORK_DISCONNECT_LOOPDEACTIVATE
+[SteamNetSockets] [#1879036152 pipe '超级坑队友'] closed by peer (2055): NETWORK_DISCONNECT_LOOPDEACTIVATE
+[NetSteamConn] Removing Steam Net Connection for loopback:1, handle #1850368768
 [Networking] Closing 'client' poll group
 [Server] SV:  IGameSystem::LoopDeactivateAllSystems {
 [Host] HO:  IGameSystem::LoopDeactivateAllSystems {
@@ -528,34 +24,33 @@ WriteSteamRemoteStorageFileAsync( "scripts/item_suggest_preference.txt" ) -> at 
 [Server] CNetworkGameServerBase::SetServerState (ss_active -> ss_dead)
 [Server] Disconnect client '超级坑队友' from server: NETWORK_DISCONNECT_SHUTDOWN (Server shutdown)
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_FULL -> SIGNONSTATE_NONE
-[NetSteamConn] Closing Steam Net Connection on socket 'server' to loopback:0, handle #2495911773 (1001 NETWORK_DISCONNECT_SHUTDOWN)
-[NetSteamConn] CloseSteamNetConnection handle #2495911773 (userdata 0)
-[NetSteamConn] Disassociating NetChan 超级坑队 @  (unknown) from Steam Net Connection handle #2495911773 (userdata 0)
-[NetSteamConn] Removing Steam Net Connection for loopback:0, handle #2495911773
+[NetSteamConn] Closing Steam Net Connection on socket 'server' to loopback:0, handle #1879036152 (1001 NETWORK_DISCONNECT_SHUTDOWN)
+[NetSteamConn] CloseSteamNetConnection handle #1879036152 (userdata 1)
+[NetSteamConn] Disassociating NetChan 超级坑队 @  (unknown) from Steam Net Connection handle #1879036152 (userdata 1)
+[NetSteamConn] Removing Steam Net Connection for loopback:0, handle #1879036152
 CPlayerVoiceListener::PostSpawnGroupUnload()
 [Networking] Closing 'server' poll group
 [stringtables] SV: CNetworkStringTableContainer::RemoveAllTables:  removing 19 tables
 [stringtables] CL: CNetworkStringTableContainer::RemoveAllTables:  removing 19 tables
 [Client]Skipping setup of already loaded game keyvalues. (base game)
-WriteSteamRemoteStorageFileAsync( "voice_ban.dt" ) -> at 80.261
+WriteSteamRemoteStorageFileAsync( "voice_ban.dt" ) -> at 267.634
 CPlayerVoiceListener::GameShutdown()
 [Server]Skipping setup of already loaded game keyvalues. (base game)
 ChangeGameUIState: DOTA_GAME_UI_STATE_DASHBOARD -> DOTA_GAME_UI_STATE_LOADING_SCREEN
 [Client] LoadingDisplay changed from NONE to LOADING (map="")
-CAsyncWriteInProgress::OnComplete( "scripts/control_groups.txt" ) -> Success at 80.280
-CAsyncWriteInProgress::OnComplete( "scripts/item_suggest_preference.txt" ) -> Success at 80.280
-CAsyncWriteInProgress::OnComplete( "voice_ban.dt" ) -> Success at 80.280
-[NetSteamConn] Steam Net connection #2495911773 pipe '超级坑队友' closed by peer, reason 2055: NETWORK_DISCONNECT_LOOPDEACTIVATE
-[NetSteamConn] CloseSteamNetConnection handle #2495911773 (userdata -1)
+CAsyncWriteInProgress::OnComplete( "scripts/control_groups.txt" ) -> Success at 267.651
+CAsyncWriteInProgress::OnComplete( "scripts/item_suggest_preference.txt" ) -> Success at 267.651
+CAsyncWriteInProgress::OnComplete( "voice_ban.dt" ) -> Success at 267.651
+[NetSteamConn] Steam Net connection #1879036152 pipe '超级坑队友' closed by peer, reason 2055: NETWORK_DISCONNECT_LOOPDEACTIVATE
+[NetSteamConn] CloseSteamNetConnection handle #1879036152 (userdata -1)
 [Client] CL:  CLoopModeLevelLoad::MaybeSwitchToGameLoop switching to "game" loopmode with addons ()
-[EngineServiceManager] SwitchToLoop game requested:  id [2] addons []
+[EngineServiceManager] SwitchToLoop game requested:  id [4] addons []
 [ResourceSystem] Failed loading resource "panorama/images/players/0_png.vtex_c" (ERROR_FILEOPEN: File not found)
 [Server] SteamGameServer_Init()
 ResetBreakpadAppId: Universe is 1 (k_EUniversePublic)
 ResetBreakpadAppId: Setting non standard break pad app id: 373300
 [Server] SteamGameServer_Init() OK, logging on to Steam
 [Networking] CNetworkSystem::InitGameServer: SteamGameServerNetworking() OK
-[SteamNetSockets] src\steamnetworkingsockets\clientlib\steam\csteamnetworkingsockets_steam.cpp(344): Assertion Failed: m_hSteamPipe == 0
 [Server] CNetworkGameServerBase::SetServerState (ss_dead -> ss_waitingforgamesessionmanifest)
 [Server] SV:  maxplayers set to 64
 [Networking] Created poll group for socket 'server'
@@ -580,15 +75,53 @@ Initscripting Team 3, Steam Details callback
 CPlayerVoiceListener::GameInit()
 [GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 579 bytes
 [Localization System] CLocalize::FindSafe failed to localize: 'invalid index'
-ProtoBufHelper::ParseJSON: Ignoring extra JSON key 'success', which is not found in protobuf message 'CMsgDOTAPlayerInfoList'!
-[ResourceSystem] Failed loading resource "particles/neutral_fx/miniboss_damage_reflect_explosion.vpcf_c" (ERROR_FILEOPEN: File not found)
 OnBotScriptDetails Team 3, bError NO, pResult 1, count 1
 Initscripting Team 3: E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\content\570\3246316298
 Dire bot scripting using script path E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\content\570\3246316298
 LoadScript: E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\content\570\3246316298\hero_selection.lua, scope name HeroSelectionScriptScope
 LoadScript: E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\content\570\3246316298\team_desires.lua, scope name TeamDesiresScriptScope
 LoadScript: E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\content\570\3246316298\team_desires.lua not found!
+[Server] SV:  Connection to Steam servers successful.
+[Server] SV:  ServerSteamID=[A:1:1517091840:51578] (90293519887694848).
+[GCClient] Logged on to Steam, set GC connection state to NO_SESSION
+[GCClient] Send msg 4007 (k_EMsgGCServerHello), 98 bytes
+[SteamNetSockets] Gameserver logged on to Steam, assigned identity steamid:90293519887694848
+[SteamNetSockets] AuthStatus (steamid:90293519887694848):  Attempting  (Requesting cert)
+[GCClient] OnSteamServersConnected()
+[Server] SV:  VAC secure mode disabled.
+[SteamNetSockets] AuthStatus (steamid:90293519887694848):  OK  (OK)
+[SteamNetSockets] Certificate expires in 48h00m at 1790647698 (current time 1790474897), will renew in 46h00m
+[GCClient] Recv msg 4005 (k_EMsgGCServerWelcome), 26 bytes
+[GCClient] Received server welcome from GC.
+[SOCache] CMsgClientWelcome subscribed: 0 up-to-date, 0 out-of-date
+GC Connection established for server version 6941
+Server:  Inactive
+Client:  Disconnected
+[EngineServiceManager] ----- Status -----
+[EngineServiceManager]   Queued   :  game
+[EngineServiceManager] @ Current  :  levelload
+[Client] CL:  CGameClientConnectPrerequisite status
+[Client] CL:  sequential     :  'CGameClientConnectPrerequisite'
+[Client] CL:  pending        :  1/7 [2512.759 msec]
+[Client] CL:  prerequisite   :  .'CWaitForGameServerStartupPrerequisite'
+[Client] CL:  waiting        :  ..waiting for IsServerRunning()
+[Client] CL:  pending        :  2/7 [not started]
+[Client] CL:  prerequisite   :  .'CCreateGameClientPrerequisite'
+[Client] CL:  pending        :  3/7 [not started]
+[Client] CL:  prerequisite   :  .'CConnectGameClientPrerequisite'
+[Client] CL:  pending        :  4/7 [not started]
+[Client] CL:                 :  .'CLoadStartupResourcePrerequisite'
+[Client] CL:  waiting        :  ..waiting for startup resource list
+[Client] CL:  pending        :  5/7 [not started]
+[Client] CL:  prerequisite   :  .'CLoadSpawnGroupsPrerequisite'
+[Client] CL:  firstspawngroup:  ..waiting for first spawn group
+[Client] CL:  pending        :  6/7 [not started]
+[Client] CL:  prerequisite   :  .'CAsyncShaderCompilePrerequisite'
+[Client] CL:  pending        :  7/7 [not started]
+[Client] CL:  prerequisite   :  .'CFinalizeConnectionPrerequisite'
+[Client] ---
 [ResourceSystem] Failed loading resource "materials/particle/particle_ring_blurry_generic_projected.vmat_c" (ERROR_FILEOPEN: File not found)
+[ResourceSystem] Failed loading resource "particles/neutral_fx/miniboss_damage_reflect_explosion.vpcf_c" (ERROR_FILEOPEN: File not found)
 [ResourceSystem] Failed loading resource "materials/sprites/blueglow1.vmat_c" (ERROR_FILEOPEN: File not found)
 [AnimResource]  models/particle/explosion/fx_explosion_capped_sphere.vmdl : Animations loaded but no animation data found
 [AnimResource]  models/props_structures/xp_shrine/xp_shrine_stones.vmdl : Animations loaded but no animation data found
@@ -597,50 +130,54 @@ LoadScript: E:\wwf_folder\runnings\games\steam\software\steamapps\workshop\conte
 [Server] CNetworkGameServerBase::SetServerState (ss_loading -> ss_active)
 [Client] CL:  CWaitForGameServerStartupPrerequisite done waiting for server
 [Client] CL:  CCreateGameClientJob creating client connection to '127.0.0.1'
-[NetSteamConn] Opened Steam Net Connection on socket 'client' to 127.0.0.1:27015, connection #482837747 UDP invalid@127.0.0.1:27015
+[NetSteamConn] Opened Steam Net Connection on socket 'client' to 127.0.0.1:27015, connection #720233085 UDP invalid@127.0.0.1:27015
 [Networking] Created poll group for socket 'client'
 [Client] Tick packet desired receive margin now 5.0ms.  cl_tickpacket_recvmargin_desired=5  cl_tickpacket_desired_queuelength=0.  engine_frametime_warnings_enable=1, cl_async_usercmd_send=1
-[NetSteamConn] Accepting Steam Net connection #1626269303 UDP steamid:76561198301032223@127.0.0.1:53552
-[SteamNetSockets] [#482837747 UDP 127.0.0.1:27015] connected
+[NetSteamConn] Accepting Steam Net connection #2975885342 UDP steamid:76561198301032223@127.0.0.1:58928
+[SteamNetSockets] [#720233085 UDP steamid:90293519887694848@127.0.0.1:27015] connected
 [Client] Sending connect to 127.0.0.1:27015
-[Server] Sending S2C_CHALLENGE [0 auth 3] to 127.0.0.1:53552
+[Server] Sending S2C_CHALLENGE [0 auth 3] to 127.0.0.1:58928
 [Client] Received S2C_CHALLENGE [0 auth 3] from 127.0.0.1:27015
 [Client] Sending C2S_CONNECT [48 protocol 0 auth 3] to 127.0.0.1:27015
-[Server] Receiving C2S_CONNECT [protocol 48 0 auth 3] from 127.0.0.1:53552
-[NetSteamConn] Associating NetChan 超级坑队 @ 127.0.0.1:53552 (127.0.0.1:53552) with Steam Net Connection handle #1626269303 (userdata 0)
-[Server] CServerSideClientBase::Connect( name='超级坑队友', userid=0, fake=0, connectiontypeflags=3, chan->addr=127.0.0.1:53552 )
+[Server] Receiving C2S_CONNECT [protocol 48 0 auth 3] from 127.0.0.1:58928
+[NetSteamConn] Associating NetChan 超级坑队 @ 127.0.0.1:58928 (127.0.0.1:58928) with Steam Net Connection handle #2975885342 (userdata 1)
+[Server] CServerSideClientBase::Connect( name='超级坑队友', userid=0, fake=0, connectiontypeflags=3, chan->addr=127.0.0.1:58928 )
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_NONE -> SIGNONSTATE_CONNECTED
-[Server] Sending S2C_CONNECTION to 127.0.0.1:53552 [addons:'']
-[Server] Sending S2C_CONNECTION to 127.0.0.1:53552 [addons:'']
+[Server] Sending S2C_CONNECTION to 127.0.0.1:58928 [addons:'']
+[Server] Sending S2C_CONNECTION to 127.0.0.1:58928 [addons:'']
 [Client] Received S2C_CONNECTION from 127.0.0.1:27015 [addons:'']
-[NetSteamConn] Associating NetChan server @ 127.0.0.1:27015 (127.0.0.1:27015) with Steam Net Connection handle #482837747 (userdata 1)
+[NetSteamConn] Associating NetChan server @ 127.0.0.1:27015 (127.0.0.1:27015) with Steam Net Connection handle #720233085 (userdata 0)
 [Client] CL:  Connected to '127.0.0.1:27015'
+[Server] Sending S2C_CONNECTION to 127.0.0.1:58928 [addons:'']
 ClientPutInServer create new player controller [超级坑队友]
 [Server] Client 0 '超级坑队友' setting rate to 80000
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_CONNECTED -> SIGNONSTATE_NEW
+[Server] SV:  "超级坑队友<0><[U:1:340766495]><>" STEAM USERID validated
+[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 42 bytes
+[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 1604 bytes
 [Client] Game: "Dota 2"
 [Client] Map: "start"
 [Client] Players: 1 (0 bots) / 64 humans
 [Client] Build: 10835 (revision 11041083)
-[Client] Server Number: 2
+[Client] Server Number: 5
 [SignonState] CL:  CNetworkGameClient::ProcessServerInfo
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_INIT
 [Client] CDOTA_Hud_Main::DeleteGameEndScreen deleted GameEndContainer
 [Client] CL:  CGameRulesGameSystem::GameInit installed game rules
-ReadSteamRemoteStorageFile( bufOut, "voice_ban.dt" ) -> 0.000256 seconds
+ReadSteamRemoteStorageFile( bufOut, "voice_ban.dt" ) -> 0.000377 seconds
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_NEW -> SIGNONSTATE_PRESPAWN
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_LAST
 [Client] PregameHud - SetPreGameVisible 1
 [Client] PregameHud - bIsPreloading is now 1
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_INIT
-[ResourceSystem] Failed loading resource "panorama/images/heroes/icons/npc_dota_hero_announcer_killing_spree_png.vtex_c" (ERROR_FILEOPEN: File not found)
 [ResourceSystem] Failed loading resource "panorama/images/heroes/icons/npc_dota_hero_announcer_png.vtex_c" (ERROR_FILEOPEN: File not found)
+[ResourceSystem] Failed loading resource "panorama/images/heroes/icons/npc_dota_hero_announcer_killing_spree_png.vtex_c" (ERROR_FILEOPEN: File not found)
 [Client] CNetworkGameClient::ProcessClassInfo: create on client true
 [Client] CNetworkGameClient::ProcessClassInfo: creating client serializers from local server serializers (crc 0, server api exists)
 [Client] Client missing networkable entity class CPhysMagnet
 [Client] Client missing networkable entity class CSpotlightEnd
-[Client] CNetworkGameClientBase::LinkClasses took 95.894 msec
+[Client] CNetworkGameClientBase::LinkClasses took 106.076 msec
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_PRESPAWN -> SIGNONSTATE_SPAWN
 [Client] CL:  CGameClientConnectPrerequisite connection succeeded
 ChangeGameUIState: DOTA_GAME_UI_STATE_LOADING_SCREEN -> DOTA_GAME_UI_DOTA_INGAME
@@ -659,8 +196,6 @@ ChangeGameUIState: DOTA_GAME_UI_STATE_LOADING_SCREEN -> DOTA_GAME_UI_DOTA_INGAME
 [Server] CRecipientFilter::AddAllPlayers - no recipients for this message, but 1 player in process of connecting was not included.
 [Server] CRecipientFilter::AddAllPlayers - no recipients for this message, but 1 player in process of connecting was not included.
 [Server] CRecipientFilter::AddAllPlayers - no recipients for this message, but 1 player in process of connecting was not included.
-[Server] CRecipientFilter::AddAllPlayers - no recipients for this message, but 1 player in process of connecting was not included.
-[Server] CRecipientFilter::AddAllPlayers - no recipients for this message, but 1 player in process of connecting was not included.
 Attempted to create IngameEvent for non-existent event 0
 [Server] SV:  } IGameSystem::LoopActivateAllSystems done
 Height map file (maps/start.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
@@ -673,18 +208,27 @@ Height map file (maps/start.vhcg) not found, this will make ground height traces
 [HLTV Server] Starting SourceTV server listening on port 0, type non-relay
 ClientPutInServer create new player controller [SourceTV]
 [Client] CL:  IGameSystem::LoopActivateAllSystems {
-ReadSteamRemoteStorageFile( bufOut, "scripts/control_groups.txt" ) -> 0.000277 seconds
-ReadSteamRemoteStorageFile( bufOut, "scripts/item_suggest_preference.txt" ) -> 0.000243 seconds
+ReadSteamRemoteStorageFile( bufOut, "scripts/control_groups.txt" ) -> 0.000276 seconds
+ReadSteamRemoteStorageFile( bufOut, "scripts/item_suggest_preference.txt" ) -> 0.000178 seconds
 [Client] CL:  } IGameSystem::LoopActivateAllSystems done
 [HostStateManager] Host activate: Loading (start)
 [SignonState] CL:  CNetworkGameClient::OnSwitchLoopModeFinished( game : success )
 [Server] Requesting account 340766495 resources without rank.
 [Server] BatchPlayerResources - Requested for 1 accounts
-[GCClient] Trying to send message type 7450 (Unknown MsgType - Not Found) before GC connection established.  This is guaranteed to fail.
-[Server] BatchPlayerResources - Failed to get accounts
-Job EconItemSearch has spent >3.000ms without yielding: 54.041ms
+[GCClient] Send msg 7450 (k_EMsgServerToGCRequestBatchPlayerResources), 29 bytes
+[GCClient] Send msg 4511 (k_EMsgGCLANServerAvailable), 26 bytes
+Job EconItemSearch has spent >3.000ms without yielding: 10.003ms
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 119.6s ago, urgency is 0.0s
+game_state: DOTA_GAMERULES_STATE_INIT
+first_blood_happened: false
+send_reason: GAME_STATE
+radiant_kills: 0
+dire_kills: 0
+radiant_lead: 0
+building_state: 19138340
+
 [HLTV Server] SourceTV[0] broadcast active.
-Job EconItemSearch has spent >3.000ms without yielding: 10.004ms
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
 [SignonState] Client 0 '超级坑队友' signon state SIGNONSTATE_SPAWN -> SIGNONSTATE_FULL
 [Server] SV:  Sending full update to client 超级坑队友 (reason:  initial update)
 [Client] CNetworkGameClientBase::OnReceivedUncompressedPacket(), received full update
@@ -694,114 +238,29 @@ DOTABaseGameMode::Spawn()
 [VScript] Scripting disabled or no server running
 Found
 [Networking] server @ 127.0.0.1:27015:  NetChan Setting Timeout to 30.00 seconds
-[Client] CL:  Signon traffic "server":  incoming 170.365 KB [22 netframes], outgoing 2.452 KB [138 netframes]
+[Client] CL:  Signon traffic "server":  incoming 171.637 KB [22 netframes], outgoing 2.442 KB [137 netframes]
 [Prediction] Added prediction for player slot 0 (超级坑队友)
-Job EconItemSearch has spent >3.000ms without yielding: 10.006ms
-[Networking] 超级坑队 @ 127.0.0.1:53552:  NetChan Setting Timeout to 20.00 seconds
+Job EconItemSearch has spent >3.000ms without yielding: 10.003ms
+[Networking] 超级坑队 @ 127.0.0.1:58928:  NetChan Setting Timeout to 20.00 seconds
 [Server] PR:OnFullyJoinedServer 4:[U:1:340766495]
 [Server] PR:SetLeaverStatus 4:[U:1:340766495] DOTA_LEAVER_NONE
 [Server] PR:SetConnectionState 4:[U:1:340766495] DOTA_CONNECTION_STATE_CONNECTED NETWORK_DISCONNECT_INVALID
-Excessive frame time of 471.01ms clamped.  Acting as if the frame only took 100.00ms.  (Last amnesty was 'level_load', 0.54s ago)
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 57.179610ms
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 58.355830ms
-[Server] SV:  Connection to Steam servers successful.
-[Server] SV:  ServerSteamID=[A:1:1146974208:51578] (90293519517577216).
-[STARTUP] {105.074} logged on to Steam
-[GCClient] Logged on to Steam, set GC connection state to NO_SESSION
-[GCClient] Send msg 4007 (k_EMsgGCServerHello), 22 bytes
-[SteamNetSockets] Gameserver logged on to Steam, assigned identity steamid:90293519517577216
-[SteamNetSockets] AuthStatus (steamid:90293519517577216):  Attempting  (Requesting cert)
-[GCClient] OnSteamServersConnected()
-[SteamNetSockets] AuthStatus (steamid:90293519517577216):  OK  (OK)
-[SteamNetSockets] Certificate expires in 48h00m at 1790646737 (current time 1790473936), will renew in 46h00m
-[Server] SV:  VAC secure mode disabled.
-[GCClient] Recv msg 4005 (k_EMsgGCServerWelcome), 26 bytes
-[GCClient] Received server welcome from GC.
-[SOCache] CMsgClientWelcome subscribed: 0 up-to-date, 0 out-of-date
-GC Connection established for server version 6941
---- Sent CMsgGameServerInfo to GC
-server_public_ip_addr: 1864344170
-server_private_ip_addr: 3232282625
-server_port: 27015
-server_tv_port: 27020
-server_key: ""
-server_hibernation: false
-server_type: GAME
-server_region: 0
-server_loadavg: 0.0957666263
-server_tv_broadcast_time: -97.5666733
-server_game_time: 0
-relay_slots_max: 64
-relays_connected: 0
-relay_clients_connected: 0
-tv_secret_code: 1963740698923107222
-server_version: 6941
-server_cluster: 0
-assigned_server_tv_port: 27020
-allow_custom_games: BOTH
-build_version: 6941
-
----
-[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-Server:  Running [192.168.184.1:27015]
-Client:  Connected [127.0.0.1:27015] [last packet 0.033 sec ago]
-[EngineServiceManager] ----- Status -----
-[EngineServiceManager] @ Current  :  game
-[HLTV Server] --- SourceTV[0] Status ---
-[HLTV Server] Online 00:17, FPS 33.1, Version 10835 (Windows)
-[HLTV Server] Master "SourceTV", delay 120, frames 1 / ticks 1
-[HLTV Server] Game Time 00:05, Mod "dota", Map "start"
-[HLTV Server] Local IP 192.168.184.1:27020, KB/sec In 0.0, Out 0.0
-[HLTV Server] Local Slots 64, Spectators 0, Proxies 0
-[HLTV Server] Total Slots 64, Spectators 0, Proxies 0
-[HLTV Server] # userid name uniqueid connected ping loss state rate adr
-[HLTV Server] #end
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 105.5s ago, urgency is 0.0s
-connected_players {
-  steam_id: 76561198301032223
-  hero_id: 0
-}
-game_state: DOTA_GAMERULES_STATE_INIT
-first_blood_happened: false
-send_reason: GAME_STATE
-radiant_kills: 0
-dire_kills: 0
-radiant_lead: 0
-building_state: 19138340
-
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 38 bytes
-[Client] source   : slot 0
-[Client] version  : 48/48 10835 insecure  public
-[Client] steamid  : [A:1:1146974208:51578] (90293519517577216)
-[Client] players  : 1 humans, 1 bots (0 max) (not hibernating) (unreserved)
-[Client] ---------spawngroups----
-[Client] loaded spawngroup(  1)  : SV:  [1: start | main lump | mapload]
-[Client] ---------players--------
-[Client]   id     time ping loss      state   rate name
-[Client]    0    00:19    0    0     active  80000 '超级坑队友'
-[Client]    1      BOT    0    0     active      0 'SourceTV'
-[Client] Lobby MatchID: 0
-[Client]       ID: 006ab6fd39b693fd
-[Client]       Type: PRACTICE
-[Client]       State: UI
-[Client]       GameMode: DOTA_GAMEMODE_TURBO
-[Client] GameState: DOTA_GAMERULES_STATE_INIT Times: Transition=0.00 Current=22.50
-[Client] #end
-[GCClient] Send msg 4511 (k_EMsgGCLANServerAvailable), 26 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 595 bytes
+[GCClient] Recv msg 7451 (k_EMsgServerToGCRequestBatchPlayerResourcesResponse), 35 bytes
 [GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 595 bytes
-[SOCache] CGCSOCacheSubscribedJob(owner=<Lobby:30037546242577405>) [in cache]
-CDOTAGCServerSystem::SOChanged setting match ID to 9018031922
-Received lobby with new match ID.  lobby_id=30037546242577405, match_id=9018031922
-[EngineServiceManager] Tearing off console log, will continue using suffix '.9018031922'
+[SOCache] CGCSOCacheSubscribedJob(owner=<Lobby:30037546255038142>) [in cache]
+CDOTAGCServerSystem::SOChanged setting match ID to 9018042557
+Received lobby with new match ID.  lobby_id=30037546255038142, match_id=9018042557
+[EngineServiceManager] Tearing off console log, will continue using suffix '.9018042557'
 [Server] PR:PrintRanks 4:[U:1:340766495] 0 (0)
-+++ CSODOTALobby.lobby_id: 30037546242577405
++++ CSODOTALobby.lobby_id: 30037546255038142
 +++ CSODOTALobby.all_members[0]: id: 76561198301032223
 +++ CSODOTALobby.all_members[0]: team: DOTA_GC_TEAM_GOOD_GUYS
 +++ CSODOTALobby.all_members[0]: slot: 5
 +++ CSODOTALobby.all_members[0]: leaver_status: DOTA_LEAVER_DISCONNECTED
 +++ CSODOTALobby.member_indices[0]: 0
 +++ CSODOTALobby.leader_id: 76561198301032223
-+++ CSODOTALobby.server_id: 90293519517577216
++++ CSODOTALobby.server_id: 90293519887694848
 +++ CSODOTALobby.game_mode: 23
 +++ CSODOTALobby.state: SERVERSETUP
 +++ CSODOTALobby.lobby_type: PRACTICE
@@ -812,7 +271,7 @@ Received lobby with new match ID.  lobby_id=30037546242577405, match_id=90180319
 +++ CSODOTALobby.team_details[1]: team_complete: false
 +++ CSODOTALobby.server_region: 0
 +++ CSODOTALobby.cm_pick: DOTA_CM_RANDOM
-+++ CSODOTALobby.match_id: 9018031922
++++ CSODOTALobby.match_id: 9018042557
 +++ CSODOTALobby.allow_spectating: false
 +++ CSODOTALobby.bot_difficulty_radiant: BOT_DIFFICULTY_HARD
 +++ CSODOTALobby.leagueid: 0
@@ -828,7 +287,7 @@ Received lobby with new match ID.  lobby_id=30037546242577405, match_id=90180319
 +++ CSODOTALobby.extra_messages[0]: contents: "\010\000"
 +++ CSODOTALobby.visibility: DOTALobbyVisibility_Public
 +++ CSODOTALobby.previous_match_override: 0
-+++ CSODOTALobby.game_start_time: 1790473940
++++ CSODOTALobby.game_start_time: 1790474903
 +++ CSODOTALobby.pause_setting: LobbyDotaPauseSetting_Unlimited
 +++ CSODOTALobby.bot_difficulty_dire: BOT_DIFFICULTY_INVALID
 +++ CSODOTALobby.bot_radiant: 1
@@ -851,102 +310,28 @@ Received lobby with new match ID.  lobby_id=30037546242577405, match_id=90180319
 +++ CSODOTALobby.requested_hero_ids[10]: 0
 +++ CSODOTALobby.requested_hero_ids[11]: 0
 +++ CSODOTALobby.with_scenario_save: false
-+++ CSODOTALobby.lobby_creation_time: 1790473909
-+++ CSODOTAStaticLobby.all_members[0]: name: "\350\266\205\347\272\247\345\235\221\351\230\237\345\217\213"
-+++ CSODOTAStaticLobby.is_player_draft: false
-+++ CSODOTAServerLobby.all_members[0]: 
++++ CSODOTALobby.lobby_creation_time: 1790474886
 +++ CSODOTAServerLobby.extra_startup_messages[0]: id: 8869
 +++ CSODOTAServerLobby.extra_startup_messages[0]: contents: "\010\237\336\276\242\001\022\007\n\005\010:\020\254\002\032\010\010\221\305\003\020\222\305\003"
-+++ CSODOTAServerStaticLobby.all_members[0]: steam_id: 76561198301032223
-+++ CSODOTAServerStaticLobby.all_members[0]: was_mvp_last_game: false
-+++ CSODOTAServerStaticLobby.all_members[0]: is_plus_subscriber: false
-+++ CSODOTAServerStaticLobby.all_members[0]: favorite_team_packed: 0
-+++ CSODOTAServerStaticLobby.all_members[0]: is_steam_china: false
-+++ CSODOTAServerStaticLobby.all_members[0]: banned_hero_ids: 0
-+++ CSODOTAServerStaticLobby.all_members[0]: banned_hero_ids: 0
-+++ CSODOTAServerStaticLobby.all_members[0]: banned_hero_ids: 0
-+++ CSODOTAServerStaticLobby.all_members[0]: banned_hero_ids: 0
-+++ CSODOTAServerStaticLobby.post_patch_strategy_time_buffer: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]: event_id: 19
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]: account_points {
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   account_id: 340766495
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   normal_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   premium_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   owned: false
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   event_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   active_effects_mask: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   tip_amount_index: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   active_event_season_id: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   teleport_fx_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   periodic_resources {
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     periodic_resource_id: 15
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     remaining: 10
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     max: 10
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   }
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   periodic_resources {
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     periodic_resource_id: 28
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     remaining: 1000
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:     max: 1000
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]:   }
-+++ CSODOTAServerStaticLobby.lobby_event_points[0]: }
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]: event_id: 26
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]: account_points {
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   account_id: 340766495
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   normal_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   premium_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   owned: true
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   event_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   active_effects_mask: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   tip_amount_index: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   active_event_season_id: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]:   teleport_fx_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[1]: }
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]: event_id: 39
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]: account_points {
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   account_id: 340766495
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   normal_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   premium_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   owned: true
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   event_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   active_effects_mask: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   tip_amount_index: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   active_event_season_id: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]:   teleport_fx_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[2]: }
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]: event_id: 54
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]: account_points {
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   account_id: 340766495
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   normal_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   premium_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   owned: true
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   event_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   active_effects_mask: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   tip_amount_index: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   active_event_season_id: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   teleport_fx_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   periodic_resources {
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     periodic_resource_id: 68
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     remaining: 1
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     max: 1
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   }
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   periodic_resources {
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     periodic_resource_id: 67
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     remaining: 10
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:     max: 10
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]:   }
-+++ CSODOTAServerStaticLobby.lobby_event_points[3]: }
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]: event_id: 58
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]: account_points {
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   account_id: 340766495
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   normal_points: 1000
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   premium_points: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   owned: true
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   event_level: 1
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   active_effects_mask: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   tip_amount_index: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   active_event_season_id: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]:   teleport_fx_level: 0
-+++ CSODOTAServerStaticLobby.lobby_event_points[4]: }
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 598 bytes
++++ CSODOTALobby.first_blood_happened: false
+[Server] CDOTA_PlayerResource::FlushPlayerResourceRequests::<lambda_1>::operator (): results {
+  account_id: 340766495
+  low_priority: false
+  is_new_player: true
+  is_guide_player: false
+  comm_level: 7
+  behavior_level: 4
+}
+
+CGCJobRequestBatchPlayerResourcesResponse: Received 1 account resources.
+[Server] CGCJobRequestBatchPlayerResourcesResponse: Received 1 account resources.
+[Server] PR:SetCommLevel 4:[U:1:340766495] Comms Level 7
+[Server] PR:SetBehaviorLevel 4:[U:1:340766495] Behavior Level 4
+[Server] PR:SetLowPriority 4:[U:1:340766495] false
+[Server] PR:SetWins 4:[U:1:340766495] 0
+[Server] PR:SetLosses 4:[U:1:340766495] 0
+[Server] PR:SetSmurfCategory 4:[U:1:340766495] 0
 [Server] CDOTA_PlayerResource: Initializing from lobby (main), player SteamID 76561198301032223 gcteam 0 slot 5 preferred PlayerID 4
 [Server] ActivateServerFromLobby - IsLan: YES, IsDedicatedServer: NO
 [Server] PR:SetPlayerName 4:[U:1:340766495] "超级坑队友"
@@ -968,37 +353,41 @@ Client:  Connected [127.0.0.1:27015] [last packet 0.017 sec ago]
 [EngineServiceManager] ----- Status -----
 [EngineServiceManager] @ Current  :  game
 [HLTV Server] --- SourceTV[0] Status ---
-[HLTV Server] Online 00:20, FPS 33.2, Version 10835 (Windows)
-[HLTV Server] Master "SourceTV", delay 120, frames 1 / ticks 1
+[HLTV Server] Online 00:00, FPS 3.2, Version 10835 (Windows)
+[HLTV Server] Master "SourceTV", delay 10, frames 1 / ticks 1
 [HLTV Server] Game Time 00:05, Mod "dota", Map "start"
 [HLTV Server] Local IP 192.168.184.1:27020, KB/sec In 0.0, Out 0.0
 [HLTV Server] Local Slots 64, Spectators 0, Proxies 0
 [HLTV Server] Total Slots 64, Spectators 0, Proxies 0
 [HLTV Server] # userid name uniqueid connected ping loss state rate adr
 [HLTV Server] #end
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 595 bytes
 [Client] source   : slot 0
 [Client] version  : 48/48 10835 insecure  public
-[Client] steamid  : [A:1:1146974208:51578] (90293519517577216)
+[Client] steamid  : [A:1:1517091840:51578] (90293519887694848)
 [Client] players  : 1 humans, 1 bots (0 max) (not hibernating) (unreserved)
 [Client] ---------spawngroups----
 [Client] loaded spawngroup(  1)  : SV:  [1: start | main lump | mapload]
 [Client] ---------players--------
 [Client]   id     time ping loss      state   rate name
-[Client]    0    00:22    0    0     active  80000 '超级坑队友'
+[Client]    0    00:03    0    0     active  80000 '超级坑队友'
 [Client]    1      BOT    0    0     active      0 'SourceTV'
-[Client] Lobby MatchID: 9018031922
-[Client]       ID: 006ab6fd39b693fd
+[Client] Lobby MatchID: 9018042557
+[Client]       ID: 006ab6fd3a74b6be
 [Client]       Type: PRACTICE
 [Client]       State: SERVERSETUP
 [Client]       GameMode: DOTA_GAMEMODE_TURBO
-[Client] GameState: DOTA_GAMERULES_STATE_INIT Times: Transition=0.00 Current=25.70
+[Client] GameState: DOTA_GAMERULES_STATE_INIT Times: Transition=0.00 Current=6.13
 [Client] #end
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 634 bytes
+[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 57.015967ms
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 606 bytes
+[Console] Saving lobby data to disk.
+WriteSteamRemoteStorageFileAsync( "scripts/dota_local_disk_lobby_data.txt" ) -> at 276.543
+Telling Steam not to update the app for the next 900 seconds
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 606 bytes
 --- CSODOTALobby.all_members[0]: leaver_status: DOTA_LEAVER_DISCONNECTED
 --- CSODOTALobby.state: SERVERSETUP
 +++ CSODOTALobby.state: RUN
-+++ CSODOTALobby.connect: "111.31.162.106:27015 192.168.184.1:27015"
++++ CSODOTALobby.connect: "0.0.0.0:0"
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD'
 CDOTAGameRules::State_Enter_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 0/1
 --- Sent CMsgGameServerInfo to GC
@@ -1010,13 +399,13 @@ server_key: ""
 server_hibernation: false
 server_type: GAME
 server_region: 0
-server_loadavg: 0.201747969
-server_tv_broadcast_time: 15.9666672
+server_loadavg: 0.319272429
+server_tv_broadcast_time: -3.50000024
 server_game_time: -45
 relay_slots_max: 64
 relays_connected: 0
 relay_clients_connected: 0
-tv_secret_code: 1963740698923107222
+tv_secret_code: 6024343112825225287
 server_version: 6941
 server_cluster: 0
 assigned_server_tv_port: 27020
@@ -1024,7 +413,7 @@ allow_custom_games: BOTH
 build_version: 6941
 
 ---
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 3.5s ago, urgency is 0.0s
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 1.4s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
 first_blood_happened: false
 send_reason: GAME_STATE
@@ -1033,21 +422,20 @@ dire_kills: 0
 radiant_lead: 0
 building_state: 19138340
 
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 634 bytes
-[Console] Saving lobby data to disk.
-WriteSteamRemoteStorageFileAsync( "scripts/dota_local_disk_lobby_data.txt" ) -> at 109.077
-Telling Steam not to update the app for the next 900 seconds
-[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
-WriteSteamRemoteStorageFileAsync( "cfg/chat.cfg" ) -> at 109.091
-[GCClient] Send msg 7272 (k_EMsgGCLeaveChatChannel), 13 bytes
-CAsyncWriteInProgress::OnComplete( "cfg/chat.cfg" ) -> Success at 109.093
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 0/1. m_waitingForPlayersState: 0
 CDOTAGameRules::WaitForPlayersSuccess: Loaded/expected players: 1/1
 S:Gamerules: WAIT_FOR_PLAYERS_TO_LOAD entering substate EWFPS_Success
-CAsyncWriteInProgress::OnComplete( "scripts/dota_local_disk_lobby_data.txt" ) -> Success at 109.108
+WriteSteamRemoteStorageFileAsync( "cfg/chat.cfg" ) -> at 276.548
+[GCClient] Send msg 7272 (k_EMsgGCLeaveChatChannel), 13 bytes
+[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 64.578429ms
+CAsyncWriteInProgress::OnComplete( "cfg/chat.cfg" ) -> Success at 276.619
+CAsyncWriteInProgress::OnComplete( "scripts/dota_local_disk_lobby_data.txt" ) -> Success at 276.619
+[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
+CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
+CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD'
-C_DOTAGamerules::State_Enter_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 0/1
+C_DOTAGamerules::State_Enter_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1
 [Client] LoadingDisplay changed from LOADING to WAITING_FOR_PLAYERS (map="start")
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
@@ -1061,13 +449,10 @@ CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 640 bytes
-+++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-+++ CSODOTALobby.first_blood_happened: false
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 [GCClient] Recv msg 7014 (k_EMsgGCOtherLeftChannel), 26 bytes
+CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 609 bytes
++++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
@@ -1087,13 +472,13 @@ CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1
 CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP'
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PLAYER_DRAFT'
-ClientPutInServer create new player controller [PARI.Satanic.OHA (Bot)]
+ClientPutInServer create new player controller [地煞.地勇.OHA (Bot)]
 [Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 0 FakeClient=1, preferred PlayerID = 0
-ClientPutInServer create new player controller [PARI.No[o]ne-.OHA (Bot)]
+ClientPutInServer create new player controller [地煞.地煞.OHA (Bot)]
 [Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 1 FakeClient=1, preferred PlayerID = 1
-ClientPutInServer create new player controller [PARI.DM.OHA (Bot)]
+ClientPutInServer create new player controller [地煞.地俊.OHA (Bot)]
 [Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 2 FakeClient=1, preferred PlayerID = 2
-ClientPutInServer create new player controller [PARI.9Class.OHA (Bot)]
+ClientPutInServer create new player controller [地煞.地雄.OHA (Bot)]
 [Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 3 FakeClient=1, preferred PlayerID = 3
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
 SV: Started streaming map dota spawngroup 2
@@ -1117,30 +502,29 @@ C:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_HERO_SELECTION
 [SndOperators] Operator Error: Event valve_dota_001.music.ui_hero_select: CSosOperatorConvar
 [SndOperators] Warning: Unable to acquire convar value: dota_music_enable_spectator_mode
-Excessive frame time of 115.19ms clamped.  Acting as if the frame only took 100.00ms
 [Client] PregameHud - bIsPreloading is now 0
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTAServerLobby.extra_startup_messages[0]: id: 8869
 --- CSODOTAServerLobby.extra_startup_messages[0]: contents: "\010\237\336\276\242\001\022\007\n\005\010:\020\254\002\032\010\010\221\305\003\020\222\305\003"
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_HERO_SELECTION
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
-[SceneSystem] Too many non-culled draws (alloc 128, need 275), resizing!
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 51.797894ms
-Excessive frame time of 132.00ms clamped.  Acting as if the frame only took 100.00ms
+[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 53.643702ms
 [Server] Unable to load grid nav for world "prefabs/promotional_radiant_fountain"
 [Server] Unable to load grid nav for world "prefabs/promotional_dire_fountain"
-[Server] PR:SetSelectedHero 0:[I:0:0] npc_dota_hero_lone_druid(80)
 [Client] Unable to load grid nav for world "prefabs/promotional_radiant_fountain" (ERROR_FILEOPEN: File not found)
 [Client] Unable to load grid nav for world "prefabs/promotional_dire_fountain" (ERROR_FILEOPEN: File not found)
 [AnimResource]  models/effects/waterfall_02.vmdl : Animations loaded but no animation data found
+[HLTV Server] Recording SourceTV replay from HLTVServerAsync:
+playdemo replays/auto-20260927-1008-start-_______________.dem
+[Server] PR:SetSelectedHero 0:[I:0:0] npc_dota_hero_lone_druid(80)
 [VScript] ==== top 5 heroes for team: Radiant pos: 2 id: 1 ====
 [VScript] 1	0.825	npc_dota_hero_mars
-[VScript] 2	0.675	npc_dota_hero_windrunner
-[VScript] 3	0.675	npc_dota_hero_lion
-[VScript] 4	0.675	npc_dota_hero_phantom_lancer
-[VScript] 5	0	npc_dota_hero_clinkz
+[VScript] 2	0.675	npc_dota_hero_lion
+[VScript] 3	0.675	npc_dota_hero_phantom_lancer
+[VScript] 4	0.525	npc_dota_hero_beastmaster
+[VScript] 5	0	npc_dota_hero_dazzle
 [Server] PR:SetSelectedHero 1:[I:0:0] npc_dota_hero_mars(129)
 [VScript] ==== top 5 heroes for team: Radiant pos: 3 id: 2 ====
 [VScript] 1	1.65	npc_dota_hero_slardar
@@ -1154,13 +538,11 @@ Excessive frame time of 132.00ms clamped.  Acting as if the frame only took 100.
 [VScript] 2	0.975	npc_dota_hero_phoenix
 [VScript] 3	0.9	npc_dota_hero_snapfire
 [VScript] 4	0.75	npc_dota_hero_ringmaster
-[VScript] 5	0.6	npc_dota_hero_techies
-[Server] PR:SetSelectedHero 3:[I:0:0] npc_dota_hero_phoenix(110)
-[HLTV Server] Recording SourceTV replay from HLTVServerAsync:
-playdemo replays/auto-20260927-0952-start-_______________.dem
-[Server] PR:SetSelectedHero 4:[U:1:340766495] npc_dota_hero_primal_beast(137)
+[VScript] 5	0.525	npc_dota_hero_witch_doctor
+[Server] PR:SetSelectedHero 3:[I:0:0] npc_dota_hero_warlock(37)
+[Server] PR:SetSelectedHero 4:[U:1:340766495] npc_dota_hero_jakiro(64)
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 10.9s ago, urgency is 0.0s
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 22.7s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
 first_blood_happened: false
 send_reason: GAME_STATE
@@ -1169,47 +551,52 @@ dire_kills: 0
 radiant_lead: 0
 building_state: 19138340
 
-[GCClient] Send msg 8330 (k_EMsgServerToGCRequestPlayerRecentAccomplishments), 26 bytes
+[GCClient] Send msg 8330 (k_EMsgServerToGCRequestPlayerRecentAccomplishments), 25 bytes
 [GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
+CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
+CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
+SteamLearn error for project 7 (toobusy: NO), existing error count 9, retrying no sooner than 47.00s
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_STRATEGY_TIME
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_STRATEGY_TIME
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 0, retrying no sooner than 2.00s
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[GCClient] Recv msg 8331 (k_EMsgServerToGCRequestPlayerRecentAccomplishmentsResponse), 19 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_HERO_SELECTION
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
-[GCClient] Recv msg 8331 (k_EMsgServerToGCRequestPlayerRecentAccomplishmentsResponse), 19 bytes
-[GCClient] Send msg 8729 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatch), 214 bytes
-[GCClient] Send msg 8673 (k_EMsgClientToGCRequestGuildData), 19 bytes
 [Entity System] Entity hero_camera [point_camera]: unrecognized parent "loadout_camera_model"
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 56.136175ms
-[InputSystem] Processing SDL events took 83.0ms
-[GCClient] Recv msg 8730 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse), 459 bytes
-[ResourceSystem] Failed loading resource "scenes/phoenix/phoenix/phoenix_phoenix_bird_exp_idle_01.vcd_c" (ERROR_FILEOPEN: File not found)
-[GCClient] Recv msg 8674 (k_EMsgClientToGCRequestGuildDataResponse), 19 bytes
-[Localization System] CLocalize::CompileString failed to localize: '#DOTA_Tooltip_CurrentStats_Header'
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 1, retrying no sooner than 7.00s
-Job CDOTA_UI_GuideBrowser::EventShowGuide has spent >3.000ms without yielding: 10.498ms
-[InputSystem] Processing SDL events took 16.6ms
-[InputSystem] Processing SDL events took 15.0ms
-[InputSystem] Processing SDL events took 16.1ms
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 2, retrying no sooner than 12.00s
-[Server] SV:  "超级坑队友<0><[U:1:340766495]><>" STEAM USERID validated
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 1637 bytes
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 42 bytes
+[GCClient] Send msg 8729 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatch), 104 bytes
+[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 59.948816ms
+[GCClient] Recv msg 8730 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse), 239 bytes
 [Server] PR:SetSelectedHeroFacet 0:[I:0:0] (npc_dota_hero_lone_druid:(null))
 [Server] PR:SetSelectedHeroFacet 1:[I:0:0] (npc_dota_hero_mars:(null))
 [Server] PR:SetSelectedHeroFacet 2:[I:0:0] (npc_dota_hero_slardar:(null))
-[Server] PR:SetSelectedHeroFacet 3:[I:0:0] (npc_dota_hero_phoenix:(null))
-[Server] PR:SetSelectedHeroFacet 4:[U:1:340766495] (npc_dota_hero_primal_beast:(null))
+[Server] PR:SetSelectedHeroFacet 3:[I:0:0] (npc_dota_hero_warlock:(null))
+[Server] PR:SetSelectedHeroFacet 4:[U:1:340766495] (npc_dota_hero_jakiro:(null))
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_TEAM_SHOWCASE'
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 15.0s ago, urgency is 0.0s
+--- Sent CMsgGameServerInfo to GC
+server_public_ip_addr: 1864344170
+server_private_ip_addr: 3232282625
+server_port: 27015
+server_tv_port: 27020
+server_key: ""
+server_hibernation: false
+server_type: GAME
+server_region: 0
+server_loadavg: 0.0629755706
+server_tv_broadcast_time: 35.2333336
+server_game_time: -16
+relay_slots_max: 64
+relays_connected: 0
+relay_clients_connected: 0
+tv_secret_code: 6024343112825225287
+server_version: 6941
+server_cluster: 0
+assigned_server_tv_port: 27020
+allow_custom_games: BOTH
+build_version: 6941
+
+---
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 15.1s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_TEAM_SHOWCASE
 first_blood_happened: false
 send_reason: GAME_STATE
@@ -1218,21 +605,18 @@ dire_kills: 0
 radiant_lead: 0
 building_state: 19138340
 
+[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
 [GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_TEAM_SHOWCASE'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_TEAM_SHOWCASE
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_TEAM_SHOWCASE
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[ResourceSystem] Failed loading resource "materials/models/items/marci/marci_crystalline_dragon_shoulder/marci_crystalline_dragon_shoulder.vmat_c" (ERROR_FILEOPEN: File not found)
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_TEAM_SHOWCASE
-[SceneSystem] Too many non-culled draws (alloc 384, need 439), resizing!
-[SceneSystem] Too many non-culled draws (alloc 512, need 666), resizing!
-[ResourceSystem] Failed loading resource "materials/models/items/marci/marci_crystalline_dragon_shoulder/marci_crystalline_dragon_shoulder.vmat_c" (ERROR_FILEOPEN: File not found)
+[GCClient] Send msg 4523 (k_EMsgClientToGCAggregateMetrics), 31 bytes
 [SndOperators] Operator Error: Event valve_dota_001.music.ui_hero_select: CSosOperatorConvar
 [SndOperators] Warning: Unable to acquire convar value: dota_music_enable_spectator_mode
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 3, retrying no sooner than 17.00s
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD'
 Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 16.0s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD
@@ -1244,14 +628,14 @@ radiant_lead: 0
 building_state: 19138340
 
 [Server] Created physics for dota
-[Server] 521:bad_result_position::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellY cell -354 is outside of cell bounds (0->128) @(2560.000000 -107231.250000 0.000000)
+[Server] 1764:bad_result_position::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellY cell -354 is outside of cell bounds (0->128) @(2560.000000 -107231.250000 0.000000)
 Bot ward spot ward_spot_radiant_high_point_top not found in map; falling back to hardcoded location.
 Bot ward spot ward_spot_dire_rune_bottom not found in map; falling back to hardcoded location.
 Bot ward spot ward_spot_dire_high_point_top in an invalid location, this may cause bots to get stuck.
 [GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
-m_flPreGameStartTime set to 68.97
-m_flStateTransitionTime set to 128.97
+m_flPreGameStartTime set to 61.30
+m_flStateTransitionTime set to 121.30
 --- Sent CMsgGameServerInfo to GC
 server_public_ip_addr: 1864344170
 server_private_ip_addr: 3232282625
@@ -1261,13 +645,13 @@ server_key: ""
 server_hibernation: false
 server_type: GAME
 server_region: 0
-server_loadavg: 0.0959751233
-server_tv_broadcast_time: 58.9333382
-server_game_time: -60.0000076
+server_loadavg: 0.320158958
+server_tv_broadcast_time: 51.2666702
+server_game_time: -60
 relay_slots_max: 64
 relays_connected: 0
 relay_clients_connected: 0
-tv_secret_code: 1963740698923107222
+tv_secret_code: 6024343112825225287
 server_version: 6941
 server_cluster: 0
 assigned_server_tv_port: 27020
@@ -1284,9 +668,9 @@ dire_kills: 0
 radiant_lead: 0
 building_state: 4784201
 
-SteamLearn error for project 1 (toobusy: NO), existing error count 0, retrying no sooner than 2.00s
 Height map file (maps/prefabs/promotional_radiant_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
 Height map file (maps/prefabs/promotional_dire_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
+SteamLearn error for project 1 (toobusy: NO), existing error count 8, retrying no sooner than 42.00s
 [VScript] npc_dota_hero_lone_druid failed to load ability with name= special_bonus_unique_lone_druid_2, at idx= 7
 [VScript] npc_dota_hero_lone_druid failed to load ability with name= special_bonus_unique_lone_druid_1, at idx= 8
 [VScript] npc_dota_hero_lone_druid failed to load ability with name= special_bonus_unique_lone_druid_4, at idx= 9
@@ -1363,35 +747,44 @@ Height map file (maps/prefabs/promotional_dire_fountain.vhcg) not found, this wi
 	no field package.preload['game/Customize/hero/slardar']Failed to find scripts\vscripts\game\Customize\hero\slardar.lua
 [VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/slardar' not found:
 	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/slardar']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\slardar.lua
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_6, at idx= 9
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_dying_light_damage, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/phoenix' not found:
-	no field package.preload['game/Customize/hero/phoenix']Failed to find scripts\vscripts\game\Customize\hero\phoenix.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\phoenix.lua
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_6, at idx= 9
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_dying_light_damage, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/phoenix' not found:
-	no field package.preload['game/Customize/hero/phoenix']Failed to find scripts\vscripts\game\Customize\hero\phoenix.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\phoenix.lua
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_6, at idx= 9
-[VScript] npc_dota_hero_phoenix failed to load ability with name= special_bonus_unique_phoenix_dying_light_damage, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/phoenix' not found:
-	no field package.preload['game/Customize/hero/phoenix']Failed to find scripts\vscripts\game\Customize\hero\phoenix.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/phoenix']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\phoenix.lua
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_5, at idx= 6
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_upheaval_aoe, at idx= 7
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_10, at idx= 8
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_7, at idx= 9
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_1, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/warlock' not found:
+	no field package.preload['game/Customize/hero/warlock']Failed to find scripts\vscripts\game\Customize\hero\warlock.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\warlock.lua
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_5, at idx= 6
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_upheaval_aoe, at idx= 7
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_10, at idx= 8
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_7, at idx= 9
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_1, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/warlock' not found:
+	no field package.preload['game/Customize/hero/warlock']Failed to find scripts\vscripts\game\Customize\hero\warlock.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\warlock.lua
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_5, at idx= 6
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_upheaval_aoe, at idx= 7
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_10, at idx= 8
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_7, at idx= 9
+[VScript] npc_dota_hero_warlock failed to load ability with name= special_bonus_unique_warlock_1, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/warlock' not found:
+	no field package.preload['game/Customize/hero/warlock']Failed to find scripts\vscripts\game\Customize\hero\warlock.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/warlock']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\warlock.lua
 [Client] Created physics for dota
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_TEAM_SHOWCASE
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
+[GCClient] Recv msg 8745 (k_EMsgServerToGCGetGuildContractsResponse), 17 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 577 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_PRE_GAME
-[GCClient] Recv msg 8745 (k_EMsgServerToGCGetGuildContractsResponse), 17 bytes
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 1'
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 2'
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 3'
@@ -1400,7 +793,6 @@ C:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_PRE_GAME
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_PRE_GAME
 **** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
-Excessive frame time of 119.57ms clamped.  Acting as if the frame only took 100.00ms.  (Last amnesty was 'CDOTA_Commander::UpdatePassabilityGrid', 0.20s ago)
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_movement_speed_15, at idx= 6
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_magic_resistance_10, at idx= 7
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_unique_lone_druid_spirit_bear_return_cd, at idx= 8
@@ -1429,17 +821,11 @@ Excessive frame time of 119.57ms clamped.  Acting as if the frame only took 100.
 [VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lone_druid_bear' not found:
 	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lone_druid_bear']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\lone_druid_bear.lua
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 1'
-SteamLearn error for project 1 (toobusy: NO), existing error count 1, retrying no sooner than 7.00s
-[VScript] LUA Memory usage warning: The VM has hit a new high usage of 16,777,216 bytes.
 [Client] PregameHud - SetPreGameVisible 0
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 4, retrying no sooner than 22.00s
-SteamLearn error for project 1 (toobusy: NO), existing error count 2, retrying no sooner than 12.00s
 Sending CMsgConnectedPlayers for reason PLAYER_HERO.  Last send was 10.2s ago, urgency is 10.0s
 connected_players {
   steam_id: 76561198301032223
-  hero_id: 137
+  hero_id: 64
 }
 game_state: DOTA_GAMERULES_STATE_PRE_GAME
 first_blood_happened: false
@@ -1449,187 +835,57 @@ dire_kills: 0
 radiant_lead: 3000
 building_state: 4784201
 
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 40 bytes
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 611 bytes
-+++ CSODOTALobby.all_members[0]: hero_id: 137
-> sv_cheats 1
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 39 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 579 bytes
++++ CSODOTALobby.all_members[0]: hero_id: 64
 [Localization System] CLocalize::FindSafe failed to localize: 'Welcome to Open Hyper AI (OHA): 0.7.41 - 2026/04/02'
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[Localization System] CLocalize::FindSafe failed to localize: 'You can select the heroes for bots to pick, e.g. 10 same heroes or your dream teams, or change their names. Just customize bots in the Customize/general file.'
 > dota_bot_give_gold 99999
-SteamLearn error for project 1 (toobusy: NO), existing error count 3, retrying no sooner than 17.00s
+CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
+CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
+SteamLearn error for project 7 (toobusy: NO), existing error count 10, retrying no sooner than 52.00s
+Script function 'GetDesire' on bot npc_dota_hero_lone_druid took 2.315ms
 **** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=false heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_butterfly] bearSlots=[] -> false
+[Localization System] CLocalize::FindSafe failed to localize: 'You can select the heroes for bots to pick, e.g. 10 same heroes or your dream teams, or change their names. Just customize bots in the Customize/general file.'
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+Script function 'ItemPurchaseThink' on bot npc_dota_hero_warlock took 2.140ms
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_warlock isLD=false heroC=0 bearC=0 bearNil=true heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_octarine_core,item_guardian_greaves,item_glimmer_cape,item_ultimate_scepter,item_refresher,item_force_staff,item_blood_grenade,item_tango,item_magic_wand] bearSlots=[n/a] -> false
+[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_warlock HasScepter=true IsItemInHero=true
 [Localization System] CLocalize::FindSafe failed to localize: 'If you feel bots are weak, try enabling the enhanced Fretbots mode to make the game a lot more challenging. Check Workshop page for details.'
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 5, retrying no sooner than 27.00s
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
 [Localization System] CLocalize::FindSafe failed to localize: 'You can type `!pos X` to swap position with a bot. For example, type: `!pos 2` to go mid lane. Type `!3pos 5` to ask the 3rd bot on the team to play position 5.'
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[Server] Client (account 0) tried to execute invalid order (85). Can't dump item, not in main inventory.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1 (toobusy: NO), existing error count 4, retrying no sooner than 22.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
 [Localization System] CLocalize::FindSafe failed to localize: 'You can type `!sp zh` for ally bots to 说中文, or `!sp en` for English, `!sp ru` for русский, `!sp ja` for 日本語. Not 100% translated, just be patient.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-Script function 'BuybackUsageThink' on bot npc_dota_hero_slardar took 2.068ms
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1, but before existing retry delay, ignoring
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+SteamLearn error for project 1 (toobusy: NO), existing error count 9, retrying no sooner than 47.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
 [Localization System] CLocalize::FindSafe failed to localize: 'This is nonprofit project, if you like this script and have any feedback or want to contritute, or give any support or buy me a coffee, please check script's Workshop.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[Server] PR:IncrementIdleTime 3:[I:0:0] 2.20
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[Server] PR:IncrementIdleTime 1:[I:0:0] 2.20
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
-CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 6, retrying no sooner than 32.00s
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[Server] PR:IncrementIdleTime 0:[I:0:0] 2.10
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[Server] PR:IncrementIdleTime 0:[I:0:0] 2.90
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
-m_flGameStartTime set to 129.00
+m_flGameStartTime set to 121.33
 Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 49.9s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
 first_blood_happened: false
 send_reason: GAME_STATE
 radiant_kills: 0
 dire_kills: 0
-radiant_lead: 402086
+radiant_lead: 402346
 building_state: 4784201
 
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 27 bytes
+[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
 [Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
@@ -1643,13 +899,13 @@ server_key: ""
 server_hibernation: false
 server_type: GAME
 server_region: 0
-server_loadavg: 0.235325187
-server_tv_broadcast_time: 119.03334
+server_loadavg: 0.311445326
+server_tv_broadcast_time: 111.366669
 server_game_time: 0.0333404541
 relay_slots_max: 64
 relays_connected: 0
 relay_clients_connected: 0
-tv_secret_code: 1963740698923107222
+tv_secret_code: 6024343112825225287
 server_version: 6941
 server_cluster: 0
 assigned_server_tv_port: 27020
@@ -1657,170 +913,149 @@ allow_custom_games: BOTH
 build_version: 6941
 
 ---
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 27 bytes
 [GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-SteamLearn error for project 1, but before existing retry delay, ignoring
 [Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
 [Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-SteamLearn error for project 1 (toobusy: NO), existing error count 5, retrying no sooner than 27.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
 [Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 611 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 579 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_PRE_GAME
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/lone_druid/lone_druid.vmdl" for entity "npc_dota_hero_lone_druid"
-[Server] PR:IncrementIdleTime 0:[I:0:0] 9.27
-[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_lone_druid_bear. Sending it to the lane# it was originally assigned: 2
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_hitloc" on model "models/props_gameplay/lantern/lantern_of_sight.vmdl" for entity "npc_dota_lantern"
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-Script function 'GetDesire' on bot npc_dota_hero_lone_druid took 3.001ms
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/mars/mars.vmdl" for entity "npc_dota_hero_mars"
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_mars HasScepter=true IsItemInHero=true
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1 (toobusy: NO), existing error count 6, retrying no sooner than 32.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+Script function 'ItemPurchaseThink' on bot npc_dota_hero_warlock took 2.101ms
 CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
 CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 7, retrying no sooner than 37.00s
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[Server] 827:item_refresher::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -5 is outside of cell bounds (0->128) @(-17873.242188 4585.151367 128.000000)
-[Server] 843:item_sheepstick::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -5 is outside of cell bounds (0->128) @(-17873.242188 4585.151367 128.000000)
-[Server] 844:item_mystic_staff::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -5 is outside of cell bounds (0->128) @(-17873.242188 4585.151367 128.000000)
-[Server] 845:item_recipe_wind_waker::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellX cell -5 is outside of cell bounds (0->128) @(-17873.242188 4585.151367 128.000000)
-[Server] PR:IncrementIdleTime 3:[I:0:0] 3.87
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Let's do Roshan!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Roshan time!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-Script function 'GetDesire' on bot npc_dota_hero_phoenix took 2.517ms
-Script function 'GetDesire' on bot npc_dota_hero_mars took 5.071ms
-Script function 'GetDesire' on bot npc_dota_hero_mars took 3.024ms
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-Script function 'GetDesire' on bot npc_dota_hero_lone_druid took 2.130ms
-[Client] Failed to find duration of soundevent 'primal_beast_exp_idle_02' when falling back from missing choreo scene 'scenes/primal_beast/primal_beast_exp_idle_02.vcd'
-[ScenePrint] C_SceneEntity::SetupClientOnlyScene: Couldn't determine duration of primal_beast_exp_idle_02
-[Client] Failed to find duration of soundevent 'primal_beast_exp_idle_02' when falling back from missing choreo scene 'scenes/primal_beast/primal_beast_exp_idle_02.vcd'
-[ScenePrint] C_SceneEntity::SetupClientOnlyScene: Couldn't determine duration of primal_beast_exp_idle_02
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/phoenix/phoenix_bird.vmdl" for entity "npc_dota_hero_phoenix"
-Script function 'GetDesire' on bot npc_dota_lone_druid_bear1 took 2.169ms
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
+SteamLearn error for project 7 (toobusy: NO), existing error count 11, retrying no sooner than 57.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
 [Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
-[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
-[Server] PR:IncrementIdleTime 1:[I:0:0] 4.87
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_phoenix isLD=false heroC=0 bearC=0 bearNil=true -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_phoenix HasScepter=true IsItemInHero=true
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-Script function 'GetDesire' on bot npc_dota_hero_mars took 2.749ms
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
 CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/slardar/slardar.vmdl" for entity "npc_dota_hero_slardar"
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_phoenix is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-SteamLearn error for project 1 (toobusy: NO), existing error count 7, retrying no sooner than 37.00s
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-SteamLearn error for project 1, but before existing retry delay, ignoring
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-Script function 'GetDesire' on bot npc_dota_hero_phoenix took 2.133ms
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_slardar isLD=false heroC=0 bearC=0 bearNil=true -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_slardar isLD=false heroC=0 bearC=0 bearNil=true heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_power_treads,item_echo_sabre,item_ultimate_scepter,item_travel_boots,item_crimson_guard,item_assault,item_flask,item_tango,item_bracer,item_satanic,item_recipe_ultimate_scepter_2] bearSlots=[n/a] -> false
 [VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_slardar HasScepter=true IsItemInHero=true
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
+[Server] PR:IncrementIdleTime 3:[I:0:0] 2.50
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+SteamLearn error for project 1 (toobusy: NO), existing error count 10, retrying no sooner than 52.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+**** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
+**** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+Script function 'GetDesire' on bot npc_dota_hero_warlock took 2.013ms
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+Script function 'GetDesire' on bot npc_dota_hero_mars took 2.835ms
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+Script function 'GetDesire' on bot npc_dota_hero_slardar took 2.419ms
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[Server] PR:IncrementIdleTime 3:[I:0:0] 2.50
 CSteamLearnManager::BYieldingGetInferenceMetadata no HMAC secret for project 7, published version 0!
 CDOTA_SuggestionManager_Learn::GetWardPossibleLocations inference metadata result -1
-SteamLearn error for project 7 (toobusy: NO), existing error count 8, retrying no sooner than 42.00s
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[Localization System] CLocalize::FindSafe failed to localize: 'Let's do Roshan!'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[Localization System] CLocalize::FindSafe failed to localize: 'Going for Rosh!'
-[Localization System] CLocalize::FindSafe failed to localize: 'Roshan time!'
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+SteamLearn error for project 7 (toobusy: NO), existing error count 12, retrying no sooner than 62.00s
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+Script function 'ItemPurchaseThink' on bot npc_dota_hero_mars took 2.935ms
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+SteamLearn error for project 1 (toobusy: NO), existing error count 11, retrying no sooner than 57.00s
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-Script function 'GetDesire' on bot npc_dota_hero_phoenix took 2.595ms
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+Script function 'GetDesire' on bot npc_dota_hero_slardar took 2.468ms
+[Server] PR:IncrementIdleTime 3:[I:0:0] 4.63
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[Server] PR:IncrementIdleTime 3:[I:0:0] 2.63
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+Script function 'ItemPurchaseThink' on bot npc_dota_hero_warlock took 2.303ms
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_warlock. Sending it to the lane# it was originally assigned: 1
+[Server] PR:IncrementIdleTime 3:[I:0:0] 2.00
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_slardar is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] Bot npc_dota_hero_warlock is in idle state for unknown reasons. N/A.
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+Building: npc_dota_badguys_tower1_top destroyed at 103.166679.
+Sending CMsgConnectedPlayers for reason BUILDING_STATE.  Last send was 103.7s ago, urgency is 60.0s
+game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
+first_blood_happened: false
+send_reason: BUILDING_STATE
+radiant_kills: 0
+dire_kills: 0
+radiant_lead: 405960
+building_state: 4849737
+
+[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 27 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 579 bytes
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+SteamLearn error for project 1, but before existing retry delay, ignoring
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+Script function 'GetDesire' on bot npc_dota_lone_druid_bear1 took 2.361ms
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[Localization System] CLocalize::CompileString failed to localize: '#DOTA_Tooltip_CurrentStats_Header'
+[Localization System] CLocalize::ConstructString failed to localize: '#DOTA_Tooltip_Ability_plus_high_five_SummaryDescription'
 [VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false -> false
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_mars is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroC=0 bearC=0 bearNil=false heroHasScepter=true heroConsumedMod=false bought=-1 heroSlots=[item_mjollnir,item_abyssal_blade,item_heart] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
+[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_mars. Sending it to the lane# it was originally assigned: 2
+[Server] PR:IncrementIdleTime 3:[I:0:0] 4.63

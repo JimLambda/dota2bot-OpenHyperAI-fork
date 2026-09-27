@@ -320,9 +320,23 @@ local function GeneralPurchase()
 		return
 	end
 
+	if bot.currBuyingBasicItem == "item_ultimate_scepter_2" then
+		local ld2 = Utils.GetLoneDruid(bot)
+		local hHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(bot,'item_ultimate_scepter_2')>0
+		local bHas = (ld2 and ld2.bear ~= nil) and (ld2.bear:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(ld2.bear,'item_ultimate_scepter_2')>0) or false
+		if _G.__ldBuyTrace == nil or DotaTime() - _G.__ldBuyTrace > 3 then
+			_G.__ldBuyTrace = DotaTime()
+			print( "[LD scepter2][buy] gold="..tostring(bot:GetGold()).." cost="..tostring(cost)
+				.. " slot14nil="..tostring(bot:GetItemInSlot(14)==nil)
+				.. " SecretShop="..tostring(bot.SecretShop)
+				.. " fromSecret="..tostring(bot.bPurchaseFromSecret)
+				.. " botDistSecret="..tostring(math.floor(bot:DistanceFromSecretShop()))
+				.. " stillNeeds="..tostring(((hHas and 1 or 0)+(bHas and 1 or 0)) < 2) )
+		end
+	end
 	--达到金钱需要时购物
 	if bot:GetGold() >= cost
-		and bot:GetItemInSlot( 14 ) == nil
+	and bot:GetItemInSlot( 14 ) == nil
 	then
 
 		if courier == nil
@@ -427,7 +441,7 @@ local function TurboModeGeneralPurchase()
 	
 
 	if not bot.hasBuyShard
-		and DotaTime() > 8 * 60
+	and DotaTime() > 8 * 60
 	then
 		local shardCDTime = 10 * 60 - DotaTime()
 		if shardCDTime < 0
@@ -435,6 +449,21 @@ local function TurboModeGeneralPurchase()
 			cost = cost + 1400
 		else
 			cost = cost + 1400 * ( 1 - shardCDTime / 180 )
+		end
+	end
+
+	if bot.currBuyingBasicItem == "item_ultimate_scepter_2" then
+		local ld2 = Utils.GetLoneDruid(bot)
+		local hHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(bot,'item_ultimate_scepter_2')>0
+		local bHas = (ld2 and ld2.bear ~= nil) and (ld2.bear:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(ld2.bear,'item_ultimate_scepter_2')>0) or false
+		if _G.__ldBuyTrace == nil or DotaTime() - _G.__ldBuyTrace > 3 then
+			_G.__ldBuyTrace = DotaTime()
+			print( "[LD scepter2][turbo-buy] gold="..tostring(bot:GetGold()).." cost="..tostring(cost)
+				.. " slot14nil="..tostring(bot:GetItemInSlot(14)==nil)
+				.. " SecretShop="..tostring(bot.SecretShop)
+				.. " fromSecret="..tostring(bot.bPurchaseFromSecret)
+				.. " botDistSecret="..tostring(math.floor(bot:DistanceFromSecretShop()))
+				.. " stillNeeds="..tostring(((hHas and 1 or 0)+(bHas and 1 or 0)) < 2) )
 		end
 	end
 
@@ -453,6 +482,8 @@ local function TurboModeGeneralPurchase()
 			if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
 			and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
 				bot.scepter2Bought = ( bot.scepter2Bought or 0 ) + 1
+				local ld = Utils.GetLoneDruid(bot)
+				if ld ~= nil then ld.scepter2Bought = ( ld.scepter2Bought or 0 ) + 1 end
 				print( "[LD scepter2][turbo] purchased Blessing #" .. tostring( bot.scepter2Bought ) )
 			end
 			ClearCurrBuyingBasicItemList()
