@@ -484,7 +484,7 @@ local function TurboModeGeneralPurchase()
 		if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 		then
 			print("Bot " .. bot:GetUnitName() .. " purchased item successfully! bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem)
-			if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
+			if bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2"
 			and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
 				bot.scepter2Bought = ( bot.scepter2Bought or 0 ) + 1
 				local ld = Utils.GetLoneDruid(bot)
