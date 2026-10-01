@@ -822,10 +822,33 @@ function ItemPurchaseThink()
 			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountItemEmptySpace(bear) <= 0 then return end
 			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then return end
 
-			-- Widen the delivery range: the bear fetches dropped items within 1000u,
-			-- so the hero can offload his first Blessing and buy his own second one.
+			-- Turbo purchases land in the backpack (6-8) / stash (9-14). Action_DropItem
+			-- only works on main-inventory slots (0-5), so move any bear item sitting in
+			-- the backpack into a free main slot first; otherwise the bear never receives
+			-- anything (we saw "Can't dump item, not in main inventory" spam) and the hero
+			-- ends up consuming the Blessing himself, which blocks the 2nd (unique).
+			local freeMain = -1
+			for s = 0, 5 do
+				if bot:GetItemInSlot(s) == nil then freeMain = s; break end
+			end
+			if freeMain ~= -1 then
+				for s = 6, 8 do
+					local it = bot:GetItemInSlot(s)
+					if it ~= nil and not it:IsRecipeItem() then
+						local nm = it:GetName()
+						if nm == 'item_ultimate_scepter_2'
+						or ( Utils.HasValue(tLoneDruidBearItems, nm) and not Utils.HasValue(tLoneDruidKeepItems, nm) ) then
+							bot:ActionImmediate_SwapItems(freeMain, s)
+							break
+						end
+					end
+				end
+			end
+
+			-- The bear fetches dropped items within 1000u, so the hero can offload his
+			-- first Blessing and buy his own second one.
 			if GetUnitToUnitDistance(bot, bear) < 1000 then
-				for i = 0, 9
+				for i = 0, 5
 				do
 					local item = bot:GetItemInSlot( i )
 					if item ~= nil
