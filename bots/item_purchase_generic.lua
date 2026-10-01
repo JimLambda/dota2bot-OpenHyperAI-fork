@@ -141,16 +141,15 @@ local function _stillNeeds(itemName)
 	-- the second is already owned and skip it. Treat the pair as satisfied only once
 	-- the hero and the bear together hold two Blessings (counting both the consumed
 	-- modifier and any physical Blessing), preventing both over-skip and over-buy.
-	if itemName == 'item_ultimate_scepter_2' and bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
+	if ( itemName == 'item_ultimate_scepter_2' or itemName == 'item_recipe_ultimate_scepter_2' )
+	and bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
+		-- The authoritative counter (incremented on each successful Blessing purchase)
+		-- is robust to the consumed-modifier name and to a Blessing sitting physical
+		-- in transit. Exactly two Blessings are desired (hero + bear).
+		print("This is a probe 2. Bot: " .. bot:GetUnitName() .. ". itemName: " .. itemName)
 		local ld = Utils.GetLoneDruid(bot)
-		local bear = ld.bear
-		local heroHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed')
-			or _countOwnedEverywhere(bot, 'item_ultimate_scepter_2') > 0
-		local bearHas = bear ~= nil and (
-			bear:HasModifier('modifier_item_ultimate_scepter_consumed')
-			or _countOwnedEverywhere(bear, 'item_ultimate_scepter_2') > 0 )
-		local owned = (heroHas and 1 or 0) + (bearHas and 1 or 0)
-		return owned < 2
+		local bought = ( ld and ( ld.scepter2Bought or 0 ) ) or 0
+		return bought < 2
 	end
 	if not bot.currBuyingRequiredCounts then return true end
 	local required = bot.currBuyingRequiredCounts[itemName]
@@ -455,17 +454,21 @@ local function TurboModeGeneralPurchase()
 		end
 	end
 
-	if bot.currBuyingBasicItem == "item_ultimate_scepter_2" then
+	if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
+	or bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2" then
+		print("This is a probe 3. Bot: " .. bot:GetUnitName() .. ". currBuyingBasicItem: " .. bot.currBuyingBasicItem)
 		local ld2 = Utils.GetLoneDruid(bot)
 		local hHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(bot,'item_ultimate_scepter_2')>0
 		local bHas = (ld2 and ld2.bear ~= nil) and (ld2.bear:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(ld2.bear,'item_ultimate_scepter_2')>0) or false
+		local bought = ( ld2 and ( ld2.scepter2Bought or 0 ) ) or 0
 		if _G.__ldBuyTrace == nil or DotaTime() - _G.__ldBuyTrace > 3 then
 			_G.__ldBuyTrace = DotaTime()
-			print( "[LD scepter2][turbo-buy] gold="..tostring(bot:GetGold()).." cost="..tostring(cost)
+			print( "[LD scepter2][turbo-buy] item="..tostring(bot.currBuyingBasicItem).." gold="..tostring(bot:GetGold()).." cost="..tostring(cost)
 				.. " slot14nil="..tostring(bot:GetItemInSlot(14)==nil)
 				.. " SecretShop="..tostring(bot.SecretShop)
 				.. " fromSecret="..tostring(bot.bPurchaseFromSecret)
 				.. " botDistSecret="..tostring(math.floor(bot:DistanceFromSecretShop()))
+				.. " bought="..tostring(bought)
 				.. " stillNeeds="..tostring(((hHas and 1 or 0)+(bHas and 1 or 0)) < 2) )
 		end
 	end
@@ -477,9 +480,20 @@ local function TurboModeGeneralPurchase()
 		return
 	end
 
-	if bot:GetGold() >= cost
-		and bot:GetItemInSlot( 14 ) == nil
-	then
+	local bIsLdBlessing = bot:GetUnitName() == "npc_dota_hero_lone_druid"
+		and ( bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2"
+			or bot.currBuyingBasicItem == "item_ultimate_scepter_2" )
+	-- The Blessing recipe combines/consumes immediately and is unique, so it never
+	-- lingers in the stash. Don't let a full stash slot 14 silently stall the Lone
+	-- Druid's 2nd Blessing (which would otherwise never be purchased once a large
+	-- late-game build fills the stash while the hero is away from base).
+	local bSlotGateOk = bIsLdBlessing or bot:GetItemInSlot( 14 ) == nil
+	print("This is a probe 4. bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem .. " bSlotGateOk: " .. tostring(bSlotGateOk) .. " bot.currBuyingBasicItem == item_ultimate_scepter_2: " .. tostring(bot.currBuyingBasicItem == "item_ultimate_scepter_2") .. ". bIsLdBlessing: " .. tostring(bIsLdBlessing))
+	if bIsLdBlessing and not bSlotGateOk then
+		print( "[LD scepter2][turbo] STASH-FULL bypass for " .. bot.currBuyingBasicItem
+			.. " slot14nil=" .. tostring( bot:GetItemInSlot( 14 ) == nil ) )
+	end
+	if bot:GetGold() >= cost and bSlotGateOk then
 		print("Bot " .. bot:GetUnitName() .. " is going to purchase item: " .. bot.currBuyingBasicItem)
 		if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 		then
