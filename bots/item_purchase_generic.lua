@@ -142,13 +142,15 @@ local function _stillNeeds(itemName)
 	-- the hero and the bear together hold two Blessings (counting both the consumed
 	-- modifier and any physical Blessing), preventing both over-skip and over-buy.
 	if itemName == 'item_ultimate_scepter_2' and bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
-		-- Count actual purchases instead of relying on the consumed-modifier / slot
-		-- detection. Aghanim's Blessing stays a physical item until consumed and its
-		-- consumed modifier name differs, so detection is unreliable. The Lone Druid
-		-- pair needs exactly two Blessings; keep buying until two are purchased.
 		local ld = Utils.GetLoneDruid(bot)
-		local bought = ( ld and ( ld.scepter2Bought or bot.scepter2Bought or 0 ) ) or 0
-		return bought < 2
+		local bear = ld.bear
+		local heroHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed')
+			or _countOwnedEverywhere(bot, 'item_ultimate_scepter_2') > 0
+		local bearHas = bear ~= nil and (
+			bear:HasModifier('modifier_item_ultimate_scepter_consumed')
+			or _countOwnedEverywhere(bear, 'item_ultimate_scepter_2') > 0 )
+		local owned = (heroHas and 1 or 0) + (bearHas and 1 or 0)
+		return owned < 2
 	end
 	if not bot.currBuyingRequiredCounts then return true end
 	local required = bot.currBuyingRequiredCounts[itemName]
@@ -347,12 +349,12 @@ local function GeneralPurchase()
 			and courier ~= nil
 			and courier:DistanceFromSecretShop() == 0
 		then
-			print("Bot" .. bot .. "is gonna purchase item: " .. bot.currBuyingBasicItem)
+			print("Bot" .. bot:GetUnitName() .. "is gonna purchase item: " .. bot.currBuyingBasicItem)
 			local res = courier:ActionImmediate_PurchaseItem(bot.currBuyingBasicItem)
 			if res == PURCHASE_ITEM_SUCCESS then
-				print("Bot" .. bot .. "purchases item successfully! Result: " .. res)
+				print("Bot" .. bot:GetUnitName() .. "purchases item successfully! Result: " .. res)
 				if bot.currBuyingBasicItem == "item_ultimate_scepter_2" and bot == Utils.GetLoneDruid(bot).hero then
-					print("[LD scepter2] bot" .. bot .. " the Lone Druid just bought item_ultimate_scepter_2!")
+					print("[LD scepter2] bot" .. bot:GetUnitName() .. " the Lone Druid just bought item_ultimate_scepter_2!")
 					local ld = Utils.GetLoneDruid(bot)
 					ld.scepter2Bought = ( ld.scepter2Bought or 0 ) + 1
 					local b = ld.bear
@@ -418,7 +420,6 @@ local function TurboModeGeneralPurchase()
 		bot.lastItemToBuy = bot.currBuyingBasicItem
 		bot:SetNextItemPurchaseValue( GetItemCost( bot.currBuyingBasicItem ) )
 		itemCost = GetItemCost( bot.currBuyingBasicItem )
-		bot.bPurchaseFromSecret = IsItemPurchasedFromSecretShop( bot.currBuyingBasicItem )
 		bot.lastItemToBuy = bot.currBuyingBasicItem
 	end
 
@@ -476,27 +477,13 @@ local function TurboModeGeneralPurchase()
 		return
 	end
 
-	-- Secret-shop items (e.g. Aghanim's Blessing) cannot be bought from base. Flag
-	-- bot.SecretShop so mode_secret_shop_generic walks the hero to the shop, and only
-	-- attempt the direct purchase once he is physically there.
-	if bot.bPurchaseFromSecret then
-		if bot:DistanceFromSecretShop() > 0 then
-			bot.SecretShop = true
-			return
-		else
-			bot.SecretShop = false
-		end
-	else
-		bot.SecretShop = false
-	end
-
 	if bot:GetGold() >= cost
-	and bot:GetItemInSlot( 14 ) == nil
+		and bot:GetItemInSlot( 14 ) == nil
 	then
-		print("Bot " .. bot .. " is going to purchase item: " .. bot.currBuyingBasicItem)
+		print("Bot " .. bot:GetUnitName() .. " is going to purchase item: " .. bot.currBuyingBasicItem)
 		if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 		then
-			print("Bot " .. bot .. " purchased item successfully! bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem)
+			print("Bot " .. bot:GetUnitName() .. " purchased item successfully! bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem)
 			if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
 			and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
 				bot.scepter2Bought = ( bot.scepter2Bought or 0 ) + 1
@@ -813,22 +800,17 @@ function ItemPurchaseThink()
 	if bot == Utils.GetLoneDruid(bot).hero then
 		local bear = Utils.GetLoneDruid(bot).bear
 		if bear ~= nil then
-			-- Decide whether it is safe to hand items to the bear. We no longer early
-			-- return here, because that would also skip the purchase logic below (the
-			-- hero must keep trying to buy, e.g. Aghanim's Blessing from the secret
-			-- shop). Drops only happen when it is safe to do so.
-			local bCanRoute = true
 			-- Only avoid handing items over if an enemy is near the bear (where the
 			-- item will land), not merely near the hero.
 			local hEnemyList = J.GetNearbyHeroes(bear, 800, true, BOT_MODE_NONE)
-			if #hEnemyList >= 1 then bCanRoute = false end
+			if #hEnemyList >= 1 then return end
 
-			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountItemEmptySpace(bear) <= 0 then bCanRoute = false end
-			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then bCanRoute = false end
+			if not bear:IsAlive() or bear:IsChanneling() or bear:IsUsingAbility() or Utils.CountItemEmptySpace(bear) <= 0 then return end
+			if bear:HasModifier('modifier_item_ultimate_scepter_consumed') then return end
 
 			-- Widen the delivery range: the bear fetches dropped items within 1000u,
 			-- so the hero can offload his first Blessing and buy his own second one.
-			if bCanRoute and GetUnitToUnitDistance(bot, bear) < 1000 then
+			if GetUnitToUnitDistance(bot, bear) < 1000 then
 				for i = 0, 9
 				do
 					local item = bot:GetItemInSlot( i )
@@ -1376,18 +1358,16 @@ function ItemPurchaseThink()
 				and bot.currBuyingItemInPurchaseList ~= 'item_ultimate_scepter_2' -- LD buys his own Blessing even after the bear already has one
 			)
 			or bot.countInvCheck > (GetGameMode() == GAMEMODE_ARDM and 30 or 3 * 60) -- ARDM: 30s timeout, normal: 3min
-			then
-			-- Never purge the Lone Druid's Aghanim's Blessing from the buy list. It is a
-			-- secret-shop item whose delivery is slow (the hero must physically reach the
-			-- shop), so the "stuck" timeout must not drop it — otherwise it is never bought.
-			local bIsLdBlessing = bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2'
-				and bot:GetUnitName() == 'npc_dota_hero_lone_druid'
-			if not bIsLdBlessing then
-				-- skip it and continue next
-				bot.countInvCheck = 0
-				_resetCurrentTarget()
-				bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
+		then
+			-- skip it and continue next
+			bot.countInvCheck = 0
+			if bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2' then
+				print( "[LD scepter2] GATE SKIPPED scepter_2 — unit=" .. tostring(bot:GetUnitName())
+					.. " HasScepter=" .. tostring(bot:HasScepter())
+					.. " IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
 			end
+			_resetCurrentTarget()
+			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
 		elseif currentTime > bot.lastInvCheck + 1.0 then
 			bot.lastInvCheck = currentTime
 			if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 and botName ~= "npc_dota_hero_lone_druid" then

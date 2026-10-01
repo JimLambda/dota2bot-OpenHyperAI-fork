@@ -64,15 +64,11 @@ function GetDesireHelper()
 	
 	if bot.SecretShop and cState ~= COURIER_STATE_MOVING  then
 		preferedShop = X.GetPreferedSecretShop();
-		if preferedShop ~= nil then
-			-- The Lone Druid must prioritise reaching the secret shop for his Blessing,
-			-- otherwise his constant fighting keeps the trip from ever happening.
-			if bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
-				return RemapValClamped( GetUnitToLocationDistance(bot, preferedShop), 6000, 0, 0.90, 0.97 );
-			elseif cState == COURIER_STATE_DEAD then
-				return RemapValClamped( GetUnitToLocationDistance(bot, preferedShop), 6000, 0, 0.7, 0.85 );
-			elseif GetUnitToLocationDistance(bot, preferedShop) <= 3200 then
-				return RemapValClamped( GetUnitToLocationDistance(bot, preferedShop), 3200, 0, 0.7, 0.85 );
+		if preferedShop ~= nil and cState == COURIER_STATE_DEAD then
+			return RemapValClamped(  GetUnitToLocationDistance(bot, preferedShop), 6000, 0, 0.7, 0.85 );
+		else
+			if preferedShop ~= nil and GetUnitToLocationDistance(bot, preferedShop) <= 3200 then
+				return RemapValClamped(  GetUnitToLocationDistance(bot, preferedShop), 3200, 0, 0.7, 0.85 );
 			end
 		end
 	end
@@ -157,12 +153,6 @@ function X.GetPreferedSecretShop()
 end
 
 function X.IsSuitableToBuy()
-	-- The Lone Druid must reach the secret shop for Aghanim's Blessing. His bear fights
-	-- beside him, so enemies are usually nearby; don't block the trip just for that —
-	-- he can TP out and the bear covers him.
-	if bot:GetUnitName() == 'npc_dota_hero_lone_druid' and bot.SecretShop then
-		return bot:IsAlive()
-	end
 	local mode = bot:GetActiveMode();
 	local Enemies = J.GetNearbyHeroes(bot,1600, true, BOT_MODE_NONE);
 	if not bot:IsAlive() 

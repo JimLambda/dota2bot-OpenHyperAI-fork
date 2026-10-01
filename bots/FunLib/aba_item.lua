@@ -1200,7 +1200,7 @@ function Item.IsItemInTargetHero( sItemName, bot )
 			-- depend on the consumed-modifier or item-slot detection, so it is robust
 			-- even if a Blessing is in transit on the courier/stash. Fallback to the
 			-- physical/consumed count if the counter is somehow unavailable.
-			local bought = ( ld and ( ld.scepter2Bought or bot.scepter2Bought or 0 ) ) or 0
+			local bought = ( ld and ld.scepter2Bought ) or 0
 			result = ( bought >= 2 ) or ( ( heroCount + bearCount ) >= 2 )
 		else
 			result = ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
