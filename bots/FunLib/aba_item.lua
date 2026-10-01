@@ -1223,11 +1223,11 @@ function Item.IsItemInTargetHero( sItemName, bot )
 			end
 			print( "[LD scepter2][Trace] unit=" .. tostring(bot:GetUnitName())
 				.. " isLD=" .. tostring(isLD)
-				.. " heroC=" .. tostring(heroCount)
-				.. " bearC=" .. tostring(bearCount)
-				.. " bearNil=" .. tostring(bear == nil)
+				.. " heroBlessingCount=" .. tostring(heroCount)
+				.. " bearBlessingCount=" .. tostring(bearCount)
+				.. " bearNil(No bear is alive)=" .. tostring(bear == nil)
 				.. " heroHasScepter=" .. tostring(bot:HasScepter())
-				.. " heroConsumedMod=" .. tostring(bot:HasModifier('modifier_item_ultimate_scepter_consumed'))
+				.. " heroHasModifierOfScepterConsumed=" .. tostring(bot:HasModifier('modifier_item_ultimate_scepter_consumed'))
 				.. " bought=" .. tostring(ld and ld.scepter2Bought or -1)
 				.. " heroSlots=[" .. table.concat(slots, ",") .. "]"
 				.. " bearSlots=[" .. tostring(bearSlots) .. "]"
