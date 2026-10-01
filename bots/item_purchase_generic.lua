@@ -1350,18 +1350,18 @@ function ItemPurchaseThink()
 	then
 		if Item.IsItemInHero( bot.currBuyingItemInPurchaseList )
 			or bot.currBuyingItemInPurchaseList == "item_aghanims_shard"
-			or (
-				bot == Utils.GetLoneDruid(bot).hero
-				and Utils.GetLoneDruid(bot).bear ~= nil
-				and Item.GetItemTotalWorthInSlots(Utils.GetLoneDruid(bot).bear) < 28000
-				and Item.IsItemInTargetHero(bot.currBuyingItemInPurchaseList, Utils.GetLoneDruid(bot).bear)
-				and bot.currBuyingItemInPurchaseList ~= 'item_ultimate_scepter_2' -- LD buys his own Blessing even after the bear already has one
-				)
-				or (
-				bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2'
-				and bot:GetUnitName() == 'npc_dota_hero_lone_druid'
-				and ( ( Utils.GetLoneDruid(bot) or {} ).scepter2Bought or 0 ) >= 1
-				) -- advance each Blessing occurrence once its recipe is bought (list is empty here)
+			-- or (
+			-- 		bot == Utils.GetLoneDruid(bot).hero
+			-- 		and Utils.GetLoneDruid(bot).bear ~= nil
+			-- 		and Item.GetItemTotalWorthInSlots(Utils.GetLoneDruid(bot).bear) < 28000
+			-- 		and Item.IsItemInTargetHero(bot.currBuyingItemInPurchaseList, Utils.GetLoneDruid(bot).bear)
+			-- 		and bot.currBuyingItemInPurchaseList ~= 'item_ultimate_scepter_2' -- LD buys his own Blessing even after the bear already has one
+			-- 	)
+			-- 	or (
+			-- 		bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2'
+			-- 		and bot:GetUnitName() == 'npc_dota_hero_lone_druid'
+			-- 		and ( ( Utils.GetLoneDruid(bot) or {} ).scepter2Bought or 0 ) >= 1
+			-- 	) -- advance each Blessing occurrence once its recipe is bought (list is empty here)
 				or bot.countInvCheck > (GetGameMode() == GAMEMODE_ARDM and 30 or 3 * 60) -- ARDM: 30s timeout, normal: 3min
 				then
 					print( "[LD scepter2] This is a probe. Bot " .. bot:GetUnitName() .. " already has " .. bot.currBuyingItemInPurchaseList)
