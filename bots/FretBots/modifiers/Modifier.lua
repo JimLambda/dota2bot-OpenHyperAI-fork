@@ -64,7 +64,7 @@ function Modifier:Initialize()
         end
     end
 	Debug:Print('Registering modifier event for bots.')
-    ListenToGameEvent("npc_spawned", Dynamic_Wrap(Modifier, 'OnNPCSpawned'), Modifier)
+	ListenToGameEvent("npc_spawned", Dynamic_Wrap(Modifier, 'OnNPCSpawned'), Modifier)
 end
 
 function Modifier:OnNPCSpawned(event)

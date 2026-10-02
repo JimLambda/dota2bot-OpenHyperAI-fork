@@ -188,3 +188,171 @@ if LinkLuaModifier ~= nil then
 		end
 	end
 end
+
+--=============================================================================
+-- Rattletrap "consume Chainmail" consumer.
+--
+-- The custom bot scripts (bots/ability_item_usage_generic.lua and
+-- bots/item_purchase_generic.lua) run in the bot Lua VM, whose unit handles expose
+-- neither RemoveItem() nor AddNewModifier(). A bot can therefore buy Chainmail
+-- forever but can never destroy it or gain the armor. This file is the game VM
+-- entry point and does have the full unit API, so the consuming lives here.
+--
+-- Every Chainmail that shows up on a Rattletrap (main inventory, backpack or stash)
+-- is destroyed and replaced with one permanent +5 armor stack.
+--
+-- Two engine quirks make this harder than it looks, and both are handled below:
+--   1. LinkLuaModifier() never reports failure. It leaves the name unregistered, and
+--      AddNewModifier() then still hands back a placeholder modifier - so HasModifier()
+--      is TRUE - while printing "Attempted to create unknown modifier type". Neither the
+--      return value nor HasModifier() proves anything; only the hero's armor going up does.
+--   2. Which (path, argument-order) form the engine accepts is not knowable up front, so
+--      every plausible form is tried in turn and only a working one is kept.
+--=============================================================================
+local OHA_CHAINMAIL_HERO = "npc_dota_hero_rattletrap"
+local OHA_CHAINMAIL_ITEM = "item_chainmail"
+local OHA_CHAINMAIL_MOD = "modifier_rattletrap_chainmail_consumed"
+-- Candidate registrations. Re-registering the same modifier name replaces the previous
+-- entry, which is what makes probing possible. Paths are relative to scripts/vscripts.
+-- "legacy" means the raw engine function called with the old (name, name, file) order.
+local OHA_CHAINMAIL_TRIES = {
+	{ path = "bots/FretBots/modifiers/" .. OHA_CHAINMAIL_MOD },
+	{ path = "bots/FretBots/modifiers/" .. OHA_CHAINMAIL_MOD .. ".lua" },
+	{ path = "game/" .. OHA_CHAINMAIL_MOD },
+	{ path = "game/" .. OHA_CHAINMAIL_MOD .. ".lua" },
+	{ path = "FretBots/modifiers/" .. OHA_CHAINMAIL_MOD },
+	{ path = "FretBots/modifiers/" .. OHA_CHAINMAIL_MOD .. ".lua" },
+	{ path = "bots/FretBots/modifiers/" .. OHA_CHAINMAIL_MOD, legacy = true },
+	{ path = "bots/FretBots/modifiers/" .. OHA_CHAINMAIL_MOD .. ".lua", legacy = true },
+}
+local OHA_ChainmailTotals = {}
+local OHA_ModReady = false
+local OHA_ProbeTicks = 0
+local OHA_NextTry = 1
+
+function OHA_FindHeroesNamed( sUnitName )
+	local tHeroes = {}
+	if PlayerResource == nil then return tHeroes end
+	for nPlayerID = 0, 23 do
+		local hHero = nil
+		pcall( function() hHero = PlayerResource:GetSelectedHeroEntity( nPlayerID ) end )
+		if hHero == nil and PlayerResource.GetPlayer ~= nil then
+			pcall( function()
+				local pPlayer = PlayerResource:GetPlayer( nPlayerID )
+				if pPlayer ~= nil then hHero = pPlayer:GetAssignedHero() end
+			end )
+		end
+		if hHero ~= nil and hHero.GetUnitName ~= nil and hHero:GetUnitName() == sUnitName then
+			table.insert( tHeroes, hHero )
+		end
+	end
+	return tHeroes
+end
+
+function OHA_GetArmor( hHero )
+	local nArmor = nil
+	pcall( function() nArmor = hHero:GetPhysicalArmorValue( false ) end )
+	if nArmor == nil then
+		pcall( function() nArmor = hHero:GetPhysicalArmorBaseValue() end )
+	end
+	return nArmor
+end
+
+-- Registers the modifier name against one candidate and proves it by measuring armor.
+-- A candidate only counts as working if the hero's armor really rises by ~5.
+function OHA_TryChainmailModifier( hHero, tTry )
+	if tTry.legacy and LinkLuaModifier_Engine ~= nil then
+		pcall( function() LinkLuaModifier_Engine( OHA_CHAINMAIL_MOD, OHA_CHAINMAIL_MOD, tTry.path ) end )
+	else
+		local nType = LUA_MODIFIER_MOTION_NONE
+		if nType == nil then nType = 0 end
+		pcall( LinkLuaModifier, OHA_CHAINMAIL_MOD, tTry.path, nType )
+	end
+
+	local nBefore = OHA_GetArmor( hHero )
+	pcall( function() hHero:AddNewModifier( hHero, nil, OHA_CHAINMAIL_MOD, {} ) end )
+	local nAfter = OHA_GetArmor( hHero )
+	local bOk = nBefore ~= nil and nAfter ~= nil and ( nAfter - nBefore ) >= 4.9
+	if not bOk then
+		-- The registration did not take, so AddNewModifier only left a placeholder behind.
+		pcall( function() hHero:RemoveModifierByName( OHA_CHAINMAIL_MOD ) end )
+	end
+	print( "[chainmail-consume] try path=" .. tTry.path .. ( tTry.legacy and " legacy" or "" )
+		.. " armor=" .. tostring(nBefore) .. "->" .. tostring(nAfter) .. " ok=" .. tostring(bOk) )
+	return bOk
+end
+
+function OHA_ConsumeChainmail()
+	local nConsumed = 0
+	for _, hHero in ipairs( OHA_FindHeroesNamed( OHA_CHAINMAIL_HERO ) ) do
+		if hHero:IsAlive() then
+			-- 0-5 main inventory, 6-8 backpack, 9-14 stash.
+			local nSlot = -1
+			for s = 0, 14 do
+				local hItem = hHero:GetItemInSlot( s )
+				if hItem ~= nil and hItem:GetName() == OHA_CHAINMAIL_ITEM then
+					nSlot = s
+					break
+				end
+			end
+			-- While no candidate works yet, sweep them only every ~5s so a failing
+			-- registration does not turn into a per-tick stream of engine errors.
+			if nSlot >= 0 and OHA_ProbeTicks <= 0 then
+				if not OHA_ModReady then
+					for _ = 1, #OHA_CHAINMAIL_TRIES do
+						if OHA_TryChainmailModifier( hHero, OHA_CHAINMAIL_TRIES[OHA_NextTry] ) then
+							OHA_ModReady = true
+							OHA_ProbeTicks = 0
+							break
+						end
+						OHA_NextTry = OHA_NextTry + 1
+						if OHA_NextTry > #OHA_CHAINMAIL_TRIES then OHA_NextTry = 1 end
+					end
+					if not OHA_ModReady then
+						-- A failed sweep must never destroy the Chainmail.
+						OHA_ProbeTicks = 10
+						print( "[chainmail-consume] no working registration yet, item kept" )
+					end
+				else
+					hHero:AddNewModifier( hHero, nil, OHA_CHAINMAIL_MOD, {} )
+				end
+
+				if OHA_ModReady then
+					local hItem = hHero:GetItemInSlot( nSlot )
+					if hItem ~= nil and hItem:GetName() == OHA_CHAINMAIL_ITEM then
+						hHero:RemoveItem( hItem )
+						local nKey = 0
+						pcall( function() nKey = hHero:entindex() end )
+						OHA_ChainmailTotals[nKey] = ( OHA_ChainmailTotals[nKey] or 0 ) + 1
+						nConsumed = nConsumed + 1
+						print( "[chainmail-consume] slot=" .. tostring(nSlot)
+							.. " total=" .. tostring(OHA_ChainmailTotals[nKey]) )
+					end
+				end
+			end
+		end
+	end
+	return nConsumed
+end
+
+function OHA_ChainmailStart()
+	if _G.OHA_ChainmailActive then return true end
+	if GameRules == nil or GameRules.GetGameModeEntity == nil then return false end
+	local gm = GameRules:GetGameModeEntity()
+	if gm == nil then return false end
+	_G.OHA_ChainmailActive = true
+
+	gm:SetThink( function()
+		if not OHA_ModReady then OHA_ProbeTicks = OHA_ProbeTicks - 1 end
+		OHA_ConsumeChainmail()
+		return 0.5
+	end, "OHA_ChainmailConsume", 0.5 )
+	print( "[chainmail-consume] game VM hook active (" .. OHA_CHAINMAIL_HERO .. " -> +5 armor per Chainmail)" )
+	return true
+end
+
+if not OHA_ChainmailStart() then
+	pcall( function()
+		ListenToGameEvent( "game_rules_state_change", function() OHA_ChainmailStart() end, nil )
+	end )
+end

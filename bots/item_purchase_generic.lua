@@ -37,15 +37,27 @@ bot.SecretShop = false
 local sPurchaseList = BotBuild['sBuyList']
 local sItemSellList = BotBuild['sSellList']
 
--- Rattletrap "consume Chainmail" feature. Load the Customize hero config so we can
--- read Hero.ConsumeChainmail, and register the custom stacking-armor modifier used
--- when a Chainmail is consumed (Chainmail is not a real consumable, so we simulate it).
-local _heroFile = string.gsub(botName, "npc_dota_", "")
-local _okCustom, _custom = pcall( dofile, GetScriptDirectory() .. "/Customize/hero/" .. _heroFile .. ".lua" )
+-- Rattletrap "consume Chainmail" feature. Load the Customize hero config so we can read
+-- Hero.ConsumeChainmail. The Chainmail itself is bought here forever once the build is
+-- complete; destroying it and granting the +5 armor stack happens in the game VM
+-- (game/gameinit.lua), because this script runs in the bot Lua VM.
+local _heroFile = string.gsub(botName, "npc_dota_hero_", "")
+-- NOTE: Dota's dofile uses module-path resolution (dots become '/', '.lua' auto-appended),
+-- so we must pass the path WITHOUT the '.lua' extension — otherwise "rattletrap.lua"
+-- becomes "rattletrap/lua.lua" and the load always fails.
+local _chainmailCfgPath = GetScriptDirectory() .. "/Customize/hero/" .. _heroFile
+local _okCustom, _custom = pcall( dofile, _chainmailCfgPath )
 bot._customBuild = ( _okCustom and _custom ) or nil
 bot._consumeChainmail = bot._customBuild ~= nil and bot._customBuild.ConsumeChainmail or false
 bot._buildComplete = false
-pcall( function() LinkLuaModifier( "modifier_rattletrap_chainmail_consumed", "FretBots/modifiers/modifier_rattletrap_chainmail_consumed.lua", LUA_MODIFIER_MOTION_NONE ) end )
+-- [chainmail-load] one-time diagnostic: shows whether the Customize hero config loaded
+-- and whether ConsumeChainmail was read. If ok=false, `_custom` holds the error message.
+print( "[chainmail-load] unit=" .. tostring(botName) .. " file=" .. _heroFile
+	.. " path=" .. _chainmailCfgPath
+	.. " ok=" .. tostring(_okCustom)
+	.. " customType=" .. type(_custom)
+	.. " raw=" .. tostring(_custom)
+	.. " consumeChainmail=" .. tostring(bot._consumeChainmail) )
 
 if sPurchaseList == nil then
 	print("[ERROR] Can't load purchase list for: " .. botName)
@@ -1385,13 +1397,45 @@ function ItemPurchaseThink()
 		end
 	end
 
+	-- [chainmail-trace] throttled snapshot (every 5s) so we can see where the loop is stuck.
+	if bot:GetUnitName() == "npc_dota_hero_rattletrap"
+	and currentTime - ( bot._cmLastTrace or -999 ) >= 5 then
+		bot._cmLastTrace = currentTime
+		local parts = {}
+		for i = 1, #bot.purchaseListInReverseOrder do
+			parts[#parts + 1] = tostring(bot.purchaseListInReverseOrder[i])
+		end
+		print( "[chainmail-trace] t=" .. string.format("%.0f", currentTime)
+			.. " consume=" .. tostring(bot._consumeChainmail)
+			.. " buildDone=" .. tostring(bot._buildComplete)
+			.. " listN=" .. #bot.purchaseListInReverseOrder
+			.. " list={" .. table.concat(parts, ",") .. "}"
+			.. " target=" .. tostring(bot.currBuyingItemInPurchaseList)
+			.. " basicN=" .. #bot.currBuyingBasicItemList
+			.. " rebuildCount=" .. tostring(bot.rebuildCount)
+			.. " hasChainmail=" .. tostring(bot:FindItemSlot("item_chainmail") >= 0)
+			.. " gold=" .. tostring(bot:GetGold()) )
+	end
+
 	if #bot.purchaseListInReverseOrder == 0 then
+		-- An empty purchase list means the real build is fully bought.
+		bot._buildComplete = true
 		-- Rattletrap: keep buying Chainmail forever once the build is done.
 		if bot._consumeChainmail
 		and bot._buildComplete
 		and bot:GetUnitName() == "npc_dota_hero_rattletrap" then
 			bot.purchaseListInReverseOrder[1] = "item_chainmail"
+			if currentTime - ( bot._cmLastInject or -999 ) >= 5 then
+				bot._cmLastInject = currentTime
+				print( "[chainmail-trace] INJECTED item_chainmail into empty list (build complete)" )
+			end
 		else
+			if bot:GetUnitName() == "npc_dota_hero_rattletrap"
+			and currentTime - ( bot._cmLastNoInject or -999 ) >= 5 then
+				bot._cmLastNoInject = currentTime
+				print( "[chainmail-trace] list empty but NOT injecting. consume=" .. tostring(bot._consumeChainmail)
+					.. " buildDone=" .. tostring(bot._buildComplete) )
+			end
 			_resetCurrentTarget()
 			bot:SetNextItemPurchaseValue( 0 )
 			return
@@ -1489,7 +1533,11 @@ function ItemPurchaseThink()
 		elseif currentTime > bot.lastInvCheck + 1.0 then
 			bot.lastInvCheck = currentTime
 			-- if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 and botName ~= "npc_dota_hero_lone_druid" then
-			if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 then
+			-- Rattletrap's consumed Chainmail must be re-bought forever, so don't let the
+			-- rebuild-attempt cap stop the loop.
+			local bInfiniteChainmail = bot._consumeChainmail
+				and bot.currBuyingItemInPurchaseList == "item_chainmail"
+			if ( bot.rebuildCount < 3 or bInfiniteChainmail ) and botCourierValue == 0 and botStashValue == 0 then
 				bot.rebuildCount = bot.rebuildCount + 1
 				-- try rebuild it based on what's actually missing
 				local newList = Item.GetReducedPurchaseList(bot, bot.currBuyingBasicItemRefList)
