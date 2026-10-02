@@ -78,6 +78,17 @@ local initSmoke = false
 
 local currentTime, botLevel, botGold, botWorth, botMode, botHP, botCourierValue, botStashValue, botDistanceFromFountain
 
+local last_print_attempt_time = -999
+local function printAntiSpam(string_text)
+	local current_time = DotaTime()
+	if current_time - last_print_attempt_time < 0.5 then
+		return  -- print nothing.
+	end
+	print(string_text)
+	last_print_attempt_time = current_time
+	return string_text
+end
+
 -- utilities for counting/need detection
 local function _countOwnedEverywhere(unit, itemName)
 	local count = 0
@@ -149,6 +160,7 @@ local function _stillNeeds(itemName)
 		print("This is a probe 2. Bot: " .. bot:GetUnitName() .. ". itemName: " .. itemName)
 		local ld = Utils.GetLoneDruid(bot)
 		local bought = ( ld and ( ld.scepter2Bought or 0 ) ) or 0
+		print("[LD scepter2] Bot: " .. bot:GetUnitName() .. ". bought: " .. bought .. ". itemName: " .. itemName)
 		return bought < 2
 	end
 	if not bot.currBuyingRequiredCounts then return true end
@@ -410,7 +422,12 @@ local function TurboModeGeneralPurchase()
 
 	-- ensure the current head is still needed (dedupe)
 	local neededHead = _popIfNoLongerNeeded()
-	if not neededHead then return end
+	if not neededHead then
+		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+			print("[TurboModeGeneralPurchase] neededHead is nil")
+		end
+		return
+	end
 	bot.currBuyingBasicItem = neededHead
 	if _antiSpamPurchase(bot.currBuyingBasicItem) then return end
 
@@ -454,9 +471,12 @@ local function TurboModeGeneralPurchase()
 		end
 	end
 
-	if bot.currBuyingBasicItem == "item_ultimate_scepter_2"
-	or bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2" then
-		print("This is a probe 3. Bot: " .. bot:GetUnitName() .. ". currBuyingBasicItem: " .. bot.currBuyingBasicItem)
+	if (bot.currBuyingBasicItem == "item_ultimate_scepter_2"
+	or bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2") 
+	and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+			print("This is a probe 3. Bot: " .. bot:GetUnitName() .. ". currBuyingBasicItem: " .. bot.currBuyingBasicItem)
+		end
 		local ld2 = Utils.GetLoneDruid(bot)
 		local hHas = bot:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(bot,'item_ultimate_scepter_2')>0
 		local bHas = (ld2 and ld2.bear ~= nil) and (ld2.bear:HasModifier('modifier_item_ultimate_scepter_consumed') or _countOwnedEverywhere(ld2.bear,'item_ultimate_scepter_2')>0) or false
@@ -488,16 +508,22 @@ local function TurboModeGeneralPurchase()
 	-- Druid's 2nd Blessing (which would otherwise never be purchased once a large
 	-- late-game build fills the stash while the hero is away from base).
 	local bSlotGateOk = bIsLdBlessing or bot:GetItemInSlot( 14 ) == nil
-	print("This is a probe 4. bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem .. " bSlotGateOk: " .. tostring(bSlotGateOk) .. " bot.currBuyingBasicItem == item_ultimate_scepter_2: " .. tostring(bot.currBuyingBasicItem == "item_ultimate_scepter_2") .. ". bIsLdBlessing: " .. tostring(bIsLdBlessing))
+	if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+		print("This is a probe 4. Bot " .. bot:GetUnitName() .. "'s bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem .. " bSlotGateOk: " .. tostring(bSlotGateOk) .. " bot.currBuyingBasicItem == item_ultimate_scepter_2: " .. tostring(bot.currBuyingBasicItem == "item_ultimate_scepter_2") .. ". bIsLdBlessing: " .. tostring(bIsLdBlessing))
+	end
 	if bIsLdBlessing and not bSlotGateOk then
 		print( "[LD scepter2][turbo] STASH-FULL bypass for " .. bot.currBuyingBasicItem
 			.. " slot14nil=" .. tostring( bot:GetItemInSlot( 14 ) == nil ) )
 	end
 	if bot:GetGold() >= cost and bSlotGateOk then
-		print("Bot " .. bot:GetUnitName() .. " is going to purchase item: " .. bot.currBuyingBasicItem)
+		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+			print("Bot " .. bot:GetUnitName() .. " is going to purchase item: " .. bot.currBuyingBasicItem)
+		end
 		if bot:ActionImmediate_PurchaseItem( bot.currBuyingBasicItem ) == PURCHASE_ITEM_SUCCESS
 		then
-			print("Bot " .. bot:GetUnitName() .. " purchased item successfully! bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem)
+			if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+				print("Bot " .. bot:GetUnitName() .. " purchased item successfully! bot.currBuyingBasicItem: " .. bot.currBuyingBasicItem)
+			end
 			if bot.currBuyingBasicItem == "item_recipe_ultimate_scepter_2"
 			and bot:GetUnitName() == "npc_dota_hero_lone_druid" then
 				bot.scepter2Bought = ( bot.scepter2Bought or 0 ) + 1
@@ -1385,6 +1411,9 @@ function ItemPurchaseThink()
 
 	if #bot.currBuyingBasicItemList == 0
 	then
+		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+			print("[LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=" .. tostring(bot:GetUnitName()))
+		end
 		if Item.IsItemInHero( bot.currBuyingItemInPurchaseList )
 			or bot.currBuyingItemInPurchaseList == "item_aghanims_shard"
 			-- or (
@@ -1401,10 +1430,12 @@ function ItemPurchaseThink()
 			-- 	) -- advance each Blessing occurrence once its recipe is bought (list is empty here)
 				or bot.countInvCheck > (GetGameMode() == GAMEMODE_ARDM and 30 or 3 * 60) -- ARDM: 30s timeout, normal: 3min
 				then
-					print( "[LD scepter2] This is a probe. Bot " .. bot:GetUnitName() .. " already has " .. bot.currBuyingItemInPurchaseList)
+					if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+						print( "[LD scepter2] This is a probe. Bot " .. bot:GetUnitName() .. " already has " .. bot.currBuyingItemInPurchaseList)
+					end
 			-- skip it and continue next
 			bot.countInvCheck = 0
-			if bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2' then
+			if bot.currBuyingItemInPurchaseList == 'item_ultimate_scepter_2' and bot:GetUnitName() == 'npc_dota_hero_lone_druid' then
 				print( "[LD scepter2] GATE SKIPPED scepter_2 — unit=" .. tostring(bot:GetUnitName())
 					.. " HasScepter=" .. tostring(bot:HasScepter())
 					.. " IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
@@ -1413,7 +1444,8 @@ function ItemPurchaseThink()
 			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
 		elseif currentTime > bot.lastInvCheck + 1.0 then
 			bot.lastInvCheck = currentTime
-			if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 and botName ~= "npc_dota_hero_lone_druid" then
+			-- if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 and botName ~= "npc_dota_hero_lone_druid" then
+			if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 then
 				bot.rebuildCount = bot.rebuildCount + 1
 				-- try rebuild it based on what's actually missing
 				local newList = Item.GetReducedPurchaseList(bot, bot.currBuyingBasicItemRefList)
@@ -1424,16 +1456,28 @@ function ItemPurchaseThink()
 				end
 				-- refresh counts after rebuild
 				bot.currBuyingRequiredCounts = _buildRequiredCounts(bot.currBuyingBasicItemList)
+				if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+					print("[LD scepter2] GATE rebuildCount < 3 — unit=" .. tostring(bot:GetUnitName()) .. " bot.rebuildCount=" .. tostring(bot.rebuildCount) .. " botCourierValue=" .. tostring(botCourierValue) .. " botStashValue=" .. tostring(botStashValue) .. " botName=" .. tostring(botName) .. " newList=" .. tostring(newList) .. " bot.currBuyingBasicItemList=" .. tostring(bot.currBuyingBasicItemList) .. " bot.currBuyingRequiredCounts=" .. tostring(bot.currBuyingRequiredCounts) .. " bot.currBuyingItemInPurchaseList=" .. tostring(bot.currBuyingItemInPurchaseList) .. " bot.purchaseListInReverseOrder=" .. tostring(bot.purchaseListInReverseOrder) .. " bot.currBuyingBasicItemRefList=" .. tostring(bot.currBuyingBasicItemRefList) .. " bot.currBuyingItemInPurchaseList=" .. tostring(bot.currBuyingItemInPurchaseList))
+				end
 				_popIfNoLongerNeeded()
+				if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+					print("[LD scepter2] Just did _popIfNoLongerNeeded(). GATE rebuildCount < 3 — unit=" .. tostring(bot:GetUnitName()) .. " bot.rebuildCount=" .. tostring(bot.rebuildCount) .. " botCourierValue=" .. tostring(botCourierValue) .. " botStashValue=" .. tostring(botStashValue) .. " botName=" .. tostring(botName) .. " newList=" .. tostring(newList) .. " bot.currBuyingBasicItemList=" .. tostring(bot.currBuyingBasicItemList) .. " bot.currBuyingRequiredCounts=" .. tostring(bot.currBuyingRequiredCounts) .. " bot.currBuyingItemInPurchaseList=" .. tostring(bot.currBuyingItemInPurchaseList) .. " bot.purchaseListInReverseOrder=" .. tostring(bot.purchaseListInReverseOrder) .. " bot.currBuyingBasicItemRefList=" .. tostring(bot.currBuyingBasicItemRefList) .. " bot.currBuyingItemInPurchaseList=" .. tostring(bot.currBuyingItemInPurchaseList))
+				end
 			else
 				-- and can't finish even with lots of gold
 				if botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 and botGold >= 2000 then
 					bot.countInvCheck = bot.countInvCheck + 1
+					if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+						print("[LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=" .. tostring(bot:GetUnitName()) .. " botGold=" .. tostring(botGold) .. " GetItemCost(bot.currBuyingItemInPurchaseList)=" .. tostring(GetItemCost(bot.currBuyingItemInPurchaseList)) .. ". bot.countInvCheck=" .. tostring(bot.countInvCheck))
+					end
 				end
 			end
 		end
 	elseif #bot.currBuyingBasicItemList > 0
 	then
+		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
+			print("[LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=" .. tostring(bot:GetUnitName()))
+		end
 		if bot.currBuyingBasicItem == nil
 		then
 			bot.currBuyingBasicItem = _popIfNoLongerNeeded()

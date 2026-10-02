@@ -1,308 +1,8 @@
-[GCClient] Send msg 4511 (k_EMsgGCLANServerAvailable), 26 bytes
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 595 bytes
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 595 bytes
-[SOCache] CGCSOCacheSubscribedJob(owner=<Lobby:30043306320657525>) [in cache]
-CDOTAGCServerSystem::SOChanged setting match ID to 9024672204
-Received lobby with new match ID.  lobby_id=30043306320657525, match_id=9024672204
-[EngineServiceManager] Tearing off console log, will continue using suffix '.9024672204'
-[Server] PR:PrintRanks 4:[U:1:340766495] 0 (0)
-+++ CSODOTALobby.lobby_id: 30043306320657525
-+++ CSODOTALobby.all_members[0]: id: 76561198301032223
-+++ CSODOTALobby.all_members[0]: team: DOTA_GC_TEAM_GOOD_GUYS
-+++ CSODOTALobby.all_members[0]: slot: 5
-+++ CSODOTALobby.all_members[0]: leaver_status: DOTA_LEAVER_DISCONNECTED
-+++ CSODOTALobby.member_indices[0]: 0
-+++ CSODOTALobby.leader_id: 76561198301032223
-+++ CSODOTALobby.server_id: 90293843704001543
-+++ CSODOTALobby.game_mode: 23
-+++ CSODOTALobby.state: SERVERSETUP
-+++ CSODOTALobby.lobby_type: PRACTICE
-+++ CSODOTALobby.allow_cheats: true
-+++ CSODOTALobby.fill_with_bots: true
-+++ CSODOTALobby.game_name: "\350\266\205\347\272\247\345\235\221\351\230\237\345\217\213\'s lobby"
-+++ CSODOTALobby.team_details[0]: team_complete: false
-+++ CSODOTALobby.team_details[1]: team_complete: false
-+++ CSODOTALobby.server_region: 0
-+++ CSODOTALobby.cm_pick: DOTA_CM_RANDOM
-+++ CSODOTALobby.match_id: 9024672204
-+++ CSODOTALobby.allow_spectating: false
-+++ CSODOTALobby.bot_difficulty_radiant: BOT_DIFFICULTY_HARD
-+++ CSODOTALobby.leagueid: 0
-+++ CSODOTALobby.penalty_level_radiant: 0
-+++ CSODOTALobby.penalty_level_dire: 0
-+++ CSODOTALobby.series_type: 0
-+++ CSODOTALobby.radiant_series_wins: 0
-+++ CSODOTALobby.dire_series_wins: 0
-+++ CSODOTALobby.allchat: false
-+++ CSODOTALobby.dota_tv_delay: LobbyDotaTV_10
-+++ CSODOTALobby.lan: true
-+++ CSODOTALobby.extra_messages[0]: id: 8821
-+++ CSODOTALobby.extra_messages[0]: contents: "\010\000"
-+++ CSODOTALobby.visibility: DOTALobbyVisibility_Public
-+++ CSODOTALobby.previous_match_override: 0
-+++ CSODOTALobby.game_start_time: 1790870078
-+++ CSODOTALobby.pause_setting: LobbyDotaPauseSetting_Unlimited
-+++ CSODOTALobby.bot_difficulty_dire: BOT_DIFFICULTY_INVALID
-+++ CSODOTALobby.bot_radiant: 1
-+++ CSODOTALobby.bot_dire: 3246316298
-+++ CSODOTALobby.selection_priority_rules: k_DOTASelectionPriorityRules_Manual
-+++ CSODOTALobby.current_primary_event: EVENT_ID_DARK_CARNIVAL
-+++ CSODOTALobby.current_primary_event_for_display: EVENT_ID_DARK_CARNIVAL
-+++ CSODOTALobby.league_node_id: 0
-+++ CSODOTALobby.league_phase: 0
-+++ CSODOTALobby.requested_hero_ids[0]: 0
-+++ CSODOTALobby.requested_hero_ids[1]: 0
-+++ CSODOTALobby.requested_hero_ids[2]: 0
-+++ CSODOTALobby.requested_hero_ids[3]: 0
-+++ CSODOTALobby.requested_hero_ids[4]: 0
-+++ CSODOTALobby.requested_hero_ids[5]: 0
-+++ CSODOTALobby.requested_hero_ids[6]: 0
-+++ CSODOTALobby.requested_hero_ids[7]: 0
-+++ CSODOTALobby.requested_hero_ids[8]: 0
-+++ CSODOTALobby.requested_hero_ids[9]: 0
-+++ CSODOTALobby.requested_hero_ids[10]: 0
-+++ CSODOTALobby.requested_hero_ids[11]: 0
-+++ CSODOTALobby.with_scenario_save: false
-+++ CSODOTALobby.lobby_creation_time: 1790870033
-+++ CSODOTAServerLobby.extra_startup_messages[0]: id: 8869
-+++ CSODOTAServerLobby.extra_startup_messages[0]: contents: "\010\237\336\276\242\001\022\007\n\005\010:\020\254\002\032\010\010\221\305\003\020\222\305\003"
-[Server] CDOTA_PlayerResource: Initializing from lobby (main), player SteamID 76561198301032223 gcteam 0 slot 5 preferred PlayerID 4
-[Server] ActivateServerFromLobby - IsLan: YES, IsDedicatedServer: NO
-[Server] PR:SetPlayerName 4:[U:1:340766495] "超级坑队友"
-[Server] PlayerID 4 [U:1:340766495] team 2 input slot 4
-[Server] PlayerID 4 [U:1:340766495] assigned to team 2 on slot 4
-[Server] PR:SetPlusSubscriptionStatus 4:[U:1:340766495] IsPlusSubscriber:No
-[Server] PR:SetWasMVPLastGame 4:[U:1:340766495] WasMVPLastGame:No
-[Server] PR:SetFavoriteTeamPacked 4:[U:1:340766495] unFavTeamPacked:0
-SetLiveSpectatorDetails -1 2
-[Server] PR:SetEventInfo for event 19: 4:[U:1:340766495] Level:0 Points:0, PremiumPoints:0
-[Server] PR:SetEventInfo for event 26: 4:[U:1:340766495] Level:0 Points:0, PremiumPoints:0
-[Server] PR:SetEventInfo for event 39: 4:[U:1:340766495] Level:0 Points:0, PremiumPoints:0
-[Server] PR:SetEventInfo for event 54: 4:[U:1:340766495] Level:0 Points:0, PremiumPoints:0
-[Server] PR:SetEventInfo for event 58: 4:[U:1:340766495] Level:1 Points:1000, PremiumPoints:0
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
-[GCClient] Send msg 4506 (k_EMsgGCServerAvailable), 8 bytes
-Server:  Running [192.168.184.1:27015]
-Client:  Connected [127.0.0.1:27015] [last packet 0.017 sec ago]
-[EngineServiceManager] ----- Status -----
-[EngineServiceManager] @ Current  :  game
-[HLTV Server] --- SourceTV[0] Status ---
-[HLTV Server] Online 00:35, FPS 33.3, Version 10835 (Windows)
-[HLTV Server] Master "SourceTV", delay 10, frames 241 / ticks 481
-[HLTV Server] Game Time 00:30, Mod "dota", Map "start"
-[HLTV Server] Local IP 192.168.184.1:27020, KB/sec In 0.0, Out 0.0
-[HLTV Server] Local Slots 64, Spectators 0, Proxies 0
-[HLTV Server] Total Slots 64, Spectators 0, Proxies 0
-[HLTV Server] # userid name uniqueid connected ping loss state rate adr
-[HLTV Server] #end
-[Client] source   : slot 0
-[Client] version  : 48/48 10835 insecure  public
-[Client] steamid  : [A:1:3210851335:51653] (90293843704001543)
-[Client] players  : 1 humans, 1 bots (0 max) (not hibernating) (unreserved)
-[Client] ---------spawngroups----
-[Client] loaded spawngroup(  1)  : SV:  [1: start | main lump | mapload]
-[Client] ---------players--------
-[Client]   id     time ping loss      state   rate name
-[Client]    0    00:38    0    0     active  80000 '超级坑队友'
-[Client]    1      BOT    0    0     active      0 'SourceTV'
-[Client] Lobby MatchID: 9024672204
-[Client]       ID: 006abc3a591efc75
-[Client]       Type: PRACTICE
-[Client]       State: SERVERSETUP
-[Client]       GameMode: DOTA_GAMEMODE_TURBO
-[Client] GameState: DOTA_GAMERULES_STATE_INIT Times: Transition=0.00 Current=40.90
-[Client] #end
-[Server] SV:  "超级坑队友<0><[U:1:340766495]><>" STEAM USERID validated
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 633 bytes
-[Console] Saving lobby data to disk.
-WriteSteamRemoteStorageFileAsync( "scripts/dota_local_disk_lobby_data.txt" ) -> at 4032.756
-Telling Steam not to update the app for the next 900 seconds
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 633 bytes
---- CSODOTALobby.all_members[0]: leaver_status: DOTA_LEAVER_DISCONNECTED
---- CSODOTALobby.state: SERVERSETUP
-+++ CSODOTALobby.state: RUN
-+++ CSODOTALobby.connect: "111.31.162.12:27015 192.168.184.1:27015"
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD'
-CDOTAGameRules::State_Enter_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 0/1
---- Sent CMsgGameServerInfo to GC
-server_public_ip_addr: 1864344076
-server_private_ip_addr: 3232282625
-server_port: 27015
-server_tv_port: 27020
-server_key: ""
-server_hibernation: false
-server_type: GAME
-server_region: 0
-server_loadavg: 0.157157406
-server_tv_broadcast_time: 31.2333355
-server_game_time: -45
-relay_slots_max: 64
-relays_connected: 0
-relay_clients_connected: 0
-tv_secret_code: 16302336914859031300
-server_version: 6942
-server_cluster: 0
-assigned_server_tv_port: 27020
-allow_custom_games: BOTH
-build_version: 6942
-
----
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 4.5s ago, urgency is 0.0s
-game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-first_blood_happened: false
-send_reason: GAME_STATE
-radiant_kills: 0
-dire_kills: 0
-radiant_lead: 0
-building_state: 19138340
-
-CAsyncWriteInProgress::OnComplete( "scripts/dota_local_disk_lobby_data.txt" ) -> Success at 4032.772
-WriteSteamRemoteStorageFileAsync( "cfg/chat.cfg" ) -> at 4032.774
-[GCClient] Send msg 7272 (k_EMsgGCLeaveChatChannel), 13 bytes
-CAsyncWriteInProgress::OnComplete( "cfg/chat.cfg" ) -> Success at 4032.777
-[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 0/1. m_waitingForPlayersState: 0
-CDOTAGameRules::WaitForPlayersSuccess: Loaded/expected players: 1/1
-S:Gamerules: WAIT_FOR_PLAYERS_TO_LOAD entering substate EWFPS_Success
-C:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD'
-C_DOTAGamerules::State_Enter_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1
-[Client] LoadingDisplay changed from LOADING to WAITING_FOR_PLAYERS (map="start")
-[Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-[Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 42 bytes
-[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 1604 bytes
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-[GCClient] Recv msg 7014 (k_EMsgGCOtherLeftChannel), 26 bytes
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 639 bytes
-+++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-+++ CSODOTALobby.first_blood_happened: false
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-CDOTAGameRules::State_Think_WAIT_FOR_PLAYERS_TO_LOAD: Loaded/expected players: 1/1. m_waitingForPlayersState: 1
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP'
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PLAYER_DRAFT'
-ClientPutInServer create new player controller [LQD.miCKe.OHA (Bot)]
-[Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 0 FakeClient=1, preferred PlayerID = 0
-ClientPutInServer create new player controller [LQD.Nisha.OHA (Bot)]
-[Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 1 FakeClient=1, preferred PlayerID = 1
-ClientPutInServer create new player controller [LQD.zai.OHA (Bot)]
-[Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 2 FakeClient=1, preferred PlayerID = 2
-ClientPutInServer create new player controller [LQD.Boxi.OHA (Bot)]
-[Server] CDOTA_PlayerResource: Adding player SteamID 0 to PlayerID 3 FakeClient=1, preferred PlayerID = 3
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
-SV: Started streaming map dota spawngroup 2
-Muted Players: 
-[GCClient] Send msg 8870 (k_EMsgServerToGCLobbyInitialized), 8 bytes
-Starting replay recording in 10 seconds...
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 1.0s ago, urgency is 0.0s
-game_state: DOTA_GAMERULES_STATE_HERO_SELECTION
-first_blood_happened: false
-send_reason: GAME_STATE
-radiant_kills: 0
-dire_kills: 0
-radiant_lead: 0
-building_state: 19138340
-
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
-Creating ingame event for event 0, but no event definition?
-C:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
-[Client] LoadingDisplay changed from WAITING_FOR_PLAYERS to NONE (map="start")
-[Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_HERO_SELECTION
-[Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_HERO_SELECTION
-[SndOperators] Operator Error: Event valve_dota_001.music.ui_hero_select: CSosOperatorConvar
-[SndOperators] Warning: Unable to acquire convar value: dota_music_enable_spectator_mode
-[Client] PregameHud - bIsPreloading is now 0
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 607 bytes
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 607 bytes
---- CSODOTAServerLobby.extra_startup_messages[0]: id: 8869
---- CSODOTAServerLobby.extra_startup_messages[0]: contents: "\010\237\336\276\242\001\022\007\n\005\010:\020\254\002\032\010\010\221\305\003\020\222\305\003"
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 607 bytes
---- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_WAIT_FOR_PLAYERS_TO_LOAD
-+++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_HERO_SELECTION
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 50.272207ms
-[Server] Unable to load grid nav for world "prefabs/promotional_radiant_fountain"
-[Server] Unable to load grid nav for world "prefabs/promotional_dire_fountain"
-[Server] PR:SetSelectedHero 0:[I:0:0] npc_dota_hero_lone_druid(80)
-[Client] Unable to load grid nav for world "prefabs/promotional_radiant_fountain" (ERROR_FILEOPEN: File not found)
-[Client] Unable to load grid nav for world "prefabs/promotional_dire_fountain" (ERROR_FILEOPEN: File not found)
-[AnimResource]  models/effects/waterfall_02.vmdl : Animations loaded but no animation data found
-[VScript] ==== top 5 heroes for team: Radiant pos: 2 id: 1 ====
-[VScript] 1	0.825	npc_dota_hero_mars
-[VScript] 2	0.675	npc_dota_hero_lion
-[VScript] 3	0.675	npc_dota_hero_phantom_lancer
-[VScript] 4	0.675	npc_dota_hero_windrunner
-[VScript] 5	0.525	npc_dota_hero_lich
-[Server] PR:SetSelectedHero 1:[I:0:0] npc_dota_hero_lion(26)
-[VScript] ==== top 5 heroes for team: Radiant pos: 3 id: 2 ====
-[VScript] 1	1.275	npc_dota_hero_centaur
-[VScript] 2	1.2	npc_dota_hero_axe
-[VScript] 3	0.975	npc_dota_hero_beastmaster
-[VScript] 4	0.825	npc_dota_hero_slardar
-[VScript] 5	0.825	npc_dota_hero_mars
-[Server] PR:SetSelectedHero 2:[I:0:0] npc_dota_hero_centaur(96)
-[VScript] ==== top 5 heroes for team: Radiant pos: 4 id: 3 ====
-[VScript] 1	0.9	npc_dota_hero_snapfire
-[VScript] 2	0.65	npc_dota_hero_phoenix
-[VScript] 3	0.525	npc_dota_hero_witch_doctor
-[VScript] 4	0.45	npc_dota_hero_shadow_demon
-[VScript] 5	0.45	npc_dota_hero_silencer
-[Server] PR:SetSelectedHero 3:[I:0:0] npc_dota_hero_silencer(75)
 [HLTV Server] Recording SourceTV replay from HLTVServerAsync:
-playdemo replays/auto-20261001-2354-start-_______________.dem
---- Sent CMsgGameServerInfo to GC
-server_public_ip_addr: 1864344076
-server_private_ip_addr: 3232282625
-server_port: 27015
-server_tv_port: 27020
-server_key: ""
-server_hibernation: false
-server_type: GAME
-server_region: 0
-server_loadavg: 0.0991966948
-server_tv_broadcast_time: 42.3333359
-server_game_time: -45
-relay_slots_max: 64
-relays_connected: 0
-relay_clients_connected: 0
-tv_secret_code: 16302336914859031300
-server_version: 6942
-server_cluster: 0
-assigned_server_tv_port: 27020
-allow_custom_games: BOTH
-build_version: 6942
-
----
-[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-[Server] PR:SetSelectedHero 4:[U:1:340766495] npc_dota_hero_magnataur(97)
+playdemo replays/auto-20261002-1110-start-_______________.dem
+[Server] PR:SetSelectedHero 4:[U:1:340766495] npc_dota_hero_centaur(96)
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 10.5s ago, urgency is 0.0s
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 11.1s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
 first_blood_happened: false
 send_reason: GAME_STATE
@@ -316,25 +16,29 @@ building_state: 19138340
 C:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_STRATEGY_TIME
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_STRATEGY_TIME
-[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 63.874173ms
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 607 bytes
+Job CDOTA_UI_GuideBrowser::EventShowGuide has spent >3.000ms without yielding: 9.816ms
+[WorldRenderer] CWorldRendererMgr::ServiceWorldRequests long frame: 55.058680ms
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_HERO_SELECTION
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
 [GCClient] Recv msg 8331 (k_EMsgServerToGCRequestPlayerRecentAccomplishmentsResponse), 19 bytes
 [Entity System] Entity hero_camera [point_camera]: unrecognized parent "loadout_camera_model"
-[GCClient] Send msg 8729 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatch), 117 bytes
-[GCClient] Recv msg 8730 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse), 304 bytes
-Job CDOTA_UI_GuideBrowser::EventShowGuide has spent >3.000ms without yielding: 11.748ms
+[Localization System] CLocalize::CompileString failed to localize: '#DOTA_Tooltip_CurrentStats_Header'
+[Localization System] CLocalize::ConstructString failed to localize: '#DOTA_Tooltip_Ability_centaur_return_SummaryDescription'
+[Localization System] CLocalize::ConstructString failed to localize: '#DOTA_Tooltip_Ability_centaur_stampede_SummaryDescription'
+[Localization System] CLocalize::ConstructString failed to localize: '#DOTA_Tooltip_Ability_centaur_stampede_SummaryDescription'
+[GCClient] Send msg 8729 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatch), 125 bytes
+[GCClient] Recv msg 8730 (k_EMsgClientToGCRequestAccountGuildPersonaInfoBatchResponse), 282 bytes
 [Server] PR:SetSelectedHeroFacet 0:[I:0:0] (npc_dota_hero_lone_druid:(null))
-[Server] PR:SetSelectedHeroFacet 1:[I:0:0] (npc_dota_hero_lion:(null))
-[Server] PR:SetSelectedHeroFacet 2:[I:0:0] (npc_dota_hero_centaur:(null))
-[Server] PR:SetSelectedHeroFacet 3:[I:0:0] (npc_dota_hero_silencer:(null))
-[Server] PR:SetSelectedHeroFacet 4:[U:1:340766495] (npc_dota_hero_magnataur:(null))
+[Server] PR:SetSelectedHeroFacet 1:[I:0:0] (npc_dota_hero_windrunner:(null))
+[Server] PR:SetSelectedHeroFacet 2:[I:0:0] (npc_dota_hero_axe:(null))
+[Server] PR:SetSelectedHeroFacet 3:[I:0:0] (npc_dota_hero_mirana:(null))
+[Server] PR:SetSelectedHeroFacet 4:[U:1:340766495] (npc_dota_hero_centaur:(null))
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD'
 S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
-m_flPreGameStartTime set to 54.43
-m_flStateTransitionTime set to 114.43
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 1.6s ago, urgency is 0.0s
+m_flPreGameStartTime set to 45.43
+m_flStateTransitionTime set to 105.43
+Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 2.3s ago, urgency is 0.0s
 game_state: DOTA_GAMERULES_STATE_PRE_GAME
 first_blood_happened: false
 send_reason: GAME_STATE
@@ -344,13 +48,12 @@ radiant_lead: 0
 building_state: 19138340
 
 [Server] Created physics for dota
-[Server] 1172:bad_result_position::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellY cell -354 is outside of cell bounds (0->128) @(2560.000000 -107231.250000 0.000000)
+[Server] 2545:bad_result_position::m_vecOrigin CNetworkOriginCellCoordQuantizedVector m_cellY cell -354 is outside of cell bounds (0->128) @(2560.000000 -107231.250000 0.000000)
 Bot ward spot ward_spot_radiant_high_point_top not found in map; falling back to hardcoded location.
 Bot ward spot ward_spot_dire_rune_bottom not found in map; falling back to hardcoded location.
 Bot ward spot ward_spot_dire_high_point_top in an invalid location, this may cause bots to get stuck.
 [GCClient] Send msg 8744 (k_EMsgServerToGCGetGuildContracts), 17 bytes
 [GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 25 bytes
-SteamLearn error for project 1 (toobusy: NO), existing error count 38, retrying no sooner than 192.00s
 Height map file (maps/prefabs/promotional_radiant_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
 Height map file (maps/prefabs/promotional_dire_fountain.vhcg) not found, this will make ground height traces more expensive! Recompile the map to generate a height map.
 [Client] Created physics for dota
@@ -358,10 +61,10 @@ C:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
 [Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_PRE_GAME
 [Client] PregameHud - eGameState is now DOTA_GAMERULES_STATE_PRE_GAME
 **** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
-[GCClient] Recv msg 8745 (k_EMsgServerToGCGetGuildContractsResponse), 17 bytes
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 607 bytes
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 608 bytes
 --- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_STRATEGY_TIME
 +++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_PRE_GAME
+[GCClient] Recv msg 8745 (k_EMsgServerToGCGetGuildContractsResponse), 17 bytes
 [ResourceSystem] Failed loading resource "materials/models/items/marci/marci_crystalline_dragon_shoulder/marci_crystalline_dragon_shoulder.vmat_c" (ERROR_FILEOPEN: File not found)
 [VScript] npc_dota_hero_lone_druid failed to load ability with name= special_bonus_unique_lone_druid_2, at idx= 7
 [VScript] npc_dota_hero_lone_druid failed to load ability with name= special_bonus_unique_lone_druid_1, at idx= 8
@@ -382,91 +85,105 @@ C:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
 [VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/lone_druid' not found:
 	no field package.preload['game/Customize/hero/lone_druid']Failed to find scripts\vscripts\game\Customize\hero\lone_druid.lua
 [VScript] [LD-DEBUG] LOADED: dota2bot-OpenHyperAI-fork/item_purchase_generic (scepter_2 double-buy fix present)
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_6, at idx= 6
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_movement_speed_20, at idx= 7
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_5, at idx= 8
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_11, at idx= 9
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_8, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/lion' not found:
-	no field package.preload['game/Customize/hero/lion']Failed to find scripts\vscripts\game\Customize\hero\lion.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\lion.lua
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_6, at idx= 6
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_movement_speed_20, at idx= 7
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_5, at idx= 8
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_11, at idx= 9
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_8, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/lion' not found:
-	no field package.preload['game/Customize/hero/lion']Failed to find scripts\vscripts\game\Customize\hero\lion.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\lion.lua
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_6, at idx= 6
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_movement_speed_20, at idx= 7
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_5, at idx= 8
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_11, at idx= 9
-[VScript] npc_dota_hero_lion failed to load ability with name= special_bonus_unique_lion_8, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/lion' not found:
-	no field package.preload['game/Customize/hero/lion']Failed to find scripts\vscripts\game\Customize\hero\lion.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lion']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\lion.lua
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_hp_regen_4, at idx= 7
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_movement_speed_15, at idx= 8
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_strength_10, at idx= 9
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_unique_centaur_4, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/centaur' not found:
-	no field package.preload['game/Customize/hero/centaur']Failed to find scripts\vscripts\game\Customize\hero\centaur.lua
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_hp_regen_4, at idx= 7
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_movement_speed_15, at idx= 8
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_strength_10, at idx= 9
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_unique_centaur_4, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/centaur' not found:
-	no field package.preload['game/Customize/hero/centaur']Failed to find scripts\vscripts\game\Customize\hero\centaur.lua
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_hp_regen_4, at idx= 7
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_movement_speed_15, at idx= 8
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_strength_10, at idx= 9
-[VScript] npc_dota_hero_centaur failed to load ability with name= special_bonus_unique_centaur_4, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/centaur' not found:
-	no field package.preload['game/Customize/hero/centaur']Failed to find scripts\vscripts\game\Customize\hero\centaur.lua
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_tango
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_tango
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_attack_speed_25, at idx= 7
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_brain_drain_damage, at idx= 8
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_7, at idx= 9
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_arcane_curse_duration, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/silencer' not found:
-	no field package.preload['game/Customize/hero/silencer']Failed to find scripts\vscripts\game\Customize\hero\silencer.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\silencer.lua
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_attack_speed_25, at idx= 7
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_brain_drain_damage, at idx= 8
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_7, at idx= 9
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_arcane_curse_duration, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/silencer' not found:
-	no field package.preload['game/Customize/hero/silencer']Failed to find scripts\vscripts\game\Customize\hero\silencer.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\silencer.lua
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_attack_speed_25, at idx= 7
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_brain_drain_damage, at idx= 8
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_7, at idx= 9
-[VScript] npc_dota_hero_silencer failed to load ability with name= special_bonus_unique_silencer_arcane_curse_duration, at idx= 10
-[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/silencer' not found:
-	no field package.preload['game/Customize/hero/silencer']Failed to find scripts\vscripts\game\Customize\hero\silencer.lua
-[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer' not found:
-	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/silencer']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\silencer.lua
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_powershot_slow, at idx= 7
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_4, at idx= 8
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_5, at idx= 9
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_3, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/windrunner' not found:
+	no field package.preload['game/Customize/hero/windrunner']Failed to find scripts\vscripts\game\Customize\hero\windrunner.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\windrunner.lua
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_powershot_slow, at idx= 7
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_4, at idx= 8
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_5, at idx= 9
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_3, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/windrunner' not found:
+	no field package.preload['game/Customize/hero/windrunner']Failed to find scripts\vscripts\game\Customize\hero\windrunner.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\windrunner.lua
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_powershot_slow, at idx= 7
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_4, at idx= 8
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_5, at idx= 9
+[VScript] npc_dota_hero_windrunner failed to load ability with name= special_bonus_unique_windranger_3, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/windrunner' not found:
+	no field package.preload['game/Customize/hero/windrunner']Failed to find scripts\vscripts\game\Customize\hero\windrunner.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/windrunner']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\windrunner.lua
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_culling_blade_speed_duration, at idx= 7
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_8, at idx= 8
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe, at idx= 9
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/axe' not found:
+	no field package.preload['game/Customize/hero/axe']Failed to find scripts\vscripts\game\Customize\hero\axe.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\axe.lua
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_culling_blade_speed_duration, at idx= 7
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_8, at idx= 8
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe, at idx= 9
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/axe' not found:
+	no field package.preload['game/Customize/hero/axe']Failed to find scripts\vscripts\game\Customize\hero\axe.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\axe.lua
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_culling_blade_speed_duration, at idx= 7
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_8, at idx= 8
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe, at idx= 9
+[VScript] npc_dota_hero_axe failed to load ability with name= special_bonus_unique_axe_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/axe' not found:
+	no field package.preload['game/Customize/hero/axe']Failed to find scripts\vscripts\game\Customize\hero\axe.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/axe']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\axe.lua
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_3, at idx= 6
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_6, at idx= 7
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_5, at idx= 8
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_1, at idx= 9
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/mirana' not found:
+	no field package.preload['game/Customize/hero/mirana']Failed to find scripts\vscripts\game\Customize\hero\mirana.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\mirana.lua
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_3, at idx= 6
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_6, at idx= 7
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_5, at idx= 8
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_1, at idx= 9
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/mirana' not found:
+	no field package.preload['game/Customize/hero/mirana']Failed to find scripts\vscripts\game\Customize\hero\mirana.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\mirana.lua
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_3, at idx= 6
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_6, at idx= 7
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_5, at idx= 8
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_1, at idx= 9
+[VScript] npc_dota_hero_mirana failed to load ability with name= special_bonus_unique_mirana_7, at idx= 10
+[VScript] [WARN] When loading customized game file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:44: module 'game/Customize/hero/mirana' not found:
+	no field package.preload['game/Customize/hero/mirana']Failed to find scripts\vscripts\game\Customize\hero\mirana.lua
+[VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana' not found:
+	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/mirana']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\mirana.lua
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 1'
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_boots
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_boots
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_tango
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_tango
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_branches
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_branches
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 2'
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 3'
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_branches
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_branches
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 4'
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 [SndOperators] Operator Error: Event valve_dota_001.music.ui_hero_select: CSosOperatorConvar
 [SndOperators] Warning: Unable to acquire convar value: dota_music_enable_spectator_mode
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_movement_speed_15, at idx= 6
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_magic_resistance_10, at idx= 7
 [VScript] npc_dota_hero_lone_druid_bear failed to load ability with name= special_bonus_unique_lone_druid_spirit_bear_return_cd, at idx= 8
@@ -494,438 +211,1066 @@ C:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
 	no field package.preload['game/Customize/hero/lone_druid_bear']Failed to find scripts\vscripts\game\Customize\hero\lone_druid_bear.lua
 [VScript] [WARN] When loading customized file: ...beta\game\dota\scripts\vscripts\bots\FunLib\jmz_func.lua:47: module 'E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lone_druid_bear' not found:
 	no field package.preload['E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots/Customize/hero/lone_druid_bear']Failed to find E:\wwf_folder\runnings\games\steam\software\steamapps\common\dota 2 beta\game\dota\scripts\vscripts\bots\Customize\hero\lone_druid_bear.lua
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 [Localization System] CLocalize::FindSafe failed to localize: 'I will play position 1'
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_branches
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_branches
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_branches
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_branches
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_faerie_fire
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_faerie_fire
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_enchanted_mango
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_enchanted_mango
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_circlet
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_circlet
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_mantle
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_mantle
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_blood_grenade
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_blood_grenade
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[Client] PregameHud - SetPreGameVisible 0
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
 > dota_bot_give_gold 99999
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_mithril_hammer
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_mithril_hammer
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_javelin bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_javelin
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_javelin
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_null_talisman
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_null_talisman
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_gloves bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_gloves
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_gloves
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_circlet
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_circlet
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_boots
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_boots
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_hyperstone bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_hyperstone
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_mantle
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_mantle
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_sobi_mask
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_sobi_mask
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_vitality_booster
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_vitality_booster
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_mjollnir bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_mjollnir
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_mjollnir
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_null_talisman
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_null_talisman
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_ring_of_basilius
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_ring_of_basilius
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_ring_of_health
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_ring_of_health
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_wizard_hat
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_wizard_hat
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] This is a probe. Bot npc_dota_hero_lone_druid already has item_mjollnir
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_reaver bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_reaver
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_reaver
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_boots
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_boots
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_helm_of_iron_will
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_helm_of_iron_will
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_arcane_boots
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_arcane_boots
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_ring_of_tarrasque bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_ring_of_tarrasque
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_ring_of_tarrasque
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_belt_of_strength
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_belt_of_strength
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_crimson_guard
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_crimson_guard
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_heart bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_heart
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_heart
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_gloves
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_gloves
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_magic_stick
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_magic_stick
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_ring_of_tarrasque
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_ring_of_tarrasque
-[Client] PregameHud - SetPreGameVisible 0
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_magic_wand
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_magic_wand
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] This is a probe. Bot npc_dota_hero_lone_druid already has item_heart
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_mithril_hammer bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_mithril_hammer
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_mithril_hammer
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_magic_stick
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_magic_stick
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_cloak
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_cloak
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_belt_of_strength bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_belt_of_strength
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_belt_of_strength
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_magic_wand
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_magic_wand
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_shawl
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_shawl
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_basher bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_basher
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_basher
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_fluffy_hat
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_fluffy_hat
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_pipe
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_pipe
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_ogre_axe bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_ogre_axe
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_force_staff
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_force_staff
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_robe
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_robe
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_platemail
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_platemail
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_belt_of_strength bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_belt_of_strength
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_belt_of_strength
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_kaya
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_kaya
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_shadow_amulet
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_shadow_amulet
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_splintmail
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_splintmail
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_sange bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_sange
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_sange
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_shawl
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_shawl
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_chasm_stone
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_chasm_stone
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_abyssal_blade bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_abyssal_blade
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_abyssal_blade
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_point_booster
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_point_booster
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_glimmer_cape
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_glimmer_cape
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_shivas_guard
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_shivas_guard
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_ogre_axe
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] This is a probe. Bot npc_dota_hero_lone_druid already has item_abyssal_blade
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_demon_edge bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_demon_edge
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_demon_edge
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_ring_of_regen
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_ring_of_regen
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_ring_of_health
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_ring_of_health
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_blitz_knuckles bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_blitz_knuckles
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_blitz_knuckles
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_headdress
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_headdress
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_void_stone
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_void_stone
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_javelin bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_javelin
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_javelin
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_chainmail
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_chainmail
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_platemail
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_platemail
+[Server] SV:  "超级坑队友<0><[U:1:340766495]><>" STEAM USERID validated
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_monkey_king_bar bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_monkey_king_bar
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_monkey_king_bar
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_ogre_axe
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_mekansm
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_mekansm
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_energy_booster
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_energy_booster
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_belt_of_strength
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_belt_of_strength
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] This is a probe. Bot npc_dota_hero_lone_druid already has item_monkey_king_bar
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_eagle bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_eagle
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_eagle
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_guardian_greaves
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_guardian_greaves
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_lotus_orb
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_lotus_orb
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_sange
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_sange
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_claymore bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_claymore
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_claymore
+[Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
+[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 42 bytes
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_talisman_of_evasion bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_talisman_of_evasion
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_talisman_of_evasion
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_energy_booster
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_energy_booster
+[GCClient] Recv msg 24 (k_ESOMsg_CacheSubscribed), 1604 bytes
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] This is a probe. Bot npc_dota_hero_lone_druid already has item_butterfly
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 0, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
 [VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=false heroHasModifierOfScepterConsumed=false bought=-1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_void_stone
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_void_stone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_point_booster
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_point_booster
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_point_booster bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_point_booster
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_point_booster
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_aether_lens
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_aether_lens
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_belt_of_strength
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_belt_of_strength
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_ogre_axe
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_ogre_axe bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_ogre_axe
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_dragon_lance
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_dragon_lance
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_blade_of_alacrity
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_blade_of_alacrity bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_blade_of_alacrity
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_mithril_hammer
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_mithril_hammer
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_hurricane_pike
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_hurricane_pike
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_staff_of_wizardry bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: false
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_staff_of_wizardry
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_ogre_axe
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 2. Bot: npc_dota_hero_lone_druid. itemName: item_recipe_ultimate_scepter_2
+[VScript] [LD scepter2] Bot: npc_dota_hero_lone_druid. bought: 0. itemName: item_recipe_ultimate_scepter_2
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList > 0 — unit=npc_dota_hero_lone_druid
+[VScript] This is a probe 2. Bot: npc_dota_hero_lone_druid. itemName: item_recipe_ultimate_scepter_2
+[VScript] [LD scepter2] Bot: npc_dota_hero_lone_druid. bought: 0. itemName: item_recipe_ultimate_scepter_2
+[VScript] This is a probe 3. Bot: npc_dota_hero_lone_druid. currBuyingBasicItem: item_recipe_ultimate_scepter_2
+[VScript] [LD scepter2][turbo-buy] item=item_recipe_ultimate_scepter_2 gold=68299 cost=1600 slot14nil=true SecretShop=false fromSecret=false botDistSecret=8819 bought=0 stillNeeds=true
+[VScript] This is a probe 4. Bot npc_dota_hero_lone_druid's bot.currBuyingBasicItem: item_recipe_ultimate_scepter_2 bSlotGateOk: true bot.currBuyingBasicItem == item_ultimate_scepter_2: false. bIsLdBlessing: true
 [VScript] Bot npc_dota_hero_lone_druid is going to purchase item: item_recipe_ultimate_scepter_2
 [VScript] Bot npc_dota_hero_lone_druid purchased item successfully! bot.currBuyingBasicItem: item_recipe_ultimate_scepter_2
 [VScript] [LD scepter2][turbo] purchased Blessing #1
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_black_king_bar
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_black_king_bar
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_ring_of_tarrasque
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_ring_of_tarrasque
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_travel_boots
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=1
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 [Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_travel_boots
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_platemail
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_platemail
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_refresher
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_refresher
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_splintmail
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_splintmail
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_chasm_stone
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_chasm_stone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_blitz_knuckles
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_blitz_knuckles
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_shivas_guard
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_shivas_guard
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_robe
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_robe
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_sobi_mask
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_sobi_mask
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_travel_boots
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 [Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_travel_boots
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_claymore
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_claymore
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_point_booster
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_point_booster
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_orchid
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_orchid
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_recipe_ultimate_scepter_2
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_recipe_ultimate_scepter_2
-[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_centaur HasScepter=true IsItemInHero=true
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_vitality_booster
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_vitality_booster
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_blitz_knuckles
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_blitz_knuckles
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_relic
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_relic
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_energy_booster
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_energy_booster
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_robe
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_robe
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_talisman_of_evasion
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_talisman_of_evasion
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_sobi_mask
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_sobi_mask
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_octarine_core
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_octarine_core
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_javelin
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_javelin
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_bloodthorn
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_bloodthorn
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_mystic_staff
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_mystic_staff
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_tiara_of_selemene
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_sheepstick
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_sheepstick
-[VScript] Bot npc_dota_hero_centaur is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_centaur purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_ultimate_scepter_2
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_ultimate_scepter_2
-[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_lion HasScepter=true IsItemInHero=true
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_boots
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_boots
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_travel_boots
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_travel_boots
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 [Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_hyperstone
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_point_booster
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_point_booster
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_ogre_axe
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_ogre_axe
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_blade_of_alacrity
-[VScript] Bot npc_dota_hero_lion is going to purchase item: item_recipe_travel_boots
-[Server] Client (account 0) tried to execute invalid order (70). Item cannot be sold.
-[VScript] Bot npc_dota_hero_lion purchased item successfully! bot.currBuyingBasicItem: item_recipe_travel_boots
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_staff_of_wizardry
-[VScript] Bot npc_dota_hero_silencer is going to purchase item: item_recipe_ultimate_scepter_2
-[VScript] Bot npc_dota_hero_silencer purchased item successfully! bot.currBuyingBasicItem: item_recipe_ultimate_scepter_2
-[VScript] [LD scepter2] GATE SKIPPED scepter_2 — unit=npc_dota_hero_silencer HasScepter=true IsItemInHero=true
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 Sending CMsgConnectedPlayers for reason PLAYER_HERO.  Last send was 10.2s ago, urgency is 10.0s
 connected_players {
   steam_id: 76561198301032223
-  hero_id: 97
+  hero_id: 96
 }
 game_state: DOTA_GAMERULES_STATE_PRE_GAME
 first_blood_happened: false
 send_reason: PLAYER_HERO
 radiant_kills: 0
 dire_kills: 0
-radiant_lead: 401971
+radiant_lead: 402216
 building_state: 4784201
 
 [GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 40 bytes
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 609 bytes
-+++ CSODOTALobby.all_members[0]: hero_id: 97
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=2
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
 [VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 610 bytes
++++ CSODOTALobby.all_members[0]: hero_id: 96
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 **** Panel Hint has fill-parent-flow for width, but isn't in a flowing right layout
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=3
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=4
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
 [VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=5
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
 [Localization System] CLocalize::FindSafe failed to localize: 'Welcome to Open Hyper AI (OHA): 0.7.41 - 2026/04/02'
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=6
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[SndOperators] Error: Invalid SoundEvent Hash -1840875145 from entry Hero_Axe.Footsteps.Automaton
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
 [VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=7
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE botGold > GetItemCost(bot.currBuyingItemInPurchaseList) * 2 — unit=npc_dota_hero_lone_druid botGold=66699 GetItemCost(bot.currBuyingItemInPurchaseList)=5800. bot.countInvCheck=8
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
 [VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Localization System] CLocalize::FindSafe failed to localize: 'You can select the heroes for bots to pick, e.g. 10 same heroes or your dream teams, or change their names. Just customize bots in the Customize/general file.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Localization System] CLocalize::FindSafe failed to localize: 'If you feel bots are weak, try enabling the enhanced Fretbots mode to make the game a lot more challenging. Check Workshop page for details.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Localization System] CLocalize::FindSafe failed to localize: 'You can type `!pos X` to swap position with a bot. For example, type: `!pos 2` to go mid lane. Type `!3pos 5` to ask the 3rd bot on the team to play position 5.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Localization System] CLocalize::FindSafe failed to localize: 'You can type `!sp zh` for ally bots to 说中文, or `!sp en` for English, `!sp ru` for русский, `!sp ja` for 日本語. Not 100% translated, just be patient.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Server] PR:IncrementIdleTime 3:[I:0:0] 2.70
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Server] PR:IncrementIdleTime 2:[I:0:0] 2.70
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Server] PR:IncrementIdleTime 2:[I:0:0] 2.20
-[Localization System] CLocalize::FindSafe failed to localize: 'This is nonprofit project, if you like this script and have any feedback or want to contritute, or give any support or buy me a coffee, please check script's Workshop.'
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Server] PR:IncrementIdleTime 1:[I:0:0] 2.10
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-Script function 'GetDesire' on bot npc_dota_hero_lone_druid took 2.350ms
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-S:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
-m_flGameStartTime set to 114.43
-Sending CMsgConnectedPlayers for reason GAME_STATE.  Last send was 50.1s ago, urgency is 0.0s
-game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
-first_blood_happened: false
-send_reason: GAME_STATE
-radiant_kills: 0
-dire_kills: 0
-radiant_lead: 401971
-building_state: 4784201
-
-[GCClient] Send msg 7034 (k_EMsgGCConnectedPlayers), 27 bytes
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[Server] PR:IncrementIdleTime 3:[I:0:0] 2.20
-C:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
-[Client] CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
-[Client] CDOTA_Hud_Main::DeleteGameEndScreen deleted GameEndContainer
---- Sent CMsgGameServerInfo to GC
-server_public_ip_addr: 1864344076
-server_private_ip_addr: 3232282625
-server_port: 27015
-server_tv_port: 27020
-server_key: ""
-server_hibernation: false
-server_type: GAME
-server_region: 0
-server_loadavg: 0.244222283
-server_tv_broadcast_time: 104.466675
-server_game_time: 0.0333328247
-relay_slots_max: 64
-relays_connected: 0
-relay_clients_connected: 0
-tv_secret_code: 16302336914859031300
-server_version: 6942
-server_cluster: 0
-assigned_server_tv_port: 27020
-allow_custom_games: BOTH
-build_version: 6942
-
----
-[GCClient] Send msg 4508 (k_EMsgGCGameServerInfo), 84 bytes
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[Localization System] CLocalize::FindSafe failed to localize: 'Position selection closed.'
-[GCClient] Recv msg 26 (k_ESOMsg_UpdateMultiple), 609 bytes
---- CSODOTALobby.game_state: DOTA_GAMERULES_STATE_PRE_GAME
-+++ CSODOTALobby.game_state: DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar,item_butterfly] bearSlots=[] -> false
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade,item_monkey_king_bar] bearSlots=[item_butterfly] -> false
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid has enqueued actions i=1, type=-1
-[VScript] [ERROR] Relocating the idle bot: npc_dota_hero_lone_druid. Sending it to the lane# it was originally assigned: 3
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] [LD scepter2][Trace] unit=npc_dota_hero_lone_druid isLD=true heroBlessingCount=0 bearBlessingCount=0 bearNil(No bear is alive)=false heroHasScepter=true heroHasModifierOfScepterConsumed=false bought=1 heroSlots=[item_mjollnir,item_heart,item_abyssal_blade] bearSlots=[item_butterfly,item_monkey_king_bar] -> false
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment "attach_fx" on model "models/heroes/silencer/silencer.vmdl" for entity "npc_dota_hero_silencer"
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid is in idle state for unknown reasons. N/A.
-[VScript] Bot npc_dota_hero_lone_druid_bear is in idle state for unknown reasons. N/A.
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false
+[VScript] [LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=npc_dota_hero_lone_druid
+[VScript] [LD scepter2] bear == bot: false
+[VScript] [LD scepter2] heroCount: 0, bearCount: 0
+[VScript] [LD scepter2] bought: 1, (heroCount + bearCount) >= 2: false
+[VScript] [LD scepter2] result: false
+[VScript] [LD scepter2] IsItemInTargetHero function result: false

@@ -50,14 +50,14 @@ Hero.PurchaseList = {
 
 	-- then lone druid's items.
 	"item_boots",
-	"item_mjollnir",
+	"item_octarine_core",
+	"item_refresher",
 	"item_hydras_breath",
 	"item_satanic",
-	"item_monkey_king_bar",
 	-- "item_ultimate_scepter",
 	"item_travel_boots_2",
+	"item_skadi",
 	-- "item_ultimate_scepter_2",
-	"item_butterfly",
 	-- "item_moon_shard",
 }
 

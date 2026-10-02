@@ -1178,21 +1178,27 @@ function Item.IsItemInTargetHero( sItemName, bot )
 		-- Aghanim's Blessing stays a PHYSICAL item until it is consumed, so a held
 		-- (not-yet-consumed) Blessing must also count as "owned". Count both the
 		-- consumed modifier and any physical item_ultimate_scepter_2 on the unit.
-		local function ldBlessingCount( u )
-			if u == nil then return 0 end
-			local n = 0
-			if u:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) then n = n + 1 end
+		local function ldBlessingCount( bot_or_unit )
+			if bot_or_unit == nil then return 0 end
+			local blessing_count_number = 0
+			if bot_or_unit:HasModifier( 'modifier_item_ultimate_scepter_consumed' ) then blessing_count_number = blessing_count_number + 1 end
 			for slot = 0, 14 do
-				local it = u:GetItemInSlot( slot )
-				if it ~= nil and it:GetName() == 'item_ultimate_scepter_2' then n = n + 1 end
+				local item_in_slot = bot_or_unit:GetItemInSlot( slot )
+				if item_in_slot ~= nil and item_in_slot:GetName() == 'item_ultimate_scepter_2' then blessing_count_number = blessing_count_number + 1 end
 			end
-			return n
+			return blessing_count_number
 		end
 		local ld = ( isLD and Utils and Utils.GetLoneDruid ) and Utils.GetLoneDruid(bot) or nil
 		local bear = ( ld and ld.bear ) or nil
+		if isLD then
+			print("[LD scepter2] bear == bot: " .. tostring(bear == bot))
+		end
 		if bear == bot then bear = nil end -- defensive: never treat the hero as its own bear
 		local heroCount = ldBlessingCount(bot)
 		local bearCount = ldBlessingCount(bear)
+		if isLD then
+			print("[LD scepter2] heroCount: " .. tostring(heroCount) .. ", bearCount: " .. tostring(bearCount))
+		end
 		local result
 		if isLD then
 			-- Authoritative: how many Blessings the lone-druid pair has actually
@@ -1201,7 +1207,9 @@ function Item.IsItemInTargetHero( sItemName, bot )
 			-- even if a Blessing is in transit on the courier/stash. Fallback to the
 			-- physical/consumed count if the counter is somehow unavailable.
 			local bought = ( ld and ld.scepter2Bought ) or 0
+			print("[LD scepter2] bought: " .. tostring(bought) .. ", (heroCount + bearCount) >= 2: " .. tostring((heroCount + bearCount) >= 2))
 			result = ( bought >= 2 ) or ( ( heroCount + bearCount ) >= 2 )
+			print("[LD scepter2] result: " .. tostring(result))
 		else
 			result = ( bot:HasScepter() and bot:FindItemSlot('item_ultimate_scepter') < 0 )
 		end
@@ -1232,6 +1240,9 @@ function Item.IsItemInTargetHero( sItemName, bot )
 				.. " heroSlots=[" .. table.concat(slots, ",") .. "]"
 				.. " bearSlots=[" .. tostring(bearSlots) .. "]"
 				.. " -> " .. tostring(result) )
+		end
+		if isLD then
+			print("[LD scepter2] IsItemInTargetHero function result: " .. tostring(result) .. "")
 		end
 		return result
 	end
