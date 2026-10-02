@@ -89,13 +89,21 @@ Customize.Radiant_Heros = {
 	-- "npc_dota_hero_earth_spirit",
 	-- "npc_dota_hero_storm_spirit",
 
-	-- Custom lineup: only force lone_druid as pos 1; the rest fall back to random
-	-- for a cleaner console while debugging the scepter_2 issue.
+	-- -- Custom lineup: only force lone_druid as pos 1; the rest fall back to random
+	-- -- for a cleaner console while debugging the scepter_2 issue.
+	-- "npc_dota_hero_lone_druid",
+	-- "npc_dota_hero_rattletrap",
+	-- "npc_dota_hero_void_spirit",
+	-- "npc_dota_hero_storm_spirit",
+	-- "npc_dota_hero_brewmaster",
+
+	-- Scaling heroes
 	"npc_dota_hero_lone_druid",
-	"npc_dota_hero_rattletrap",
-	"npc_dota_hero_void_spirit",
-	"npc_dota_hero_storm_spirit",
-	"npc_dota_hero_brewmaster",
+	"npc_dota_hero_silencer",
+	"npc_dota_hero_pudge",
+	"npc_dota_hero_slark",
+	"npc_dota_hero_axe",
+	"npc_dota_hero_life_stealer",
 }
 
 -- Same notes as above for picking heroes but for the Dire side.
