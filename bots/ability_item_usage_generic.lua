@@ -1064,6 +1064,35 @@ local function ItemUsageComplement()
 		end
 	end
 
+	-- Rattletrap special: after his full build is complete, infinitely buy and
+	-- "consume" Chainmail for a permanent +5 armor per Chainmail (stacking). Since
+	-- Chainmail is not a real consumable, consumption is simulated: destroy the
+	-- physical item, then grant the stacking armor modifier.
+	if bot:GetUnitName() == "npc_dota_hero_rattletrap"
+	and bot._consumeChainmail
+	and bot._buildComplete
+	then
+		local cmSlot = bot:FindItemSlot( "item_chainmail" )
+		if cmSlot >= 0 then
+			local hCM = bot:GetItemInSlot( cmSlot )
+			if hCM ~= nil and hCM:GetName() == "item_chainmail" then
+				-- Remove the physical item first (prefer destroying it outright; fall back to
+				-- detaching from inventory). Chainmail is not a real consumable, so without
+				-- this the bot would re-detect it every frame and stack armor infinitely.
+				local removed = pcall( function() hCM:RemoveSelf() end )
+				if not removed then
+					pcall( function() bot:RemoveItem( hCM ) end )
+				end
+				-- Only grant the stack once the Chainmail is truly gone, so a removal
+				-- failure can never cause a runaway re-stack on the next frame.
+				if bot:FindItemSlot( "item_chainmail" ) < 0 then
+					bot:AddNewModifier( bot, nil, "modifier_rattletrap_chainmail_consumed", {} )
+					bot._chainmailConsumed = ( bot._chainmailConsumed or 0 ) + 1
+				end
+			end
+		end
+	end
+
 	local nItemSlot = { 5, 4, 3, 2, 1, 0, 15, 16 }
 
 	for _, nSlot in pairs( nItemSlot )

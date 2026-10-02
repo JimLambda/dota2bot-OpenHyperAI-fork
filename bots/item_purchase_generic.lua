@@ -37,6 +37,15 @@ bot.SecretShop = false
 local sPurchaseList = BotBuild['sBuyList']
 local sItemSellList = BotBuild['sSellList']
 
+-- Rattletrap "consume Chainmail" feature. Load the Customize hero config so we can
+-- read Hero.ConsumeChainmail, and register the custom stacking-armor modifier used
+-- when a Chainmail is consumed (Chainmail is not a real consumable, so we simulate it).
+local _heroFile = string.gsub(botName, "npc_dota_", "")
+local _okCustom, _custom = pcall( dofile, GetScriptDirectory() .. "/Customize/hero/" .. _heroFile .. ".lua" )
+bot._customBuild = ( _okCustom and _custom ) or nil
+bot._consumeChainmail = bot._customBuild ~= nil and bot._customBuild.ConsumeChainmail or false
+bot._buildComplete = false
+pcall( function() LinkLuaModifier( "modifier_rattletrap_chainmail_consumed", "FretBots/modifiers/modifier_rattletrap_chainmail_consumed.lua", LUA_MODIFIER_MOTION_NONE ) end )
 
 if sPurchaseList == nil then
 	print("[ERROR] Can't load purchase list for: " .. botName)
@@ -604,6 +613,15 @@ function ItemPurchaseThink()
 			end
 		end
 
+		-- Rattletrap infinite Chainmail consumption: once the real build is done, keep the
+		-- purchase list topped up with Chainmail so he buys + "consumes" it forever.
+		bot._buildComplete = ( #bot.purchaseListInReverseOrder == 0 )
+		if bot._buildComplete
+		and bot._consumeChainmail
+		and bot:GetUnitName() == "npc_dota_hero_rattletrap" then
+			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder + 1] = "item_chainmail"
+		end
+
 		-- Build set of all items/components needed by new build
 		local tNewBuildNeeds = {}
 		for _, itemName in ipairs(sPurchaseList) do
@@ -620,6 +638,7 @@ function ItemPurchaseThink()
 			item_cheese = true, item_refresher_shard = true,
 			item_moon_shard = true, item_tpscroll = true,
 			item_famango = true, item_great_famango = true, item_greater_famango = true,
+			item_chainmail = true,
 		}
 
 		-- Collect sellable items sorted by cost (cheapest first)
@@ -729,11 +748,20 @@ function ItemPurchaseThink()
 				if not bSkip then
 					idx = idx + 1
 					bot.purchaseListInReverseOrder[idx] = itemName
-				end
-			end
-		end
+					end
+					end
+					end
 
-		-- Reset purchase state machine
+					-- Rattletrap infinite Chainmail consumption: once the real build is done, keep the
+					-- purchase list topped up with Chainmail so he buys + "consumes" it forever.
+					bot._buildComplete = ( #bot.purchaseListInReverseOrder == 0 )
+					if bot._buildComplete
+					and bot._consumeChainmail
+					and bot:GetUnitName() == "npc_dota_hero_rattletrap" then
+					bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder + 1] = "item_chainmail"
+					end
+
+					-- Reset purchase state machine
 		bot.currBuyingItemInPurchaseList = nil
 		bot.currBuyingBasicItem = nil
 		bot.currBuyingBasicItemList = {}
@@ -1358,9 +1386,16 @@ function ItemPurchaseThink()
 	end
 
 	if #bot.purchaseListInReverseOrder == 0 then
-		_resetCurrentTarget()
-		bot:SetNextItemPurchaseValue( 0 )
-		return
+		-- Rattletrap: keep buying Chainmail forever once the build is done.
+		if bot._consumeChainmail
+		and bot._buildComplete
+		and bot:GetUnitName() == "npc_dota_hero_rattletrap" then
+			bot.purchaseListInReverseOrder[1] = "item_chainmail"
+		else
+			_resetCurrentTarget()
+			bot:SetNextItemPurchaseValue( 0 )
+			return
+		end
 	end
 
 	-- Only skip raw boots of speed when we already have ANY boots.
@@ -1414,7 +1449,8 @@ function ItemPurchaseThink()
 		if bot:GetUnitName() == "npc_dota_hero_lone_druid" then
 			print("[LD scepter2] GATE #bot.currBuyingBasicItemList == 0 — unit=" .. tostring(bot:GetUnitName()))
 		end
-		if Item.IsItemInHero( bot.currBuyingItemInPurchaseList )
+		if ( Item.IsItemInHero( bot.currBuyingItemInPurchaseList )
+			and bot.currBuyingItemInPurchaseList ~= "item_chainmail" )
 			or bot.currBuyingItemInPurchaseList == "item_aghanims_shard"
 			-- or (
 			-- 		bot == Utils.GetLoneDruid(bot).hero
@@ -1440,8 +1476,16 @@ function ItemPurchaseThink()
 					.. " HasScepter=" .. tostring(bot:HasScepter())
 					.. " IsItemInHero=" .. tostring( Item.IsItemInHero( bot.currBuyingItemInPurchaseList ) ) )
 			end
+			local _popped = bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder]
 			_resetCurrentTarget()
 			bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder] = nil
+			-- Rattletrap: keep the infinite Chainmail purchase alive even if this branch pops it.
+			if _popped == "item_chainmail"
+			and bot._consumeChainmail
+			and bot._buildComplete
+			and bot:GetUnitName() == "npc_dota_hero_rattletrap" then
+				bot.purchaseListInReverseOrder[#bot.purchaseListInReverseOrder + 1] = "item_chainmail"
+			end
 		elseif currentTime > bot.lastInvCheck + 1.0 then
 			bot.lastInvCheck = currentTime
 			-- if bot.rebuildCount < 3 and botCourierValue == 0 and botStashValue == 0 and botName ~= "npc_dota_hero_lone_druid" then

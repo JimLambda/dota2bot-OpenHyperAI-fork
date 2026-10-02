@@ -42,9 +42,16 @@ Hero.PurchaseList = {
 	"item_ultimate_scepter",
 	"item_travel_boots_2",
 	"item_ultimate_scepter_2",
-	"item_octarine_core",
+	-- "item_octarine_core",
 	"item_moon_shard",
 }
+
+-- Rattletrap special ability: after the full build above is purchased, he will
+-- infinitely buy and "consume" Chainmail for a permanent +5 armor per Chainmail
+-- (stacking). Chainmail is not a real consumable, so consumption is simulated:
+-- the physical item is destroyed and a stacking armor modifier is applied.
+-- Set to false to disable this behavior.
+Hero.ConsumeChainmail = true
 
 -- -- The items this bot will sell in game. Note the items should be paired together - once the bot gets the first item in the pair, the bot sells the second item.
 -- Hero.SellList = {
